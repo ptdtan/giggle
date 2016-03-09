@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -68,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,18 +85,58 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">ll.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br/>
 <code>#include &lt;stdint.h&gt;</code><br/>
+<code>#include &lt;err.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ll_8h_source.html">ll.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="giggle_8h_source.html">giggle.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="wah_8h_source.html">wah.h</a>&quot;</code><br/>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a78c5c274485e152d887a18b394af9fd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#a78c5c274485e152d887a18b394af9fd5">uint32_t_ll_wah_giggle_set_data_handler</a> ()</td></tr>
+<tr class="separator:a78c5c274485e152d887a18b394af9fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedaba87b3606605fd2c26067fa47d82f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#aedaba87b3606605fd2c26067fa47d82f">uint32_t_ll_leading_serialize_to_wah</a> (void *deserialized, void **serialized)</td></tr>
+<tr class="separator:aedaba87b3606605fd2c26067fa47d82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab52ff3b88e408533fffe3c291f116a3"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#aab52ff3b88e408533fffe3c291f116a3">uint32_t_ll_non_leading_serialize_to_wah</a> (void *deserialized, void **serialized)</td></tr>
+<tr class="separator:aab52ff3b88e408533fffe3c291f116a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a857fa1cb10691e79dd7e21636eeaad43"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#a857fa1cb10691e79dd7e21636eeaad43">uint32_t_ll_non_leading_serialize</a> (void *deserialized, void **serialized)</td></tr>
+<tr class="separator:a857fa1cb10691e79dd7e21636eeaad43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfe7cda5d3421cfe17dcc91b95fccf15"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#acfe7cda5d3421cfe17dcc91b95fccf15">uint32_t_ll_non_leading_deserialize</a> (void *serialized, uint64_t serialized_size, void **deserialized)</td></tr>
+<tr class="separator:acfe7cda5d3421cfe17dcc91b95fccf15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad11592dd3033e9e4439b4155d38c444f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#ad11592dd3033e9e4439b4155d38c444f">uint32_t_ll_non_leading_free</a> (void **deserialized)</td></tr>
+<tr class="separator:ad11592dd3033e9e4439b4155d38c444f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdbbae08c4b26caee7c278e2778db6c8"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#abdbbae08c4b26caee7c278e2778db6c8">uint32_t_ll_leading_serialize</a> (void *deserialized, void **serialized)</td></tr>
+<tr class="separator:abdbbae08c4b26caee7c278e2778db6c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5cfdfff071b7c7004b1cb8c70d4a1ef"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#ae5cfdfff071b7c7004b1cb8c70d4a1ef">uint32_t_ll_leading_deserialize</a> (void *serialized, uint64_t serialized_size, void **deserialized)</td></tr>
+<tr class="separator:ae5cfdfff071b7c7004b1cb8c70d4a1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac6f08cdd015042073c2e6bab6ca08e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#aac6f08cdd015042073c2e6bab6ca08e2">uint32_t_ll_leading_free</a> (void **deserialized)</td></tr>
+<tr class="separator:aac6f08cdd015042073c2e6bab6ca08e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8caa8269ed0e1fd8168ba8082a808e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#ad8caa8269ed0e1fd8168ba8082a808e0">uint32_t_ll_giggle_set_data_handler</a> ()</td></tr>
+<tr class="separator:ad8caa8269ed0e1fd8168ba8082a808e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af331582fc40722d1f95e46cd383519aa"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#af331582fc40722d1f95e46cd383519aa">uint32_t_ll_new_non_leading</a> (uint32_t domain)</td></tr>
+<tr class="separator:af331582fc40722d1f95e46cd383519aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a694e4719b330002fe736e685af548956"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#a694e4719b330002fe736e685af548956">uint32_t_ll_new_leading</a> (uint32_t domain)</td></tr>
+<tr class="separator:a694e4719b330002fe736e685af548956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a074de3121d457278953023bc7838f83f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#a074de3121d457278953023bc7838f83f">uint32_t_ll_non_leading_SA_add_scalar</a> (uint32_t domain, void *_nld, void *_id)</td></tr>
+<tr class="separator:a074de3121d457278953023bc7838f83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a114e4ef57cfa9b5cbeede3db368fd9b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#a114e4ef57cfa9b5cbeede3db368fd9b6">uint32_t_ll_non_leading_SE_add_scalar</a> (uint32_t domain, void *_nld, void *_id)</td></tr>
+<tr class="separator:a114e4ef57cfa9b5cbeede3db368fd9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27f5fc643ab9066167d82dcf517fc596"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#a27f5fc643ab9066167d82dcf517fc596">uint32_t_ll_leading_B_add_scalar</a> (uint32_t domain, void *_ld, void *_id)</td></tr>
+<tr class="separator:a27f5fc643ab9066167d82dcf517fc596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b43569138fbf3b91222453cb6e1691"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#ae0b43569138fbf3b91222453cb6e1691">uint32_t_ll_leading_union_with_B</a> (uint32_t domain, void **R, void *leading)</td></tr>
+<tr class="separator:ae0b43569138fbf3b91222453cb6e1691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0f4ebec49c10f8252a00370a05c557c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#ae0f4ebec49c10f8252a00370a05c557c">uint32_t_ll_non_leading_union_with_SA</a> (uint32_t domain, void **R, void *d)</td></tr>
+<tr class="separator:ae0f4ebec49c10f8252a00370a05c557c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d85d1a332b7888c56b3fa4f27cbcde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#a24d85d1a332b7888c56b3fa4f27cbcde">uint32_t_ll_non_leading_union_with_SA_subtract_SE</a> (uint32_t domain, void **R, void *d)</td></tr>
+<tr class="separator:a24d85d1a332b7888c56b3fa4f27cbcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff47a665a05bdbe3a0183d899f42c889"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#aff47a665a05bdbe3a0183d899f42c889">uint32_t_ll_append</a> (struct <a class="el" href="structuint32__t__ll.html">uint32_t_ll</a> **ll, uint32_t val)</td></tr>
 <tr class="separator:aff47a665a05bdbe3a0183d899f42c889"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29342a209cb09f387f7e3305c18b226a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#a29342a209cb09f387f7e3305c18b226a">uint32_t_ll_uniq_append</a> (struct <a class="el" href="structuint32__t__ll.html">uint32_t_ll</a> **ll, uint32_t val)</td></tr>
@@ -106,28 +147,19 @@ Functions</h2></td></tr>
 <tr class="separator:a80006493caaa1ddf1da2e07320bf2f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7c2fcce418ac14ad1d89a50eae9e11b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#ae7c2fcce418ac14ad1d89a50eae9e11b">uint32_t_ll_free</a> (void **_ll)</td></tr>
 <tr class="separator:ae7c2fcce418ac14ad1d89a50eae9e11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac46abe8925f5b5aa18512d2ad35a60e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#ac46abe8925f5b5aa18512d2ad35a60e5">uint32_t_ll_non_leading_free</a> (void **_d)</td></tr>
-<tr class="separator:ac46abe8925f5b5aa18512d2ad35a60e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5380117af4c923c2379d885a1dc91c22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#a5380117af4c923c2379d885a1dc91c22">uint32_t_ll_leading_free</a> (void **_d)</td></tr>
-<tr class="separator:a5380117af4c923c2379d885a1dc91c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a262372d5d42bb5a0f9eef652f08d4534"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#a262372d5d42bb5a0f9eef652f08d4534">uint32_t_ll_leading_repair</a> (struct <a class="el" href="structbpt__node.html">bpt_node</a> *a, struct <a class="el" href="structbpt__node.html">bpt_node</a> *b)</td></tr>
-<tr class="separator:a262372d5d42bb5a0f9eef652f08d4534"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab62a3abf94a903d41aecaa37ac962084"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#ab62a3abf94a903d41aecaa37ac962084">uint32_t_ll_new_non_leading</a> ()</td></tr>
-<tr class="separator:ab62a3abf94a903d41aecaa37ac962084"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac12132310b7cbb206b860588e1932638"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#ac12132310b7cbb206b860588e1932638">uint32_t_ll_new_leading</a> ()</td></tr>
-<tr class="separator:ac12132310b7cbb206b860588e1932638"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a456804df8089910fded81d429319cd78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#a456804df8089910fded81d429319cd78">uint32_t_ll_non_leading_SA_add_scalar</a> (void *d, void *v)</td></tr>
-<tr class="separator:a456804df8089910fded81d429319cd78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac95a62f953b942af7516f5710d98e2c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#ac95a62f953b942af7516f5710d98e2c4">uint32_t_ll_non_leading_SE_add_scalar</a> (void *d, void *v)</td></tr>
-<tr class="separator:ac95a62f953b942af7516f5710d98e2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7671cf9752eba3c8bb911302b96cb5a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#a7671cf9752eba3c8bb911302b96cb5a4">uint32_t_ll_leading_B_add_scalar</a> (void *d, void *v)</td></tr>
-<tr class="separator:a7671cf9752eba3c8bb911302b96cb5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c49a69feacae6228cee581170bf1af4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#a1c49a69feacae6228cee581170bf1af4">uint32_t_ll_leading_union_with_B</a> (void **R, void *leading)</td></tr>
-<tr class="separator:a1c49a69feacae6228cee581170bf1af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad434bc97665ec3a5ccf39c0a0476f050"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#ad434bc97665ec3a5ccf39c0a0476f050">uint32_t_ll_non_leading_union_with_SA_subtract_SE</a> (void **R, void *d)</td></tr>
-<tr class="separator:ad434bc97665ec3a5ccf39c0a0476f050"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa401b714faf03988136a51f2c07c681"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#aaa401b714faf03988136a51f2c07c681">uint32_t_ll_non_leading_union_with_SA</a> (void **R, void *d)</td></tr>
-<tr class="separator:aaa401b714faf03988136a51f2c07c681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afddda5f56f15d102ba7f5acab843b47b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#afddda5f56f15d102ba7f5acab843b47b">uint32_t_ll_leading_repair</a> (uint32_t domain, struct <a class="el" href="structbpt__node.html">bpt_node</a> *a, struct <a class="el" href="structbpt__node.html">bpt_node</a> *b)</td></tr>
+<tr class="separator:afddda5f56f15d102ba7f5acab843b47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a72fcff32fd59ce75bb0530c367a33703"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcache__handler.html">cache_handler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#a72fcff32fd59ce75bb0530c367a33703">uint32_t_ll_wah_leading_cache_handler</a></td></tr>
+<tr class="separator:a72fcff32fd59ce75bb0530c367a33703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae313ce882c5a155b6c04392b60b3ae3d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcache__handler.html">cache_handler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#ae313ce882c5a155b6c04392b60b3ae3d">uint32_t_ll_wah_non_leading_cache_handler</a></td></tr>
+<tr class="separator:ae313ce882c5a155b6c04392b60b3ae3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb1de698b3cf38bbfe6873b9c760226b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcache__handler.html">cache_handler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#adb1de698b3cf38bbfe6873b9c760226b">uint32_t_ll_non_leading_cache_handler</a></td></tr>
+<tr class="separator:adb1de698b3cf38bbfe6873b9c760226b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f99751d4f9969c61bab162aed15fac5"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcache__handler.html">cache_handler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#a3f99751d4f9969c61bab162aed15fac5">uint32_t_ll_leading_cache_handler</a></td></tr>
+<tr class="separator:a3f99751d4f9969c61bab162aed15fac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="aff47a665a05bdbe3a0183d899f42c889"></a>
@@ -198,21 +230,42 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7671cf9752eba3c8bb911302b96cb5a4"></a>
+<a class="anchor" id="ad8caa8269ed0e1fd8168ba8082a808e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void uint32_t_ll_giggle_set_data_handler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a27f5fc643ab9066167d82dcf517fc596"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void uint32_t_ll_leading_B_add_scalar </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>v</em>&#160;</td>
+          <td class="paramname"><em>_ld</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>_id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -224,7 +277,39 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5380117af4c923c2379d885a1dc91c22"></a>
+<a class="anchor" id="ae5cfdfff071b7c7004b1cb8c70d4a1ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t uint32_t_ll_leading_deserialize </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>serialized</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>serialized_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>deserialized</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aac6f08cdd015042073c2e6bab6ca08e2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -232,7 +317,7 @@ Functions</h2></td></tr>
           <td class="memname">void uint32_t_ll_leading_free </td>
           <td>(</td>
           <td class="paramtype">void **&#160;</td>
-          <td class="paramname"><em>_d</em></td><td>)</td>
+          <td class="paramname"><em>deserialized</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -240,13 +325,19 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a262372d5d42bb5a0f9eef652f08d4534"></a>
+<a class="anchor" id="afddda5f56f15d102ba7f5acab843b47b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void uint32_t_ll_leading_repair </td>
           <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">struct <a class="el" href="structbpt__node.html">bpt_node</a> *&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
@@ -266,13 +357,71 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1c49a69feacae6228cee581170bf1af4"></a>
+<a class="anchor" id="abdbbae08c4b26caee7c278e2778db6c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t uint32_t_ll_leading_serialize </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>deserialized</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>serialized</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aedaba87b3606605fd2c26067fa47d82f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t uint32_t_ll_leading_serialize_to_wah </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>deserialized</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>serialized</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae0b43569138fbf3b91222453cb6e1691"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void uint32_t_ll_leading_union_with_B </td>
           <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">void **&#160;</td>
           <td class="paramname"><em>R</em>, </td>
         </tr>
@@ -292,14 +441,15 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac12132310b7cbb206b860588e1932638"></a>
+<a class="anchor" id="a694e4719b330002fe736e685af548956"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void* uint32_t_ll_new_leading </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -307,14 +457,15 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab62a3abf94a903d41aecaa37ac962084"></a>
+<a class="anchor" id="af331582fc40722d1f95e46cd383519aa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void* uint32_t_ll_new_non_leading </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -322,7 +473,39 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac46abe8925f5b5aa18512d2ad35a60e5"></a>
+<a class="anchor" id="acfe7cda5d3421cfe17dcc91b95fccf15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t uint32_t_ll_non_leading_deserialize </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>serialized</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>serialized_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>deserialized</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad11592dd3033e9e4439b4155d38c444f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -330,7 +513,7 @@ Functions</h2></td></tr>
           <td class="memname">void uint32_t_ll_non_leading_free </td>
           <td>(</td>
           <td class="paramtype">void **&#160;</td>
-          <td class="paramname"><em>_d</em></td><td>)</td>
+          <td class="paramname"><em>deserialized</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -338,21 +521,27 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a456804df8089910fded81d429319cd78"></a>
+<a class="anchor" id="a074de3121d457278953023bc7838f83f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void uint32_t_ll_non_leading_SA_add_scalar </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>v</em>&#160;</td>
+          <td class="paramname"><em>_nld</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>_id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -364,21 +553,27 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac95a62f953b942af7516f5710d98e2c4"></a>
+<a class="anchor" id="a114e4ef57cfa9b5cbeede3db368fd9b6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void uint32_t_ll_non_leading_SE_add_scalar </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>v</em>&#160;</td>
+          <td class="paramname"><em>_nld</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>_id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -390,13 +585,71 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aaa401b714faf03988136a51f2c07c681"></a>
+<a class="anchor" id="a857fa1cb10691e79dd7e21636eeaad43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t uint32_t_ll_non_leading_serialize </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>deserialized</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>serialized</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aab52ff3b88e408533fffe3c291f116a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t uint32_t_ll_non_leading_serialize_to_wah </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>deserialized</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>serialized</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae0f4ebec49c10f8252a00370a05c557c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void uint32_t_ll_non_leading_union_with_SA </td>
           <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">void **&#160;</td>
           <td class="paramname"><em>R</em>, </td>
         </tr>
@@ -416,13 +669,19 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad434bc97665ec3a5ccf39c0a0476f050"></a>
+<a class="anchor" id="a24d85d1a332b7888c56b3fa4f27cbcde"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void uint32_t_ll_non_leading_union_with_SA_subtract_SE </td>
           <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">void **&#160;</td>
           <td class="paramname"><em>R</em>, </td>
         </tr>
@@ -494,10 +753,106 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a78c5c274485e152d887a18b394af9fd5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void uint32_t_ll_wah_giggle_set_data_handler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a3f99751d4f9969c61bab162aed15fac5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structcache__handler.html">cache_handler</a> uint32_t_ll_leading_cache_handler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">        <a class="code" href="ll_8c.html#abdbbae08c4b26caee7c278e2778db6c8">uint32_t_ll_leading_serialize</a>,</div>
+<div class="line">        <a class="code" href="ll_8c.html#ae5cfdfff071b7c7004b1cb8c70d4a1ef">uint32_t_ll_leading_deserialize</a>,</div>
+<div class="line">        <a class="code" href="ll_8c.html#aac6f08cdd015042073c2e6bab6ca08e2">uint32_t_ll_leading_free</a></div>
+<div class="line">}</div>
+<div class="ttc" id="ll_8c_html_aac6f08cdd015042073c2e6bab6ca08e2"><div class="ttname"><a href="ll_8c.html#aac6f08cdd015042073c2e6bab6ca08e2">uint32_t_ll_leading_free</a></div><div class="ttdeci">void uint32_t_ll_leading_free(void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:413</div></div>
+<div class="ttc" id="ll_8c_html_ae5cfdfff071b7c7004b1cb8c70d4a1ef"><div class="ttname"><a href="ll_8c.html#ae5cfdfff071b7c7004b1cb8c70d4a1ef">uint32_t_ll_leading_deserialize</a></div><div class="ttdeci">uint64_t uint32_t_ll_leading_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:381</div></div>
+<div class="ttc" id="ll_8c_html_abdbbae08c4b26caee7c278e2778db6c8"><div class="ttname"><a href="ll_8c.html#abdbbae08c4b26caee7c278e2778db6c8">uint32_t_ll_leading_serialize</a></div><div class="ttdeci">uint64_t uint32_t_ll_leading_serialize(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> ll.c:333</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="adb1de698b3cf38bbfe6873b9c760226b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structcache__handler.html">cache_handler</a> uint32_t_ll_non_leading_cache_handler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">        <a class="code" href="ll_8c.html#a857fa1cb10691e79dd7e21636eeaad43">uint32_t_ll_non_leading_serialize</a>,</div>
+<div class="line">        <a class="code" href="ll_8c.html#acfe7cda5d3421cfe17dcc91b95fccf15">uint32_t_ll_non_leading_deserialize</a>,</div>
+<div class="line">        <a class="code" href="ll_8c.html#ad11592dd3033e9e4439b4155d38c444f">uint32_t_ll_non_leading_free</a></div>
+<div class="line">}</div>
+<div class="ttc" id="ll_8c_html_ad11592dd3033e9e4439b4155d38c444f"><div class="ttname"><a href="ll_8c.html#ad11592dd3033e9e4439b4155d38c444f">uint32_t_ll_non_leading_free</a></div><div class="ttdeci">void uint32_t_ll_non_leading_free(void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:313</div></div>
+<div class="ttc" id="ll_8c_html_a857fa1cb10691e79dd7e21636eeaad43"><div class="ttname"><a href="ll_8c.html#a857fa1cb10691e79dd7e21636eeaad43">uint32_t_ll_non_leading_serialize</a></div><div class="ttdeci">uint64_t uint32_t_ll_non_leading_serialize(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> ll.c:203</div></div>
+<div class="ttc" id="ll_8c_html_acfe7cda5d3421cfe17dcc91b95fccf15"><div class="ttname"><a href="ll_8c.html#acfe7cda5d3421cfe17dcc91b95fccf15">uint32_t_ll_non_leading_deserialize</a></div><div class="ttdeci">uint64_t uint32_t_ll_non_leading_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:271</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a72fcff32fd59ce75bb0530c367a33703"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structcache__handler.html">cache_handler</a> uint32_t_ll_wah_leading_cache_handler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">        <a class="code" href="ll_8c.html#aedaba87b3606605fd2c26067fa47d82f">uint32_t_ll_leading_serialize_to_wah</a>,</div>
+<div class="line">        <a class="code" href="ll_8c.html#ae5cfdfff071b7c7004b1cb8c70d4a1ef">uint32_t_ll_leading_deserialize</a>,</div>
+<div class="line">        <a class="code" href="ll_8c.html#aac6f08cdd015042073c2e6bab6ca08e2">uint32_t_ll_leading_free</a></div>
+<div class="line">}</div>
+<div class="ttc" id="ll_8c_html_aedaba87b3606605fd2c26067fa47d82f"><div class="ttname"><a href="ll_8c.html#aedaba87b3606605fd2c26067fa47d82f">uint32_t_ll_leading_serialize_to_wah</a></div><div class="ttdeci">uint64_t uint32_t_ll_leading_serialize_to_wah(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> ll.c:42</div></div>
+<div class="ttc" id="ll_8c_html_aac6f08cdd015042073c2e6bab6ca08e2"><div class="ttname"><a href="ll_8c.html#aac6f08cdd015042073c2e6bab6ca08e2">uint32_t_ll_leading_free</a></div><div class="ttdeci">void uint32_t_ll_leading_free(void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:413</div></div>
+<div class="ttc" id="ll_8c_html_ae5cfdfff071b7c7004b1cb8c70d4a1ef"><div class="ttname"><a href="ll_8c.html#ae5cfdfff071b7c7004b1cb8c70d4a1ef">uint32_t_ll_leading_deserialize</a></div><div class="ttdeci">uint64_t uint32_t_ll_leading_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:381</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ae313ce882c5a155b6c04392b60b3ae3d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structcache__handler.html">cache_handler</a> uint32_t_ll_wah_non_leading_cache_handler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">        <a class="code" href="ll_8c.html#aab52ff3b88e408533fffe3c291f116a3">uint32_t_ll_non_leading_serialize_to_wah</a>,</div>
+<div class="line">        <a class="code" href="ll_8c.html#acfe7cda5d3421cfe17dcc91b95fccf15">uint32_t_ll_non_leading_deserialize</a>,</div>
+<div class="line">        <a class="code" href="ll_8c.html#ad11592dd3033e9e4439b4155d38c444f">uint32_t_ll_non_leading_free</a></div>
+<div class="line">}</div>
+<div class="ttc" id="ll_8c_html_ad11592dd3033e9e4439b4155d38c444f"><div class="ttname"><a href="ll_8c.html#ad11592dd3033e9e4439b4155d38c444f">uint32_t_ll_non_leading_free</a></div><div class="ttdeci">void uint32_t_ll_non_leading_free(void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:313</div></div>
+<div class="ttc" id="ll_8c_html_acfe7cda5d3421cfe17dcc91b95fccf15"><div class="ttname"><a href="ll_8c.html#acfe7cda5d3421cfe17dcc91b95fccf15">uint32_t_ll_non_leading_deserialize</a></div><div class="ttdeci">uint64_t uint32_t_ll_non_leading_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:271</div></div>
+<div class="ttc" id="ll_8c_html_aab52ff3b88e408533fffe3c291f116a3"><div class="ttname"><a href="ll_8c.html#aab52ff3b88e408533fffe3c291f116a3">uint32_t_ll_non_leading_serialize_to_wah</a></div><div class="ttdeci">uint64_t uint32_t_ll_non_leading_serialize_to_wah(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> ll.c:108</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 15 2016 09:27:58 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 9 2016 12:22:18 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

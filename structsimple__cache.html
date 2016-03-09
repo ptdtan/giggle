@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,76 +89,118 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="lists_8h_source.html">lists.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="cache_8h_source.html">cache.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a9294ae73c0a3b77ebd0e618c8b46be75"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structindexed__list.html">indexed_list</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsimple__cache.html#a9294ae73c0a3b77ebd0e618c8b46be75">il</a></td></tr>
-<tr class="separator:a9294ae73c0a3b77ebd0e618c8b46be75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadf06d88cbadec0bf9ac88b33c0105a0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsimple__cache.html#aadf06d88cbadec0bf9ac88b33c0105a0">size</a></td></tr>
-<tr class="separator:aadf06d88cbadec0bf9ac88b33c0105a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8eaa4469367ec9a0a72d33c23abc424e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsimple__cache.html#a8eaa4469367ec9a0a72d33c23abc424e">num</a></td></tr>
-<tr class="separator:a8eaa4469367ec9a0a72d33c23abc424e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac261273f15b1bd38463e5ff6e700068e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsimple__cache.html#ac261273f15b1bd38463e5ff6e700068e">seen</a></td></tr>
-<tr class="separator:ac261273f15b1bd38463e5ff6e700068e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaafe9c19b784e3445d4937affb182633"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structdisk__store.html">disk_store</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsimple__cache.html#aaafe9c19b784e3445d4937affb182633">ds</a></td></tr>
-<tr class="separator:aaafe9c19b784e3445d4937affb182633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02edcd1b1cbd4f2c73e161cceeb30afb"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structindexed__list.html">indexed_list</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsimple__cache.html#a02edcd1b1cbd4f2c73e161cceeb30afb">ils</a></td></tr>
+<tr class="separator:a02edcd1b1cbd4f2c73e161cceeb30afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a942a96f5c71a68b7ee586cbcd0170d44"><td class="memItemLeft" align="right" valign="top">uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsimple__cache.html#a942a96f5c71a68b7ee586cbcd0170d44">sizes</a></td></tr>
+<tr class="separator:a942a96f5c71a68b7ee586cbcd0170d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fcd026a887024d7783a55698a0190e8"><td class="memItemLeft" align="right" valign="top">uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsimple__cache.html#a1fcd026a887024d7783a55698a0190e8">nums</a></td></tr>
+<tr class="separator:a1fcd026a887024d7783a55698a0190e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dbe8b40a155c9689e5c630f1e38957b"><td class="memItemLeft" align="right" valign="top">uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsimple__cache.html#a1dbe8b40a155c9689e5c630f1e38957b">seens</a></td></tr>
+<tr class="separator:a1dbe8b40a155c9689e5c630f1e38957b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c9ac95d5a7b79c0eb300857c56898f3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsimple__cache.html#a4c9ac95d5a7b79c0eb300857c56898f3">num_domains</a></td></tr>
+<tr class="separator:a4c9ac95d5a7b79c0eb300857c56898f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af09d1513dd062a2f527de72ef0d2d310"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsimple__cache.html#af09d1513dd062a2f527de72ef0d2d310">index_file_names</a></td></tr>
+<tr class="separator:af09d1513dd062a2f527de72ef0d2d310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb296fbbd77756c753609c7cfc7dd45e"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsimple__cache.html#abb296fbbd77756c753609c7cfc7dd45e">data_file_names</a></td></tr>
+<tr class="separator:abb296fbbd77756c753609c7cfc7dd45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b32d7790fafcf69482e6505d4b11dd"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structdisk__store.html">disk_store</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsimple__cache.html#aa4b32d7790fafcf69482e6505d4b11dd">dss</a></td></tr>
+<tr class="separator:aa4b32d7790fafcf69482e6505d4b11dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="aaafe9c19b784e3445d4937affb182633"></a>
+<a class="anchor" id="abb296fbbd77756c753609c7cfc7dd45e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structdisk__store.html">disk_store</a>* simple_cache::ds</td>
+          <td class="memname">char ** simple_cache::data_file_names</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a9294ae73c0a3b77ebd0e618c8b46be75"></a>
+<a class="anchor" id="aa4b32d7790fafcf69482e6505d4b11dd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structindexed__list.html">indexed_list</a>* simple_cache::il</td>
+          <td class="memname">struct <a class="el" href="structdisk__store.html">disk_store</a>** simple_cache::dss</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a8eaa4469367ec9a0a72d33c23abc424e"></a>
+<a class="anchor" id="a02edcd1b1cbd4f2c73e161cceeb30afb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t simple_cache::num</td>
+          <td class="memname">struct <a class="el" href="structindexed__list.html">indexed_list</a>** simple_cache::ils</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="ac261273f15b1bd38463e5ff6e700068e"></a>
+<a class="anchor" id="af09d1513dd062a2f527de72ef0d2d310"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t simple_cache::seen</td>
+          <td class="memname">char** simple_cache::index_file_names</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aadf06d88cbadec0bf9ac88b33c0105a0"></a>
+<a class="anchor" id="a4c9ac95d5a7b79c0eb300857c56898f3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t simple_cache::size</td>
+          <td class="memname">uint32_t simple_cache::num_domains</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1fcd026a887024d7783a55698a0190e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t * simple_cache::nums</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1dbe8b40a155c9689e5c630f1e38957b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t * simple_cache::seens</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a942a96f5c71a68b7ee586cbcd0170d44"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t* simple_cache::sizes</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -165,12 +208,12 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="lists_8h_source.html">lists.h</a></li>
+<li><a class="el" href="cache_8h_source.html">cache.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 15 2016 09:27:58 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 9 2016 12:22:18 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

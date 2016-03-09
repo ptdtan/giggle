@@ -1,8 +1,22 @@
 var searchData=
 [
-  ['hash_5fa',['hash_A',['../lists_8c.html#a5186e3c81e44747946be33006cf8cd5e',1,'hash_A(uint32_t x, uint32_t limit):&#160;lists.c'],['../lists_8h.html#a5186e3c81e44747946be33006cf8cd5e',1,'hash_A(uint32_t x, uint32_t limit):&#160;lists.c']]],
-  ['hash_5fb',['hash_B',['../lists_8c.html#a86fd3b575cd7db67f4086a4de0eac689',1,'hash_B(uint32_t x, uint32_t limit):&#160;lists.c'],['../lists_8h.html#a86fd3b575cd7db67f4086a4de0eac689',1,'hash_B(uint32_t x, uint32_t limit):&#160;lists.c']]],
-  ['hash_5ftable',['hash_table',['../structlru__cache.html#af6e14f49efa9029a942d2bd0adb8d0da',1,'lru_cache']]],
-  ['hashes',['hashes',['../structcc__hash.html#a1d1172d344fda374e825362e5b051dac',1,'cc_hash']]],
-  ['head',['head',['../structfifo__q.html#aeb05c7b0f4869c41e644b9617f331623',1,'fifo_q::head()'],['../structlru__cache.html#a7fe4cd0d03a2e49d75c1a5b9146e1b95',1,'lru_cache::head()'],['../structuint32__t__ll.html#a996df632f505f7fa639ec0797a2942ce',1,'uint32_t_ll::head()']]]
+  ['get',['get',['../structcache__def.html#a7aabffe2b566859c85fe11c4adeed428',1,'cache_def']]],
+  ['get_5fwah_5fi',['get_wah_i',['../wah_8c.html#a67d98f3986de408bacbfb7bc854d5b46',1,'get_wah_i(uint8_t *W, void *v, uint32_t word_size, uint32_t i):&#160;wah.c'],['../wah_8h.html#a67d98f3986de408bacbfb7bc854d5b46',1,'get_wah_i(uint8_t *W, void *v, uint32_t word_size, uint32_t i):&#160;wah.c']]],
+  ['giggle_2ec',['giggle.c',['../giggle_8c.html',1,'']]],
+  ['giggle_2eh',['giggle.h',['../giggle_8h.html',1,'']]],
+  ['giggle_5fdata_5fhandler',['giggle_data_handler',['../giggle_8h.html#a4330d0dc27201510a1e11bd6ce64a444',1,'giggle.h']]],
+  ['giggle_5fdef',['giggle_def',['../structgiggle__def.html',1,'']]],
+  ['giggle_5fget_5fchrm_5fid',['giggle_get_chrm_id',['../giggle_8c.html#ac38233bf7b6534aea65e48b5ed8eef01',1,'giggle_get_chrm_id(struct giggle_index *gi, char *chrm):&#160;giggle.c'],['../giggle_8h.html#ac38233bf7b6534aea65e48b5ed8eef01',1,'giggle_get_chrm_id(struct giggle_index *gi, char *chrm):&#160;giggle.c']]],
+  ['giggle_5fget_5ffile_5fid',['giggle_get_file_id',['../giggle_8h.html#a05db908699e66d54537864ed74e918d2',1,'giggle.h']]],
+  ['giggle_5findex',['giggle_index',['../structgiggle__index.html',1,'']]],
+  ['giggle_5findex_5fdestroy',['giggle_index_destroy',['../giggle_8c.html#a9390b7bab0c5d9f5ae96550509f5ce36',1,'giggle_index_destroy(struct giggle_index **gi):&#160;giggle.c'],['../giggle_8h.html#a9390b7bab0c5d9f5ae96550509f5ce36',1,'giggle_index_destroy(struct giggle_index **gi):&#160;giggle.c']]],
+  ['giggle_5findex_5fdirectory',['giggle_index_directory',['../giggle_8c.html#a7fe54417633c695c06b467457856a362',1,'giggle_index_directory(struct giggle_index *gi, char *path_name, int verbose):&#160;giggle.c'],['../giggle_8h.html#a7fe54417633c695c06b467457856a362',1,'giggle_index_directory(struct giggle_index *gi, char *path_name, int verbose):&#160;giggle.c']]],
+  ['giggle_5findex_5ffile',['giggle_index_file',['../giggle_8c.html#a03e525c1029262c9ff65cdccb189781f',1,'giggle_index_file(struct giggle_index *gi, char *file_name):&#160;giggle.c'],['../giggle_8h.html#a03e525c1029262c9ff65cdccb189781f',1,'giggle_index_file(struct giggle_index *gi, char *file_name):&#160;giggle.c']]],
+  ['giggle_5finit',['giggle_init',['../giggle_8c.html#a8da3d23c494b08f4780540841a70480e',1,'giggle_init(uint32_t num_chrms, char *data_dir, uint32_t force, void(*giggle_set_data_handler)(void)):&#160;giggle.c'],['../giggle_8h.html#a0b2c252e6a23b46a67db2bd65ce893ad',1,'giggle_init(uint32_t num_chrms, char *output_dir, uint32_t force, void(*giggle_set_data_handler)()):&#160;giggle.h']]],
+  ['giggle_5finit_5findex',['giggle_init_index',['../giggle_8c.html#af780e44dca35474173c455d4dd429adf',1,'giggle_init_index(uint32_t init_size):&#160;giggle.c'],['../giggle_8h.html#af780e44dca35474173c455d4dd429adf',1,'giggle_init_index(uint32_t init_size):&#160;giggle.c']]],
+  ['giggle_5finsert',['giggle_insert',['../giggle_8c.html#a1f3d27a3a1001a999ceed7ae81af5ca0',1,'giggle_insert(uint32_t domain, uint32_t *root_id, uint32_t start, uint32_t end, uint32_t id):&#160;giggle.c'],['../giggle_8h.html#a1f3d27a3a1001a999ceed7ae81af5ca0',1,'giggle_insert(uint32_t domain, uint32_t *root_id, uint32_t start, uint32_t end, uint32_t id):&#160;giggle.c']]],
+  ['giggle_5fload',['giggle_load',['../giggle_8c.html#a7b594f54e544eb0801200e661aaddbe9',1,'giggle_load(char *data_dir, void(*giggle_set_data_handler)(void)):&#160;giggle.c'],['../giggle_8h.html#a7b594f54e544eb0801200e661aaddbe9',1,'giggle_load(char *data_dir, void(*giggle_set_data_handler)(void)):&#160;giggle.c']]],
+  ['giggle_5fquery_5fregion',['giggle_query_region',['../giggle_8c.html#a41c9d7a7379fca66600c6d1a9407bf7f',1,'giggle_query_region(struct giggle_index *gi, char *chrm, uint32_t start, uint32_t end):&#160;giggle.c'],['../giggle_8h.html#a41c9d7a7379fca66600c6d1a9407bf7f',1,'giggle_query_region(struct giggle_index *gi, char *chrm, uint32_t start, uint32_t end):&#160;giggle.c']]],
+  ['giggle_5fsearch',['giggle_search',['../giggle_8c.html#ad1935641307768a31beefa079e7e9127',1,'giggle_search(uint32_t domain, uint32_t root_id, uint32_t start, uint32_t end):&#160;giggle.c'],['../giggle_8h.html#ad1935641307768a31beefa079e7e9127',1,'giggle_search(uint32_t domain, uint32_t root_id, uint32_t start, uint32_t end):&#160;giggle.c']]],
+  ['giggle_5fstore',['giggle_store',['../giggle_8c.html#aeec33bc2e5d70061b43d37bba9372af7',1,'giggle_store(struct giggle_index *gi):&#160;giggle.c'],['../giggle_8h.html#aeec33bc2e5d70061b43d37bba9372af7',1,'giggle_store(struct giggle_index *gi):&#160;giggle.c']]]
 ];

@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -68,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -99,10 +100,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3cd0b00a135768f5fd91f2a69b015bc5"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structdisk__store.html">disk_store</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="disk__store_8c.html#a3cd0b00a135768f5fd91f2a69b015bc5">disk_store_init</a> (uint32_t size, FILE **fp, char *file_name)</td></tr>
-<tr class="separator:a3cd0b00a135768f5fd91f2a69b015bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3d9cc41ea113c55ffbfc92359299690"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structdisk__store.html">disk_store</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="disk__store_8c.html#af3d9cc41ea113c55ffbfc92359299690">disk_store_load</a> (FILE **fp, char *file_name)</td></tr>
-<tr class="separator:af3d9cc41ea113c55ffbfc92359299690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04cefb668024bd950c39a782d0e4519d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structdisk__store.html">disk_store</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="disk__store_8c.html#a04cefb668024bd950c39a782d0e4519d">disk_store_init</a> (uint32_t size, FILE **index_fp, char *index_file_name, FILE **data_fp, char *data_file_name)</td></tr>
+<tr class="separator:a04cefb668024bd950c39a782d0e4519d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea8c0ba7d4e8b54c355dd13a0a8c403b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structdisk__store.html">disk_store</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="disk__store_8c.html#aea8c0ba7d4e8b54c355dd13a0a8c403b">disk_store_load</a> (FILE **index_fp, char *index_file_name, FILE **data_fp, char *data_file_name)</td></tr>
+<tr class="separator:aea8c0ba7d4e8b54c355dd13a0a8c403b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a809f5b8ef05fcc07a26b1158ad01bf87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="disk__store_8c.html#a809f5b8ef05fcc07a26b1158ad01bf87">disk_store_sync</a> (struct <a class="el" href="structdisk__store.html">disk_store</a> *ds)</td></tr>
 <tr class="separator:a809f5b8ef05fcc07a26b1158ad01bf87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a941f11764650464718651cfee9543f20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="disk__store_8c.html#a941f11764650464718651cfee9543f20">disk_store_destroy</a> (struct <a class="el" href="structdisk__store.html">disk_store</a> **ds)</td></tr>
@@ -193,7 +194,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3cd0b00a135768f5fd91f2a69b015bc5"></a>
+<a class="anchor" id="a04cefb668024bd950c39a782d0e4519d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -207,13 +208,25 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">FILE **&#160;</td>
-          <td class="paramname"><em>fp</em>, </td>
+          <td class="paramname"><em>index_fp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>file_name</em>&#160;</td>
+          <td class="paramname"><em>index_file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE **&#160;</td>
+          <td class="paramname"><em>data_fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data_file_name</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -225,7 +238,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af3d9cc41ea113c55ffbfc92359299690"></a>
+<a class="anchor" id="aea8c0ba7d4e8b54c355dd13a0a8c403b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -233,13 +246,25 @@ Functions</h2></td></tr>
           <td class="memname">struct <a class="el" href="structdisk__store.html">disk_store</a>* disk_store_load </td>
           <td>(</td>
           <td class="paramtype">FILE **&#160;</td>
-          <td class="paramname"><em>fp</em>, </td>
+          <td class="paramname"><em>index_fp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>file_name</em>&#160;</td>
+          <td class="paramname"><em>index_file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE **&#160;</td>
+          <td class="paramname"><em>data_fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data_file_name</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -270,7 +295,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 15 2016 09:27:58 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 9 2016 12:22:18 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -68,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,55 +97,52 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;string.h&gt;</code><br/>
 <code>#include &lt;err.h&gt;</code><br/>
 <code>#include &lt;sysexits.h&gt;</code><br/>
+<code>#include &lt;stdbool.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="bpt_8h_source.html">bpt.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="lists_8h_source.html">lists.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="ll_8h_source.html">ll.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="disk__store_8h_source.html">disk_store.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="cache_8h_source.html">cache.h</a>&quot;</code><br/>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ad70ee0a6e41825f14874c9d8105555c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#ad70ee0a6e41825f14874c9d8105555c8">b_search</a> (uint32_t key, uint32_t *D, uint32_t D_size)</td></tr>
 <tr class="separator:ad70ee0a6e41825f14874c9d8105555c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a042f9f7868daa47230e891e4a5e5132a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structbpt__node.html">bpt_node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a042f9f7868daa47230e891e4a5e5132a">bpt_new_node</a> ()</td></tr>
-<tr class="separator:a042f9f7868daa47230e891e4a5e5132a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbb8c37842630a543162346fbd893399"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structbpt__node.html">bpt_node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#abbb8c37842630a543162346fbd893399">bpt_copy_node</a> (uint32_t *data)</td></tr>
-<tr class="separator:abbb8c37842630a543162346fbd893399"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3e66466aa9f2973db1afa6f737ff616"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#af3e66466aa9f2973db1afa6f737ff616">bpt_free_node</a> (void **v)</td></tr>
-<tr class="separator:af3e66466aa9f2973db1afa6f737ff616"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae46c6c6a198fc0368a987718b5ee6626"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#ae46c6c6a198fc0368a987718b5ee6626">bpt_find_leaf</a> (uint32_t curr_id, uint32_t key)</td></tr>
-<tr class="separator:ae46c6c6a198fc0368a987718b5ee6626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affde2092fffe21602aa70ca49ce0ac5f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#affde2092fffe21602aa70ca49ce0ac5f">bpt_node_serialize</a> (void *deserialized, void **serialized)</td></tr>
+<tr class="separator:affde2092fffe21602aa70ca49ce0ac5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb8e0a3eef338e0f8f328212379f3257"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#afb8e0a3eef338e0f8f328212379f3257">bpt_node_deserialize</a> (void *serialized, uint64_t serialized_size, void **deserialized)</td></tr>
+<tr class="separator:afb8e0a3eef338e0f8f328212379f3257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09ae2b9a9097078c629b2316a52f185f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a09ae2b9a9097078c629b2316a52f185f">bpt_node_free_mem</a> (void **deserialized)</td></tr>
+<tr class="separator:a09ae2b9a9097078c629b2316a52f185f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66affff2018650c24ac95ebeb6b830d8"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structbpt__node.html">bpt_node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a66affff2018650c24ac95ebeb6b830d8">bpt_new_node</a> (uint32_t domain)</td></tr>
+<tr class="separator:a66affff2018650c24ac95ebeb6b830d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a677b994323d5cf0103e60bfe1c24e723"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a677b994323d5cf0103e60bfe1c24e723">bpt_find_leaf</a> (uint32_t domain, uint32_t curr_id, uint32_t key)</td></tr>
+<tr class="separator:a677b994323d5cf0103e60bfe1c24e723"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dd2625a37253e8fb26f39eb80c5d03b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a1dd2625a37253e8fb26f39eb80c5d03b">bpt_find_insert_pos</a> (struct <a class="el" href="structbpt__node.html">bpt_node</a> *leaf, uint32_t key)</td></tr>
 <tr class="separator:a1dd2625a37253e8fb26f39eb80c5d03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a213a8e5f7505fe5373c389d6b8aa18f3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a213a8e5f7505fe5373c389d6b8aa18f3">bpt_split_node</a> (uint32_t root_id, uint32_t bpt_node_id, uint32_t *lo_result_id, uint32_t *hi_result_id, int *lo_hi_split_point, void(*<a class="el" href="bpt_8h.html#a3aae69cb02bdfa3c2bb420b2014095fb">repair</a>)(struct <a class="el" href="structbpt__node.html">bpt_node</a> *, struct <a class="el" href="structbpt__node.html">bpt_node</a> *))</td></tr>
-<tr class="separator:a213a8e5f7505fe5373c389d6b8aa18f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d5fc39a584855be8e9e318db31d225d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a0d5fc39a584855be8e9e318db31d225d">bpt_place_new_key_value</a> (uint32_t root_id, uint32_t *target_id, int *target_key_pos, uint32_t key, uint32_t value_id)</td></tr>
-<tr class="separator:a0d5fc39a584855be8e9e318db31d225d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5780edc2fdd2a9e7c33890faa7f82ba"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#ad5780edc2fdd2a9e7c33890faa7f82ba">bpt_insert</a> (uint32_t root_id, uint32_t key, uint32_t value_id, uint32_t *leaf_id, int *pos)</td></tr>
-<tr class="separator:ad5780edc2fdd2a9e7c33890faa7f82ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a319d2ff7a7ddeab0a710b0aa48417f39"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a319d2ff7a7ddeab0a710b0aa48417f39">bpt_insert_new_value</a> (uint32_t root_id, uint32_t key, void *value, void(*free_value)(void **data), uint32_t *value_id, uint32_t *leaf_id, int *pos)</td></tr>
-<tr class="separator:a319d2ff7a7ddeab0a710b0aa48417f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a649016a403290661b01e96165996f60b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a649016a403290661b01e96165996f60b">bpt_find</a> (uint32_t root_id, uint32_t *leaf_id, int *pos, uint32_t key)</td></tr>
-<tr class="separator:a649016a403290661b01e96165996f60b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a370928f48470d86d7407d80e56d9dedc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a370928f48470d86d7407d80e56d9dedc">bpt_write_tree</a> (uint32_t root_id, FILE *f, char *file_name)</td></tr>
-<tr class="separator:a370928f48470d86d7407d80e56d9dedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33d0e24e3b5bf1c20d4d5f47ea212945"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a33d0e24e3b5bf1c20d4d5f47ea212945">serialize_uint32_t</a> (void *deserialized, uint8_t **serialized)</td></tr>
-<tr class="separator:a33d0e24e3b5bf1c20d4d5f47ea212945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eb9f11a1fbe7fcd9f73e7e72080bb9f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a1eb9f11a1fbe7fcd9f73e7e72080bb9f">bpt_split_node</a> (uint32_t domain, uint32_t root_id, uint32_t bpt_node_id, uint32_t *lo_result_id, uint32_t *hi_result_id, int *lo_hi_split_point, void(*repair)(uint32_t domain, struct <a class="el" href="structbpt__node.html">bpt_node</a> *, struct <a class="el" href="structbpt__node.html">bpt_node</a> *))</td></tr>
+<tr class="separator:a1eb9f11a1fbe7fcd9f73e7e72080bb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32cd7bbd689554ac1d69e6078860d495"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a32cd7bbd689554ac1d69e6078860d495">bpt_place_new_key_value</a> (uint32_t domain, uint32_t root_id, uint32_t *target_id, int *target_key_pos, uint32_t key, uint32_t value_id, struct <a class="el" href="structcache__handler.html">cache_handler</a> *handler)</td></tr>
+<tr class="separator:a32cd7bbd689554ac1d69e6078860d495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b0bca3ea258bbe02b7da96cb01ac805"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a4b0bca3ea258bbe02b7da96cb01ac805">bpt_insert</a> (uint32_t domain, uint32_t root_id, uint32_t key, uint32_t value_id, struct <a class="el" href="structcache__handler.html">cache_handler</a> *handler, uint32_t *leaf_id, int *pos)</td></tr>
+<tr class="separator:a4b0bca3ea258bbe02b7da96cb01ac805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5fd7cb3becfc64e139b0501b8a2c0f7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#ad5fd7cb3becfc64e139b0501b8a2c0f7">bpt_insert_new_value</a> (uint32_t domain, uint32_t root_id, uint32_t key, void *value, struct <a class="el" href="structcache__handler.html">cache_handler</a> *handler, uint32_t *value_id, uint32_t *leaf_id, int *pos)</td></tr>
+<tr class="separator:ad5fd7cb3becfc64e139b0501b8a2c0f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82816f83bc191b4e48f81a4106d1bd82"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a82816f83bc191b4e48f81a4106d1bd82">bpt_find</a> (uint32_t domain, uint32_t root_id, uint32_t *leaf_id, int *pos, uint32_t key)</td></tr>
+<tr class="separator:a82816f83bc191b4e48f81a4106d1bd82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36131eb22db7c95bbab5a5c8617fe7c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a36131eb22db7c95bbab5a5c8617fe7c9">bpt_write_tree</a> (uint32_t domain, uint32_t root_id)</td></tr>
+<tr class="separator:a36131eb22db7c95bbab5a5c8617fe7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba5b3aaead0ed6e28c32839282b73887"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#aba5b3aaead0ed6e28c32839282b73887">bpt_print_node</a> (struct <a class="el" href="structbpt__node.html">bpt_node</a> *node)</td></tr>
+<tr class="separator:aba5b3aaead0ed6e28c32839282b73887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a1ad3ce7d4618b751c6f47372263c301a"><td class="memItemLeft" align="right" valign="top">uint64_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a1ad3ce7d4618b751c6f47372263c301a">serialize_leading</a> )(void *deserialized, uint8_t **serialized)</td></tr>
-<tr class="separator:a1ad3ce7d4618b751c6f47372263c301a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43f7ca295865d553b8948d894f3a162b"><td class="memItemLeft" align="right" valign="top">uint64_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a43f7ca295865d553b8948d894f3a162b">serialize_pointer</a> )(void *deserialized, uint8_t **serialized)</td></tr>
-<tr class="separator:a43f7ca295865d553b8948d894f3a162b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3aae69cb02bdfa3c2bb420b2014095fb"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a3aae69cb02bdfa3c2bb420b2014095fb">repair</a> )(struct <a class="el" href="structbpt__node.html">bpt_node</a> *, struct <a class="el" href="structbpt__node.html">bpt_node</a> *) = NULL</td></tr>
-<tr class="separator:a3aae69cb02bdfa3c2bb420b2014095fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8191377efaf4c23e85b2e1276473c805"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a8191377efaf4c23e85b2e1276473c805">ORDER</a> = 4</td></tr>
 <tr class="separator:a8191377efaf4c23e85b2e1276473c805"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad187c5a8a7a4049ab918e552d2a24a14"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#ad187c5a8a7a4049ab918e552d2a24a14">CACHE_SIZE</a> = 10000</td></tr>
-<tr class="separator:ad187c5a8a7a4049ab918e552d2a24a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a507d91a76ed4c55dd996740e5d679628"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcache__def.html">cache_def</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a507d91a76ed4c55dd996740e5d679628">cache</a></td></tr>
-<tr class="separator:a507d91a76ed4c55dd996740e5d679628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33bc4e33e4c8064daa0ce694a8ea5b2f"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a33bc4e33e4c8064daa0ce694a8ea5b2f">bpt_node_repair</a> )(uint32_t domain, struct <a class="el" href="structbpt__node.html">bpt_node</a> *, struct <a class="el" href="structbpt__node.html">bpt_node</a> *) = NULL</td></tr>
+<tr class="separator:a33bc4e33e4c8064daa0ce694a8ea5b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9327e690ad0291e950cca3b765ce38"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcache__handler.html">cache_handler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#add9327e690ad0291e950cca3b765ce38">bpt_node_cache_handler</a></td></tr>
+<tr class="separator:add9327e690ad0291e950cca3b765ce38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ad70ee0a6e41825f14874c9d8105555c8"></a>
@@ -179,29 +177,19 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abbb8c37842630a543162346fbd893399"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structbpt__node.html">bpt_node</a>* bpt_copy_node </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a649016a403290661b01e96165996f60b"></a>
+<a class="anchor" id="a82816f83bc191b4e48f81a4106d1bd82"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">uint32_t bpt_find </td>
           <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>root_id</em>, </td>
         </tr>
@@ -259,13 +247,19 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae46c6c6a198fc0368a987718b5ee6626"></a>
+<a class="anchor" id="a677b994323d5cf0103e60bfe1c24e723"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">uint32_t bpt_find_leaf </td>
           <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>curr_id</em>, </td>
         </tr>
@@ -285,29 +279,19 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af3e66466aa9f2973db1afa6f737ff616"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bpt_free_node </td>
-          <td>(</td>
-          <td class="paramtype">void **&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad5780edc2fdd2a9e7c33890faa7f82ba"></a>
+<a class="anchor" id="a4b0bca3ea258bbe02b7da96cb01ac805"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">uint32_t bpt_insert </td>
           <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>root_id</em>, </td>
         </tr>
@@ -322,6 +306,12 @@ Variables</h2></td></tr>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>value_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcache__handler.html">cache_handler</a> *&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -345,13 +335,19 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a319d2ff7a7ddeab0a710b0aa48417f39"></a>
+<a class="anchor" id="ad5fd7cb3becfc64e139b0501b8a2c0f7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">uint32_t bpt_insert_new_value </td>
           <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>root_id</em>, </td>
         </tr>
@@ -370,8 +366,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(void **data)&#160;</td>
-          <td class="paramname"><em>free_value</em>, </td>
+          <td class="paramtype">struct <a class="el" href="structcache__handler.html">cache_handler</a> *&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -401,14 +397,15 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a042f9f7868daa47230e891e4a5e5132a"></a>
+<a class="anchor" id="a66affff2018650c24ac95ebeb6b830d8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">struct <a class="el" href="structbpt__node.html">bpt_node</a>* bpt_new_node </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -416,13 +413,93 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0d5fc39a584855be8e9e318db31d225d"></a>
+<a class="anchor" id="afb8e0a3eef338e0f8f328212379f3257"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t bpt_node_deserialize </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>serialized</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>serialized_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>deserialized</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a09ae2b9a9097078c629b2316a52f185f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bpt_node_free_mem </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>deserialized</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="affde2092fffe21602aa70ca49ce0ac5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t bpt_node_serialize </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>deserialized</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>serialized</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a32cd7bbd689554ac1d69e6078860d495"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">uint32_t bpt_place_new_key_value </td>
           <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>root_id</em>, </td>
         </tr>
@@ -448,7 +525,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>value_id</em>&#160;</td>
+          <td class="paramname"><em>value_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcache__handler.html">cache_handler</a> *&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -460,13 +543,35 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a213a8e5f7505fe5373c389d6b8aa18f3"></a>
+<a class="anchor" id="aba5b3aaead0ed6e28c32839282b73887"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bpt_print_node </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structbpt__node.html">bpt_node</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1eb9f11a1fbe7fcd9f73e7e72080bb9f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">uint32_t bpt_split_node </td>
           <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>root_id</em>, </td>
         </tr>
@@ -497,7 +602,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(struct <a class="el" href="structbpt__node.html">bpt_node</a> *, struct <a class="el" href="structbpt__node.html">bpt_node</a> *)&#160;</td>
+          <td class="paramtype">void(*)(uint32_t domain, struct <a class="el" href="structbpt__node.html">bpt_node</a> *, struct <a class="el" href="structbpt__node.html">bpt_node</a> *)&#160;</td>
           <td class="paramname"><em>repair</em>&#160;</td>
         </tr>
         <tr>
@@ -510,53 +615,21 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a370928f48470d86d7407d80e56d9dedc"></a>
+<a class="anchor" id="a36131eb22db7c95bbab5a5c8617fe7c9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void bpt_write_tree </td>
+          <td class="memname">bool bpt_write_tree </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>root_id</em>, </td>
+          <td class="paramname"><em>domain</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">FILE *&#160;</td>
-          <td class="paramname"><em>f</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>file_name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a33d0e24e3b5bf1c20d4d5f47ea212945"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t serialize_uint32_t </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>deserialized</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t **&#160;</td>
-          <td class="paramname"><em>serialized</em>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>root_id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -569,38 +642,30 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a507d91a76ed4c55dd996740e5d679628"></a>
+<a class="anchor" id="add9327e690ad0291e950cca3b765ce38"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structcache__def.html">cache_def</a> cache</td>
+          <td class="memname">struct <a class="el" href="structcache__handler.html">cache_handler</a> bpt_node_cache_handler</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    NULL,</div>
-<div class="line">    <a class="code" href="lists_8c.html#a8990bff26464d696b7fe1addad50508f">simple_cache_init</a>,</div>
-<div class="line">    <a class="code" href="lists_8c.html#a18310e67a2880b208ba1d86130720552">simple_cache_seen</a>,</div>
-<div class="line">    <a class="code" href="lists_8c.html#a4df82b047d38ae0f88679c33d52984d2">simple_cache_add</a>,</div>
-<div class="line">    <a class="code" href="lists_8c.html#a7c95706780f8687df9856fe5728ccb69">simple_cache_get</a>,</div>
-<div class="line">    NULL,</div>
-<div class="line">    <a class="code" href="lists_8c.html#ac4135ffc37513b4a71ec3e425263fa05">simple_cache_destroy</a></div>
-<div class="line">}</div>
-<div class="ttc" id="lists_8c_html_a8990bff26464d696b7fe1addad50508f"><div class="ttname"><a href="lists_8c.html#a8990bff26464d696b7fe1addad50508f">simple_cache_init</a></div><div class="ttdeci">void * simple_cache_init(uint32_t init_size, FILE *fp)</div><div class="ttdef"><b>Definition:</b> lists.c:891</div></div>
-<div class="ttc" id="lists_8c_html_a4df82b047d38ae0f88679c33d52984d2"><div class="ttname"><a href="lists_8c.html#a4df82b047d38ae0f88679c33d52984d2">simple_cache_add</a></div><div class="ttdeci">void simple_cache_add(void *_sc, uint32_t key, void *value, void(*free_value)(void **data))</div><div class="ttdef"><b>Definition:</b> lists.c:908</div></div>
-<div class="ttc" id="lists_8c_html_ac4135ffc37513b4a71ec3e425263fa05"><div class="ttname"><a href="lists_8c.html#ac4135ffc37513b4a71ec3e425263fa05">simple_cache_destroy</a></div><div class="ttdeci">void simple_cache_destroy(void **_sc)</div><div class="ttdef"><b>Definition:</b> lists.c:934</div></div>
-<div class="ttc" id="lists_8c_html_a18310e67a2880b208ba1d86130720552"><div class="ttname"><a href="lists_8c.html#a18310e67a2880b208ba1d86130720552">simple_cache_seen</a></div><div class="ttdeci">uint32_t simple_cache_seen(void *_sc)</div><div class="ttdef"><b>Definition:</b> lists.c:902</div></div>
-<div class="ttc" id="lists_8c_html_a7c95706780f8687df9856fe5728ccb69"><div class="ttname"><a href="lists_8c.html#a7c95706780f8687df9856fe5728ccb69">simple_cache_get</a></div><div class="ttdeci">void * simple_cache_get(void *_sc, uint32_t key)</div><div class="ttdef"><b>Definition:</b> lists.c:923</div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">= {<a class="code" href="bpt_8c.html#affde2092fffe21602aa70ca49ce0ac5f">bpt_node_serialize</a>, </div>
+<div class="line">                                               <a class="code" href="bpt_8c.html#afb8e0a3eef338e0f8f328212379f3257">bpt_node_deserialize</a>,</div>
+<div class="line">                                               <a class="code" href="bpt_8c.html#a09ae2b9a9097078c629b2316a52f185f">bpt_node_free_mem</a>}</div>
+<div class="ttc" id="bpt_8c_html_afb8e0a3eef338e0f8f328212379f3257"><div class="ttname"><a href="bpt_8c.html#afb8e0a3eef338e0f8f328212379f3257">bpt_node_deserialize</a></div><div class="ttdeci">uint64_t bpt_node_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> bpt.c:65</div></div>
+<div class="ttc" id="bpt_8c_html_affde2092fffe21602aa70ca49ce0ac5f"><div class="ttname"><a href="bpt_8c.html#affde2092fffe21602aa70ca49ce0ac5f">bpt_node_serialize</a></div><div class="ttdeci">uint64_t bpt_node_serialize(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> bpt.c:49</div></div>
+<div class="ttc" id="bpt_8c_html_a09ae2b9a9097078c629b2316a52f185f"><div class="ttname"><a href="bpt_8c.html#a09ae2b9a9097078c629b2316a52f185f">bpt_node_free_mem</a></div><div class="ttdeci">void bpt_node_free_mem(void **deserialized)</div><div class="ttdef"><b>Definition:</b> bpt.c:83</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="ad187c5a8a7a4049ab918e552d2a24a14"></a>
+<a class="anchor" id="a33bc4e33e4c8064daa0ce694a8ea5b2f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t CACHE_SIZE = 10000</td>
+          <td class="memname">void(* bpt_node_repair)(uint32_t domain, struct <a class="el" href="structbpt__node.html">bpt_node</a> *, struct <a class="el" href="structbpt__node.html">bpt_node</a> *) = NULL</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -619,52 +684,10 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3aae69cb02bdfa3c2bb420b2014095fb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* repair)(struct <a class="el" href="structbpt__node.html">bpt_node</a> *, struct <a class="el" href="structbpt__node.html">bpt_node</a> *) = NULL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1ad3ce7d4618b751c6f47372263c301a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t(* serialize_leading)(void *deserialized, uint8_t **serialized)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">        <a class="code" href="bpt_8c.html#a33d0e24e3b5bf1c20d4d5f47ea212945">serialize_uint32_t</a></div>
-<div class="ttc" id="bpt_8c_html_a33d0e24e3b5bf1c20d4d5f47ea212945"><div class="ttname"><a href="bpt_8c.html#a33d0e24e3b5bf1c20d4d5f47ea212945">serialize_uint32_t</a></div><div class="ttdeci">uint64_t serialize_uint32_t(void *deserialized, uint8_t **serialized)</div><div class="ttdef"><b>Definition:</b> bpt.c:687</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a43f7ca295865d553b8948d894f3a162b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t(* serialize_pointer)(void *deserialized, uint8_t **serialized)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">        <a class="code" href="bpt_8c.html#a33d0e24e3b5bf1c20d4d5f47ea212945">serialize_uint32_t</a></div>
-<div class="ttc" id="bpt_8c_html_a33d0e24e3b5bf1c20d4d5f47ea212945"><div class="ttname"><a href="bpt_8c.html#a33d0e24e3b5bf1c20d4d5f47ea212945">serialize_uint32_t</a></div><div class="ttdeci">uint64_t serialize_uint32_t(void *deserialized, uint8_t **serialized)</div><div class="ttdef"><b>Definition:</b> bpt.c:687</div></div>
-</div><!-- fragment -->
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 15 2016 09:27:58 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 9 2016 12:22:18 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

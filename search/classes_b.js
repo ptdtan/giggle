@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value_5ffree_5fvalue_5fpair',['value_free_value_pair',['../structvalue__free__value__pair.html',1,'']]]
+  ['value_5fcache_5fhandler_5fpair',['value_cache_handler_pair',['../structvalue__cache__handler__pair.html',1,'']]]
 ];

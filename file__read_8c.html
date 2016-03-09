@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -68,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -95,6 +96,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;stdint.h&gt;</code><br/>
 <code>#include &lt;string.h&gt;</code><br/>
 <code>#include &lt;err.h&gt;</code><br/>
+<code>#include &lt;sysexits.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="file__read_8h_source.html">file_read.h</a>&quot;</code><br/>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -105,12 +108,92 @@ Functions</h2></td></tr>
 <tr class="separator:a1b9d2c7932e8eca80fef6f1bcea3bad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f69717cbf1944350cc5a7f59eb825b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__read_8c.html#a5f69717cbf1944350cc5a7f59eb825b9">input_file_destroy</a> (struct <a class="el" href="structinput__file.html">input_file</a> **i)</td></tr>
 <tr class="separator:a5f69717cbf1944350cc5a7f59eb825b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add651715fe8d10ec9859aa79cf4b3fab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__read_8c.html#add651715fe8d10ec9859aa79cf4b3fab">input_file_get_next_interval</a> (struct <a class="el" href="structinput__file.html">input_file</a> *i, char **chrm, int *chrm_len, uint32_t *start, uint32_t *end, long *offset)</td></tr>
+<tr class="memitem:add651715fe8d10ec9859aa79cf4b3fab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__read_8c.html#add651715fe8d10ec9859aa79cf4b3fab">input_file_get_next_interval</a> (struct <a class="el" href="structinput__file.html">input_file</a> *i, char **chrm, int *chrm_len, uint32_t *<a class="el" href="timer_8h.html#a60de64d75454385b23995437f1d72669">start</a>, uint32_t *end, long *offset)</td></tr>
 <tr class="separator:add651715fe8d10ec9859aa79cf4b3fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad495762ca278abacc848849e1b75404d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__read_8c.html#ad495762ca278abacc848849e1b75404d">input_file_seek</a> (struct <a class="el" href="structinput__file.html">input_file</a> *i, long offset)</td></tr>
 <tr class="separator:ad495762ca278abacc848849e1b75404d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8f1af70cceee38466748e42af5dfcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__read_8c.html#adf8f1af70cceee38466748e42af5dfcd">file_data_store</a> (void *v, FILE *f, char *file_name)</td></tr>
+<tr class="separator:adf8f1af70cceee38466748e42af5dfcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bbbe3c53908e01d33e2bd90c37306b9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__read_8c.html#a6bbbe3c53908e01d33e2bd90c37306b9">file_data_load</a> (FILE *f, char *file_name)</td></tr>
+<tr class="separator:a6bbbe3c53908e01d33e2bd90c37306b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a712b798ffb47675fff60dfd0e6bf24bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__read_8c.html#a712b798ffb47675fff60dfd0e6bf24bb">file_data_free</a> (void **v)</td></tr>
+<tr class="separator:a712b798ffb47675fff60dfd0e6bf24bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a712b798ffb47675fff60dfd0e6bf24bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void file_data_free </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6bbbe3c53908e01d33e2bd90c37306b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* file_data_load </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adf8f1af70cceee38466748e42af5dfcd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void file_data_store </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a5f69717cbf1944350cc5a7f59eb825b9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -266,7 +349,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 15 2016 09:27:58 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 9 2016 12:22:18 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

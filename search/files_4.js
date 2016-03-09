@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['index_5fsearch_2ec',['index_search.c',['../index__search_8c.html',1,'']]]
+  ['giggle_2ec',['giggle.c',['../giggle_8c.html',1,'']]],
+  ['giggle_2eh',['giggle.h',['../giggle_8h.html',1,'']]]
 ];

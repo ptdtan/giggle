@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -68,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,15 +84,917 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">wah.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="wah_8h_source.html">wah.h</a>&quot;</code><br/>
-</div></div><!-- contents -->
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;stdint.h&gt;</code><br/>
+<code>#include &lt;math.h&gt;</code><br/>
+<code>#include &lt;inttypes.h&gt;</code><br/>
+<code>#include &lt;string.h&gt;</code><br/>
+<code>#include &lt;err.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="wah_8h_source.html">wah.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br/>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ad2f3678bf5eae3684fc497130b946eae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#ad2f3678bf5eae3684fc497130b946eae">MIN</a>(X, Y)&#160;&#160;&#160;(((X) &lt; (Y)) ? (X) : (Y))</td></tr>
+<tr class="separator:ad2f3678bf5eae3684fc497130b946eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff9931d7524c88e07743af6535b20761"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#aff9931d7524c88e07743af6535b20761">MAX</a>(X, Y)&#160;&#160;&#160;(((X) &gt; (Y)) ? (X) : (Y))</td></tr>
+<tr class="separator:aff9931d7524c88e07743af6535b20761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a34296aa58cac54a2453e55254c70e8c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#a34296aa58cac54a2453e55254c70e8c3">set_wah_i</a> (uint8_t *W, void *v, uint32_t word_size, uint32_t i)</td></tr>
+<tr class="separator:a34296aa58cac54a2453e55254c70e8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d98f3986de408bacbfb7bc854d5b46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#a67d98f3986de408bacbfb7bc854d5b46">get_wah_i</a> (uint8_t *W, void *v, uint32_t word_size, uint32_t i)</td></tr>
+<tr class="separator:a67d98f3986de408bacbfb7bc854d5b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1477b022c55901c2e9b5e96404ed608a"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#a1477b022c55901c2e9b5e96404ed608a">wah_init_8</a> (uint32_t val)</td></tr>
+<tr class="separator:a1477b022c55901c2e9b5e96404ed608a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07816fed971f01cc1d912e8bc0a69b25"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#a07816fed971f01cc1d912e8bc0a69b25">wah_8_copy</a> (uint8_t *w)</td></tr>
+<tr class="separator:a07816fed971f01cc1d912e8bc0a69b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac4ef1386272d3f89b39e553dc4cd81a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#aac4ef1386272d3f89b39e553dc4cd81a">wah_or_8</a> (uint8_t *X, uint8_t *Y, uint8_t **R, uint32_t *R_size)</td></tr>
+<tr class="separator:aac4ef1386272d3f89b39e553dc4cd81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae4e2f64e12b75c2a432ddff2170711"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#a5ae4e2f64e12b75c2a432ddff2170711">wah_nand_8</a> (uint8_t *X, uint8_t *Y, uint8_t **R, uint32_t *R_size)</td></tr>
+<tr class="separator:a5ae4e2f64e12b75c2a432ddff2170711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6735e38c3d473b3aa05a107d69eb6fdb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#a6735e38c3d473b3aa05a107d69eb6fdb">wah_get_ints_8</a> (uint8_t *X, uint32_t **R)</td></tr>
+<tr class="separator:a6735e38c3d473b3aa05a107d69eb6fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29ab5d364a8522811e66841ee8475dbd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#a29ab5d364a8522811e66841ee8475dbd">wah_get_ints_count_8</a> (uint8_t *X)</td></tr>
+<tr class="separator:a29ab5d364a8522811e66841ee8475dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed9f48099ab3a2fb567a2f3e7290703e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#aed9f48099ab3a2fb567a2f3e7290703e">wah_8_uniq_append</a> (uint8_t **w, uint32_t id)</td></tr>
+<tr class="separator:aed9f48099ab3a2fb567a2f3e7290703e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af87f550eb9f0d32a2cbbe7532c635421"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#af87f550eb9f0d32a2cbbe7532c635421">wah_8_leading_repair</a> (uint32_t domain, struct <a class="el" href="structbpt__node.html">bpt_node</a> *a, struct <a class="el" href="structbpt__node.html">bpt_node</a> *b)</td></tr>
+<tr class="separator:af87f550eb9f0d32a2cbbe7532c635421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a266719a42f5f277827e4181c19951425"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#a266719a42f5f277827e4181c19951425">wah_8_giggle_set_data_handler</a> ()</td></tr>
+<tr class="separator:a266719a42f5f277827e4181c19951425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10208547de9fec70af433d28396494d4"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#a10208547de9fec70af433d28396494d4">wah_8_new_non_leading</a> (uint32_t domain)</td></tr>
+<tr class="separator:a10208547de9fec70af433d28396494d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5771c3668f06b02e8f26bc1db3d58f44"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#a5771c3668f06b02e8f26bc1db3d58f44">wah_8_new_leading</a> (uint32_t domain)</td></tr>
+<tr class="separator:a5771c3668f06b02e8f26bc1db3d58f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff6ebff95fe6efdaa418e70cab40c77f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#aff6ebff95fe6efdaa418e70cab40c77f">wah_8_non_leading_SA_add_scalar</a> (uint32_t domain, void *_nld, void *_id)</td></tr>
+<tr class="separator:aff6ebff95fe6efdaa418e70cab40c77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe00f2f26e7543fa0eff1543292e6e1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#afe00f2f26e7543fa0eff1543292e6e1c">wah_8_non_leading_SE_add_scalar</a> (uint32_t domain, void *_nld, void *_id)</td></tr>
+<tr class="separator:afe00f2f26e7543fa0eff1543292e6e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac4f25e789bbf2e961549a7f902049b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#aac4f25e789bbf2e961549a7f902049b0">wah_8_leading_B_add_scalar</a> (uint32_t domain, void *_ld, void *_id)</td></tr>
+<tr class="separator:aac4f25e789bbf2e961549a7f902049b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95153dacb6b9f50ba9648b6f49846cc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#a95153dacb6b9f50ba9648b6f49846cc1">wah_8_leading_union_with_B</a> (uint32_t domain, void **R, void *leading)</td></tr>
+<tr class="separator:a95153dacb6b9f50ba9648b6f49846cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a167f7a3930b655fc8afa516219a74aae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#a167f7a3930b655fc8afa516219a74aae">wah_8_non_leading_union_with_SA</a> (uint32_t domain, void **R, void *d)</td></tr>
+<tr class="separator:a167f7a3930b655fc8afa516219a74aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab80465c4ddf5181e0c93cb5e6afe3df6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#ab80465c4ddf5181e0c93cb5e6afe3df6">wah_8_non_leading_union_with_SA_subtract_SE</a> (uint32_t domain, void **R, void *d)</td></tr>
+<tr class="separator:ab80465c4ddf5181e0c93cb5e6afe3df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a865315e840ded3c060aab6baed81317e"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#a865315e840ded3c060aab6baed81317e">wah_8_non_leading_serialize</a> (void *deserialized, void **serialized)</td></tr>
+<tr class="separator:a865315e840ded3c060aab6baed81317e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a735106fc7f33810476650d7314d3a13c"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#a735106fc7f33810476650d7314d3a13c">wah_8_non_leading_deserialize</a> (void *serialized, uint64_t serialized_size, void **deserialized)</td></tr>
+<tr class="separator:a735106fc7f33810476650d7314d3a13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade7d27f44cade41e0a11d844787ec757"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#ade7d27f44cade41e0a11d844787ec757">wah_8_non_leading_free</a> (void **deserialized)</td></tr>
+<tr class="separator:ade7d27f44cade41e0a11d844787ec757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add5a099ee951823dad47a61b9e7cf645"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#add5a099ee951823dad47a61b9e7cf645">wah_8_leading_serialize</a> (void *deserialized, void **serialized)</td></tr>
+<tr class="separator:add5a099ee951823dad47a61b9e7cf645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834fc9bc6161f22f8ddf5e581efb2631"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#a834fc9bc6161f22f8ddf5e581efb2631">wah_8_leading_deserialize</a> (void *serialized, uint64_t serialized_size, void **deserialized)</td></tr>
+<tr class="separator:a834fc9bc6161f22f8ddf5e581efb2631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc86cae8556d7bb3a2e696ef4380c106"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#adc86cae8556d7bb3a2e696ef4380c106">wah_8_leading_free</a> (void **deserialized)</td></tr>
+<tr class="separator:adc86cae8556d7bb3a2e696ef4380c106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab286280e58da2f86adb7b84805a05d9d"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#ab286280e58da2f86adb7b84805a05d9d">uints_to_wah</a> (uint32_t *D, uint32_t D_num)</td></tr>
+<tr class="separator:ab286280e58da2f86adb7b84805a05d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a21a41453aa34a7f35fb75af54d419731"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#a21a41453aa34a7f35fb75af54d419731">WAH_SIZE</a> = 32</td></tr>
+<tr class="separator:a21a41453aa34a7f35fb75af54d419731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa216ffb5fa4c3597501ac675304c29ad"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#aa216ffb5fa4c3597501ac675304c29ad">WAH_MAX_FILL_WORDS</a> = 2147483647</td></tr>
+<tr class="separator:aa216ffb5fa4c3597501ac675304c29ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6979dd70a892e8aa7a180de156da4caf"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcache__handler.html">cache_handler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#a6979dd70a892e8aa7a180de156da4caf">wah_8_non_leading_cache_handler</a></td></tr>
+<tr class="separator:a6979dd70a892e8aa7a180de156da4caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f000730fff3b9d951bca72527981ff6"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcache__handler.html">cache_handler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wah_8c.html#a5f000730fff3b9d951bca72527981ff6">wah_8_leading_cache_handler</a></td></tr>
+<tr class="separator:a5f000730fff3b9d951bca72527981ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="aff9931d7524c88e07743af6535b20761"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">X, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Y&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(((X) &gt; (Y)) ? (X) : (Y))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad2f3678bf5eae3684fc497130b946eae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">X, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Y&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(((X) &lt; (Y)) ? (X) : (Y))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a67d98f3986de408bacbfb7bc854d5b46"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void get_wah_i </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>W</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>word_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a34296aa58cac54a2453e55254c70e8c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_wah_i </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>W</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>word_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab286280e58da2f86adb7b84805a05d9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t* uints_to_wah </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>D</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>D_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a07816fed971f01cc1d912e8bc0a69b25"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t* wah_8_copy </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a266719a42f5f277827e4181c19951425"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wah_8_giggle_set_data_handler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aac4f25e789bbf2e961549a7f902049b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wah_8_leading_B_add_scalar </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>_ld</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a834fc9bc6161f22f8ddf5e581efb2631"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t wah_8_leading_deserialize </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>serialized</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>serialized_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>deserialized</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adc86cae8556d7bb3a2e696ef4380c106"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wah_8_leading_free </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>deserialized</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af87f550eb9f0d32a2cbbe7532c635421"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wah_8_leading_repair </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structbpt__node.html">bpt_node</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structbpt__node.html">bpt_node</a> *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="add5a099ee951823dad47a61b9e7cf645"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t wah_8_leading_serialize </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>deserialized</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>serialized</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a95153dacb6b9f50ba9648b6f49846cc1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wah_8_leading_union_with_B </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>leading</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5771c3668f06b02e8f26bc1db3d58f44"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* wah_8_new_leading </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a10208547de9fec70af433d28396494d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* wah_8_new_non_leading </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a735106fc7f33810476650d7314d3a13c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t wah_8_non_leading_deserialize </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>serialized</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>serialized_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>deserialized</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ade7d27f44cade41e0a11d844787ec757"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wah_8_non_leading_free </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>deserialized</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aff6ebff95fe6efdaa418e70cab40c77f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wah_8_non_leading_SA_add_scalar </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>_nld</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afe00f2f26e7543fa0eff1543292e6e1c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wah_8_non_leading_SE_add_scalar </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>_nld</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a865315e840ded3c060aab6baed81317e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t wah_8_non_leading_serialize </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>deserialized</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>serialized</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a167f7a3930b655fc8afa516219a74aae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wah_8_non_leading_union_with_SA </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab80465c4ddf5181e0c93cb5e6afe3df6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wah_8_non_leading_union_with_SA_subtract_SE </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aed9f48099ab3a2fb567a2f3e7290703e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wah_8_uniq_append </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t **&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6735e38c3d473b3aa05a107d69eb6fdb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t wah_get_ints_8 </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t **&#160;</td>
+          <td class="paramname"><em>R</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a29ab5d364a8522811e66841ee8475dbd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t wah_get_ints_count_8 </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>X</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1477b022c55901c2e9b5e96404ed608a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t* wah_init_8 </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5ae4e2f64e12b75c2a432ddff2170711"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t wah_nand_8 </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>Y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t **&#160;</td>
+          <td class="paramname"><em>R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>R_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aac4ef1386272d3f89b39e553dc4cd81a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t wah_or_8 </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>Y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t **&#160;</td>
+          <td class="paramname"><em>R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>R_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a5f000730fff3b9d951bca72527981ff6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structcache__handler.html">cache_handler</a> wah_8_leading_cache_handler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">        <a class="code" href="wah_8c.html#add5a099ee951823dad47a61b9e7cf645">wah_8_leading_serialize</a>,</div>
+<div class="line">        <a class="code" href="wah_8c.html#a834fc9bc6161f22f8ddf5e581efb2631">wah_8_leading_deserialize</a>,</div>
+<div class="line">        <a class="code" href="wah_8c.html#adc86cae8556d7bb3a2e696ef4380c106">wah_8_leading_free</a></div>
+<div class="line">}</div>
+<div class="ttc" id="wah_8c_html_add5a099ee951823dad47a61b9e7cf645"><div class="ttname"><a href="wah_8c.html#add5a099ee951823dad47a61b9e7cf645">wah_8_leading_serialize</a></div><div class="ttdeci">uint64_t wah_8_leading_serialize(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> wah.c:845</div></div>
+<div class="ttc" id="wah_8c_html_a834fc9bc6161f22f8ddf5e581efb2631"><div class="ttname"><a href="wah_8c.html#a834fc9bc6161f22f8ddf5e581efb2631">wah_8_leading_deserialize</a></div><div class="ttdeci">uint64_t wah_8_leading_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> wah.c:890</div></div>
+<div class="ttc" id="wah_8c_html_adc86cae8556d7bb3a2e696ef4380c106"><div class="ttname"><a href="wah_8c.html#adc86cae8556d7bb3a2e696ef4380c106">wah_8_leading_free</a></div><div class="ttdeci">void wah_8_leading_free(void **deserialized)</div><div class="ttdef"><b>Definition:</b> wah.c:929</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a6979dd70a892e8aa7a180de156da4caf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structcache__handler.html">cache_handler</a> wah_8_non_leading_cache_handler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">        <a class="code" href="wah_8c.html#a865315e840ded3c060aab6baed81317e">wah_8_non_leading_serialize</a>,</div>
+<div class="line">        <a class="code" href="wah_8c.html#a735106fc7f33810476650d7314d3a13c">wah_8_non_leading_deserialize</a>,</div>
+<div class="line">        <a class="code" href="wah_8c.html#ade7d27f44cade41e0a11d844787ec757">wah_8_non_leading_free</a></div>
+<div class="line">}</div>
+<div class="ttc" id="wah_8c_html_a735106fc7f33810476650d7314d3a13c"><div class="ttname"><a href="wah_8c.html#a735106fc7f33810476650d7314d3a13c">wah_8_non_leading_deserialize</a></div><div class="ttdeci">uint64_t wah_8_non_leading_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> wah.c:775</div></div>
+<div class="ttc" id="wah_8c_html_ade7d27f44cade41e0a11d844787ec757"><div class="ttname"><a href="wah_8c.html#ade7d27f44cade41e0a11d844787ec757">wah_8_non_leading_free</a></div><div class="ttdeci">void wah_8_non_leading_free(void **deserialized)</div><div class="ttdef"><b>Definition:</b> wah.c:822</div></div>
+<div class="ttc" id="wah_8c_html_a865315e840ded3c060aab6baed81317e"><div class="ttname"><a href="wah_8c.html#a865315e840ded3c060aab6baed81317e">wah_8_non_leading_serialize</a></div><div class="ttdeci">uint64_t wah_8_non_leading_serialize(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> wah.c:718</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa216ffb5fa4c3597501ac675304c29ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t WAH_MAX_FILL_WORDS = 2147483647</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a21a41453aa34a7f35fb75af54d419731"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t WAH_SIZE = 32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 15 2016 09:27:58 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 9 2016 12:22:18 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

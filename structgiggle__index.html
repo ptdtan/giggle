@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,6 +105,16 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a45339222ad7ea1c7bc68e0832414ab7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44fb755992080bf37272c7678fd80c08"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structunordered__list.html">unordered_list</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgiggle__index.html#a44fb755992080bf37272c7678fd80c08">offset_index</a></td></tr>
 <tr class="separator:a44fb755992080bf37272c7678fd80c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f934ab10aaf7fd20219c95703ebae1a"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgiggle__index.html#a1f934ab10aaf7fd20219c95703ebae1a">data_dir</a></td></tr>
+<tr class="separator:a1f934ab10aaf7fd20219c95703ebae1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52704a4a1681e71b9ce8fc35c788b42c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgiggle__index.html#a52704a4a1681e71b9ce8fc35c788b42c">chrm_index_file_name</a></td></tr>
+<tr class="separator:a52704a4a1681e71b9ce8fc35c788b42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6449753b6a9b1c150a4d3595bb1cd126"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgiggle__index.html#a6449753b6a9b1c150a4d3595bb1cd126">file_index_file_name</a></td></tr>
+<tr class="separator:a6449753b6a9b1c150a4d3595bb1cd126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac18e3d072a93ed225c58cc00ea81df8c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgiggle__index.html#ac18e3d072a93ed225c58cc00ea81df8c">offset_index_file_name</a></td></tr>
+<tr class="separator:ac18e3d072a93ed225c58cc00ea81df8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd8ec17c9315a4aeaad26bebae8bdfd"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgiggle__index.html#a8cd8ec17c9315a4aeaad26bebae8bdfd">root_ids_file_name</a></td></tr>
+<tr class="separator:a8cd8ec17c9315a4aeaad26bebae8bdfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a69160fb3233ca0cbf802a7128949d417"></a>
@@ -118,12 +129,48 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a52704a4a1681e71b9ce8fc35c788b42c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * giggle_index::chrm_index_file_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1f934ab10aaf7fd20219c95703ebae1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* giggle_index::data_dir</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a45339222ad7ea1c7bc68e0832414ab7f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">struct <a class="el" href="structunordered__list.html">unordered_list</a>* giggle_index::file_index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6449753b6a9b1c150a4d3595bb1cd126"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * giggle_index::file_index_file_name</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -166,6 +213,18 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ac18e3d072a93ed225c58cc00ea81df8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * giggle_index::offset_index_file_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ab5deac81d85c8d4a9d1f89dd3ba6d54d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -178,13 +237,25 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a8cd8ec17c9315a4aeaad26bebae8bdfd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * giggle_index::root_ids_file_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="giggle_8h_source.html">giggle.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 15 2016 09:27:58 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 9 2016 12:22:18 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

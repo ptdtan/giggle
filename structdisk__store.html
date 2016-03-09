@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -92,10 +93,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a06a114793603f859a8bd193fc9bc3d15"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdisk__store.html#a06a114793603f859a8bd193fc9bc3d15">file_name</a></td></tr>
-<tr class="separator:a06a114793603f859a8bd193fc9bc3d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf586ce06b463e30bb67d5103ab0ef3d"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdisk__store.html#adf586ce06b463e30bb67d5103ab0ef3d">fp</a></td></tr>
-<tr class="separator:adf586ce06b463e30bb67d5103ab0ef3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a093fe3713a187fb35b3235e8d3ca6728"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdisk__store.html#a093fe3713a187fb35b3235e8d3ca6728">index_file_name</a></td></tr>
+<tr class="separator:a093fe3713a187fb35b3235e8d3ca6728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb6fd2ffcbae0cd8832cca225b1ce8e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdisk__store.html#a5cb6fd2ffcbae0cd8832cca225b1ce8e">data_file_name</a></td></tr>
+<tr class="separator:a5cb6fd2ffcbae0cd8832cca225b1ce8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a19abda95a515092fc7eee047e5e6ad"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdisk__store.html#a2a19abda95a515092fc7eee047e5e6ad">index_fp</a></td></tr>
+<tr class="separator:a2a19abda95a515092fc7eee047e5e6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa7e4c7f034ea6365b5d158850190c30"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdisk__store.html#aaa7e4c7f034ea6365b5d158850190c30">data_fp</a></td></tr>
+<tr class="separator:aaa7e4c7f034ea6365b5d158850190c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad87c29238e78daa4b00e1a5c708a240f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdisk__store.html#ad87c29238e78daa4b00e1a5c708a240f">size</a></td></tr>
 <tr class="separator:ad87c29238e78daa4b00e1a5c708a240f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae581d818440aef8b0ceaea9c0b4232c0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdisk__store.html#ae581d818440aef8b0ceaea9c0b4232c0">num</a></td></tr>
@@ -108,6 +113,30 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ae352925717a5d0c783fad3192642ec8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a5cb6fd2ffcbae0cd8832cca225b1ce8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * disk_store::data_file_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaa7e4c7f034ea6365b5d158850190c30"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FILE * disk_store::data_fp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aa463b04137c504af9d503a1b530c26bf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -120,24 +149,24 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a06a114793603f859a8bd193fc9bc3d15"></a>
+<a class="anchor" id="a093fe3713a187fb35b3235e8d3ca6728"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char* disk_store::file_name</td>
+          <td class="memname">char* disk_store::index_file_name</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="adf586ce06b463e30bb67d5103ab0ef3d"></a>
+<a class="anchor" id="a2a19abda95a515092fc7eee047e5e6ad"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">FILE* disk_store::fp</td>
+          <td class="memname">FILE* disk_store::index_fp</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -198,7 +227,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 15 2016 09:27:58 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 9 2016 12:22:18 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

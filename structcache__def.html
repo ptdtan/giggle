@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,104 +89,104 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="lists_8h_source.html">lists.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="cache_8h_source.html">cache.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a3ee71a99335df5531a7140bad19dbaab"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcache__def.html#a3ee71a99335df5531a7140bad19dbaab">cache</a></td></tr>
-<tr class="separator:a3ee71a99335df5531a7140bad19dbaab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09ad61d455d8b4463eabd064cb07aeb2"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcache__def.html#a09ad61d455d8b4463eabd064cb07aeb2">init</a> )(uint32_t size, FILE *fp)</td></tr>
-<tr class="separator:a09ad61d455d8b4463eabd064cb07aeb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec0455852571f956eee7a74e5a0045ae"><td class="memItemLeft" align="right" valign="top">uint32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcache__def.html#aec0455852571f956eee7a74e5a0045ae">seen</a> )(void *<a class="el" href="structcache__def.html#a3ee71a99335df5531a7140bad19dbaab">cache</a>)</td></tr>
-<tr class="separator:aec0455852571f956eee7a74e5a0045ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55570d30fff2f0a47691645b00fd2580"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcache__def.html#a55570d30fff2f0a47691645b00fd2580">add</a> )(void *<a class="el" href="structcache__def.html#a3ee71a99335df5531a7140bad19dbaab">cache</a>, uint32_t key, void *data, void(*free_value)(void **data))</td></tr>
-<tr class="separator:a55570d30fff2f0a47691645b00fd2580"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf107b6478e784b327add07832896c75"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcache__def.html#adf107b6478e784b327add07832896c75">get</a> )(void *<a class="el" href="structcache__def.html#a3ee71a99335df5531a7140bad19dbaab">cache</a>, uint32_t key)</td></tr>
-<tr class="separator:adf107b6478e784b327add07832896c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e0b339155c7cd6e1be21bb381932aa3"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcache__def.html#a3e0b339155c7cd6e1be21bb381932aa3">remove</a> )(void *<a class="el" href="structcache__def.html#a3ee71a99335df5531a7140bad19dbaab">cache</a>, uint32_t key)</td></tr>
-<tr class="separator:a3e0b339155c7cd6e1be21bb381932aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9868baf2b3e9b88fb2f51cab51cb38bc"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcache__def.html#a9868baf2b3e9b88fb2f51cab51cb38bc">destroy</a> )(void **<a class="el" href="structcache__def.html#a3ee71a99335df5531a7140bad19dbaab">cache</a>)</td></tr>
-<tr class="separator:a9868baf2b3e9b88fb2f51cab51cb38bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01f83e34550dc7c0ba0c3cf1336f3e89"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcache__def.html#a01f83e34550dc7c0ba0c3cf1336f3e89">init</a> )(uint32_t size, uint32_t num_domains, char **file_names)</td></tr>
+<tr class="separator:a01f83e34550dc7c0ba0c3cf1336f3e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77605e3f8def3f98f0214f42d538b689"><td class="memItemLeft" align="right" valign="top">uint32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcache__def.html#a77605e3f8def3f98f0214f42d538b689">seen</a> )(uint32_t domain)</td></tr>
+<tr class="separator:a77605e3f8def3f98f0214f42d538b689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67dd31b50f4d5cc72143c33830c8dc58"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcache__def.html#a67dd31b50f4d5cc72143c33830c8dc58">add</a> )(uint32_t domain, uint32_t key, void *data, struct <a class="el" href="structcache__handler.html">cache_handler</a> *handler)</td></tr>
+<tr class="separator:a67dd31b50f4d5cc72143c33830c8dc58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aabffe2b566859c85fe11c4adeed428"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcache__def.html#a7aabffe2b566859c85fe11c4adeed428">get</a> )(uint32_t domain, uint32_t key, struct <a class="el" href="structcache__handler.html">cache_handler</a> *handler)</td></tr>
+<tr class="separator:a7aabffe2b566859c85fe11c4adeed428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65ee708ebbcc1942136a611c9b668d45"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcache__def.html#a65ee708ebbcc1942136a611c9b668d45">store</a> )(uint32_t domain, uint32_t *disk_id_order)</td></tr>
+<tr class="separator:a65ee708ebbcc1942136a611c9b668d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23463582ffb0e96da3a167b5dc65ef29"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcache__def.html#a23463582ffb0e96da3a167b5dc65ef29">remove</a> )(uint32_t domain, uint32_t key)</td></tr>
+<tr class="separator:a23463582ffb0e96da3a167b5dc65ef29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67e13cb964b737f3185d5ea2c86ba796"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcache__def.html#a67e13cb964b737f3185d5ea2c86ba796">destroy</a> )()</td></tr>
+<tr class="separator:a67e13cb964b737f3185d5ea2c86ba796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a55570d30fff2f0a47691645b00fd2580"></a>
+<a class="anchor" id="a67dd31b50f4d5cc72143c33830c8dc58"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* cache_def::add)(void *<a class="el" href="structcache__def.html#a3ee71a99335df5531a7140bad19dbaab">cache</a>, uint32_t key, void *data, void(*free_value)(void **data))</td>
+          <td class="memname">void(* cache_def::add)(uint32_t domain, uint32_t key, void *data, struct <a class="el" href="structcache__handler.html">cache_handler</a> *handler)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a3ee71a99335df5531a7140bad19dbaab"></a>
+<a class="anchor" id="a67e13cb964b737f3185d5ea2c86ba796"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* cache_def::cache</td>
+          <td class="memname">void(* cache_def::destroy)()</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a9868baf2b3e9b88fb2f51cab51cb38bc"></a>
+<a class="anchor" id="a7aabffe2b566859c85fe11c4adeed428"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* cache_def::destroy)(void **<a class="el" href="structcache__def.html#a3ee71a99335df5531a7140bad19dbaab">cache</a>)</td>
+          <td class="memname">void*(* cache_def::get)(uint32_t domain, uint32_t key, struct <a class="el" href="structcache__handler.html">cache_handler</a> *handler)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="adf107b6478e784b327add07832896c75"></a>
+<a class="anchor" id="a01f83e34550dc7c0ba0c3cf1336f3e89"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void*(* cache_def::get)(void *<a class="el" href="structcache__def.html#a3ee71a99335df5531a7140bad19dbaab">cache</a>, uint32_t key)</td>
+          <td class="memname">void*(* cache_def::init)(uint32_t size, uint32_t num_domains, char **file_names)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a09ad61d455d8b4463eabd064cb07aeb2"></a>
+<a class="anchor" id="a23463582ffb0e96da3a167b5dc65ef29"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void*(* cache_def::init)(uint32_t size, FILE *fp)</td>
+          <td class="memname">void(* cache_def::remove)(uint32_t domain, uint32_t key)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a3e0b339155c7cd6e1be21bb381932aa3"></a>
+<a class="anchor" id="a77605e3f8def3f98f0214f42d538b689"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* cache_def::remove)(void *<a class="el" href="structcache__def.html#a3ee71a99335df5531a7140bad19dbaab">cache</a>, uint32_t key)</td>
+          <td class="memname">uint32_t(* cache_def::seen)(uint32_t domain)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aec0455852571f956eee7a74e5a0045ae"></a>
+<a class="anchor" id="a65ee708ebbcc1942136a611c9b668d45"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t(* cache_def::seen)(void *<a class="el" href="structcache__def.html#a3ee71a99335df5531a7140bad19dbaab">cache</a>)</td>
+          <td class="memname">void(* cache_def::store)(uint32_t domain, uint32_t *disk_id_order)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -193,12 +194,12 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="lists_8h_source.html">lists.h</a></li>
+<li><a class="el" href="cache_8h_source.html">cache.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 15 2016 09:27:58 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 9 2016 12:22:18 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
