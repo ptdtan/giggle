@@ -37,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -64,7 +63,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -78,10 +77,63 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Giggle Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"></div></div><!-- contents -->
+<div class="textblock"><p><a href="https://travis-ci.org/ryanlayer/giggle">![Build Status](https://travis-ci.org/ryanlayer/giggle.svg?branch=master)</a></p>
+<h1>Epigenomics Roadmap</h1>
+<pre class="fragment">mkdir data
+cd data
+wget http://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/coreMarks/jointModel/final/all.mnemonics.bedFiles.tgz
+tar zxvf all.mnemonics.bedFiles.tgz
+cd ..
+mkdir split
+python rename.py states.txt EDACC_NAME.txt "data/*gz" "split/"
+cd split
+ls *.bed | xargs -I {} -P 10 sh -c "bgzip {}"
+ls *.bed.gz | xargs -I {} -P 10 sh -c "tabix {}"
+</pre><h2>bedtools</h2>
+<h3>unsorted</h3>
+<p>time ls split/*gz | \ xargs -I{} \ sh -c "bedtools intersect -a inkids_rare.bed.gz -b {} | wc -l"</p>
+<p>real 2m15.021s user 1m57.950s sys 0m16.163s</p>
+<h3>sorted</h3>
+<p>time ls split/*gz | \ xargs -I{} \ sh -c "bedtools intersect -sorted -g genome.txt -a inkids_rare.bed.gz -b {} | wc -l"</p>
+<p>real 0m58.092s user 0m51.030s sys 0m8.076s</p>
+<h2>tabix</h2>
+<h3>index</h3>
+<p>time ls *gz | xargs -I{} tabix {}</p>
+<p>real 1m54.741s user 1m41.347s sys 0m7.689s</p>
+<h3>search</h3>
+<p>time ls split/*gz | xargs -I{} sh -c "tabix -p bed -B {}  inkids_rare.bed.gz | wc -l"</p>
+<p>real 0m26.832s user 0m19.550s sys 0m7.597s</p>
+<h2>giggle</h2>
+<h3>index</h3>
+<p>time ~/src/giggle/bin/giggle index \ -i "split/*gz" -o split_i -f Indexed 55605005 intervals.</p>
+<p>real 7m59.121s user 7m3.515s sys 0m41.202s </p>
+<h3>just the counts</h3>
+<p>time ~/src/giggle/bin/giggle search -c \ -q inkids_rare.bed.gz \ -i split_i</p>
+<p>real 0m0.727s user 0m0.031s sys 0m0.677s</p>
+<h3>counts and significance tests</h3>
+<p>time ~/src/giggle/bin/giggle search -s \ -q inkids_rare.bed.gz \ -i split_i</p>
+<p>real 0m0.851s user 0m0.052s sys 0m0.712s</p>
+<h3>all matching records in all files</h3>
+<p>time ~/src/giggle/bin/giggle search -v \ -q inkids_rare.bed.gz \ -i split_i</p>
+<p>real 0m3.249s user 0m2.280s sys 0m0.822s</p>
+<h1>Web server</h1>
+<p><a href="http://www.gnu.org/software/libmicrohttpd/">http://www.gnu.org/software/libmicrohttpd/</a> </p>
+<pre class="fragment">wget http://ftpmirror.gnu.org/libmicrohttpd/libmicrohttpd-0.9.46.tar.gz
+tar zxvf libmicrohttpd-0.9.46.tar.gz
+cd libmicrohttpd-0.9.46
+./configure --prefix=$HOME/usr/local/
+make
+make install
+
+git clone https://github.com/json-c/json-c.git
+cd json-c
+sh autogen.sh
+./configure --prefix=$HOME/usr/local/
+make
+make install</pre> </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 9 2016 12:22:18 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 29 2016 10:28:05 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['simple_5fcache',['simple_cache',['../structsimple__cache.html',1,'']]],
-  ['str_5fuint_5fpair',['str_uint_pair',['../structstr__uint__pair.html',1,'']]]
+  ['offset_5fsize_5fpair',['offset_size_pair',['../structoffset__size__pair.html',1,'']]],
+  ['ordered_5fset',['ordered_set',['../structordered__set.html',1,'']]]
 ];

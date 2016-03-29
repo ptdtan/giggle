@@ -1,7 +1,11 @@
 var searchData=
 [
-  ['b',['B',['../structuint32__t__ll__bpt__leading__data.html#a124e6bbf71fe85e6609926aa44829ff9',1,'uint32_t_ll_bpt_leading_data::B()'],['../structwah__8__bpt__leading__data.html#a7e87da7741ccadca837786f75a093812',1,'wah_8_bpt_leading_data::B()'],['../structwah__16__bpt__leading__data.html#ade4088ed0d039792a2ff1b420f1e1543',1,'wah_16_bpt_leading_data::B()']]],
+  ['b',['B',['../structuint32__t__ll__bpt__leading__data.html#a124e6bbf71fe85e6609926aa44829ff9',1,'uint32_t_ll_bpt_leading_data::B()'],['../structwah__bpt__leading__data.html#a7dd4ef17208a4ae214a0bd239e4118d3',1,'wah_bpt_leading_data::B()']]],
   ['b_5fsearch',['b_search',['../bpt_8c.html#ad70ee0a6e41825f14874c9d8105555c8',1,'b_search(uint32_t key, uint32_t *D, uint32_t D_size):&#160;bpt.c'],['../bpt_8h.html#ad70ee0a6e41825f14874c9d8105555c8',1,'b_search(uint32_t key, uint32_t *D, uint32_t D_size):&#160;bpt.c']]],
+  ['bcf',['BCF',['../structinput__file.html#a83873e9ae9752ffbf9df3608749d0e6aa76f38477b58dc3c39ec043589fdd07e6',1,'input_file']]],
+  ['bcf_5ffp',['bcf_fp',['../structinput__file.html#a3752c0b61401791be013c401c57a210e',1,'input_file']]],
+  ['bed',['BED',['../structinput__file.html#a83873e9ae9752ffbf9df3608749d0e6aae0ef2c2a12df0414c1398c1bd732da8c',1,'input_file']]],
+  ['bed_5ffp',['bed_fp',['../structinput__file.html#a2c5a7d3df3bb5907ecb9a32b8a6175f2',1,'input_file']]],
   ['bin_5fchar_5fto_5fint',['bin_char_to_int',['../util_8c.html#ab6b9b8c30fd0871b375f5b17d01d9555',1,'bin_char_to_int(char *bin):&#160;util.c'],['../util_8h.html#ab6b9b8c30fd0871b375f5b17d01d9555',1,'bin_char_to_int(char *bin):&#160;util.c']]],
   ['bit_5fmap',['bit_map',['../structbit__map.html',1,'']]],
   ['bit_5fmap_5fdestroy',['bit_map_destroy',['../lists_8c.html#ab7f73c47da855a1eb811aed42caeb499',1,'bit_map_destroy(struct bit_map **b):&#160;lists.c'],['../lists_8h.html#ab7f73c47da855a1eb811aed42caeb499',1,'bit_map_destroy(struct bit_map **b):&#160;lists.c']]],
@@ -41,6 +45,7 @@ var searchData=
   ['bpt_5fprint_5fnode',['bpt_print_node',['../bpt_8c.html#aba5b3aaead0ed6e28c32839282b73887',1,'bpt_print_node(struct bpt_node *node):&#160;bpt.c'],['../bpt_8h.html#aba5b3aaead0ed6e28c32839282b73887',1,'bpt_print_node(struct bpt_node *node):&#160;bpt.c']]],
   ['bpt_5fsplit_5fnode',['bpt_split_node',['../bpt_8c.html#a1eb9f11a1fbe7fcd9f73e7e72080bb9f',1,'bpt_split_node(uint32_t domain, uint32_t root_id, uint32_t bpt_node_id, uint32_t *lo_result_id, uint32_t *hi_result_id, int *lo_hi_split_point, void(*repair)(uint32_t domain, struct bpt_node *, struct bpt_node *)):&#160;bpt.c'],['../bpt_8h.html#a1eb9f11a1fbe7fcd9f73e7e72080bb9f',1,'bpt_split_node(uint32_t domain, uint32_t root_id, uint32_t bpt_node_id, uint32_t *lo_result_id, uint32_t *hi_result_id, int *lo_hi_split_point, void(*repair)(uint32_t domain, struct bpt_node *, struct bpt_node *)):&#160;bpt.c']]],
   ['bpt_5fwrite_5ftree',['bpt_write_tree',['../bpt_8c.html#a36131eb22db7c95bbab5a5c8617fe7c9',1,'bpt_write_tree(uint32_t domain, uint32_t root_id):&#160;bpt.c'],['../bpt_8h.html#a36131eb22db7c95bbab5a5c8617fe7c9',1,'bpt_write_tree(uint32_t domain, uint32_t root_id):&#160;bpt.c']]],
+  ['build_5fversion',['BUILD_VERSION',['../giggle__index_8h.html#ad7a967dd260384e94010b31b1412a0b4',1,'giggle_index.h']]],
   ['byte',['BYTE',['../wah_8h.html#aec93e83855ac17c3c25c55c37ca186dd',1,'wah.h']]],
   ['byte_5farray',['byte_array',['../structbyte__array.html',1,'']]],
   ['byte_5farray_5fappend',['byte_array_append',['../lists_8c.html#a963af5c92ddf38c3e260a47b40271940',1,'byte_array_append(struct byte_array *ba, void *data, uint32_t size):&#160;lists.c'],['../lists_8h.html#a963af5c92ddf38c3e260a47b40271940',1,'byte_array_append(struct byte_array *ba, void *data, uint32_t size):&#160;lists.c']]],

@@ -37,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -85,6 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -102,6 +102,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="lists_8h_source.html">lists.h</a>&quot;</code><br/>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a369266c24eacffb87046522897a570d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cache_8c.html#a369266c24eacffb87046522897a570d5">_GNU_SOURCE</a></td></tr>
+<tr class="separator:a369266c24eacffb87046522897a570d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ac6df73735d3d7be14d9b6527b5652278"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cache_8c.html#ac6df73735d3d7be14d9b6527b5652278">uint32_t_serialize</a> (void *deserialized, void **serialized)</td></tr>
@@ -136,6 +141,19 @@ Variables</h2></td></tr>
 <tr class="memitem:a61a60e0458b310ba1b4a9ff4e5601bd6"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcache__def.html">cache_def</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cache_8c.html#a61a60e0458b310ba1b4a9ff4e5601bd6">simple_cache_def</a></td></tr>
 <tr class="separator:a61a60e0458b310ba1b4a9ff4e5601bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a369266c24eacffb87046522897a570d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _GNU_SOURCE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a228fb164e1510f64b1ab295b9f6ad80e"></a>
 <div class="memitem">
@@ -437,12 +455,12 @@ Variables</h2></td></tr>
 <div class="line">    NULL,</div>
 <div class="line">    <a class="code" href="cache_8c.html#a9f7f80caf44bbcbe519350fe3bd7fe3b">simple_cache_destroy</a></div>
 <div class="line">}</div>
-<div class="ttc" id="cache_8c_html_ad111b81657bfdb8d7f8a0ba039a67c75"><div class="ttname"><a href="cache_8c.html#ad111b81657bfdb8d7f8a0ba039a67c75">simple_cache_store</a></div><div class="ttdeci">void simple_cache_store(uint32_t domain, uint32_t *disk_id_order)</div><div class="ttdef"><b>Definition:</b> cache.c:256</div></div>
-<div class="ttc" id="cache_8c_html_afdc781c069b4b0043f35869fcbc55efc"><div class="ttname"><a href="cache_8c.html#afdc781c069b4b0043f35869fcbc55efc">simple_cache_seen</a></div><div class="ttdeci">uint32_t simple_cache_seen(uint32_t domain)</div><div class="ttdef"><b>Definition:</b> cache.c:154</div></div>
-<div class="ttc" id="cache_8c_html_af38057b4ddbe01e823749310861823db"><div class="ttname"><a href="cache_8c.html#af38057b4ddbe01e823749310861823db">simple_cache_add</a></div><div class="ttdeci">void simple_cache_add(uint32_t domain, uint32_t key, void *value, struct cache_handler *handler)</div><div class="ttdef"><b>Definition:</b> cache.c:165</div></div>
-<div class="ttc" id="cache_8c_html_a97cefeeb95cf098047581d0c5594e77f"><div class="ttname"><a href="cache_8c.html#a97cefeeb95cf098047581d0c5594e77f">simple_cache_init</a></div><div class="ttdeci">void * simple_cache_init(uint32_t size, uint32_t num_domains, char **file_names)</div><div class="ttdef"><b>Definition:</b> cache.c:76</div></div>
-<div class="ttc" id="cache_8c_html_a71ed49431550978fe7f8166d95fe5abd"><div class="ttname"><a href="cache_8c.html#a71ed49431550978fe7f8166d95fe5abd">simple_cache_get</a></div><div class="ttdeci">void * simple_cache_get(uint32_t domain, uint32_t key, struct cache_handler *handler)</div><div class="ttdef"><b>Definition:</b> cache.c:184</div></div>
-<div class="ttc" id="cache_8c_html_a9f7f80caf44bbcbe519350fe3bd7fe3b"><div class="ttname"><a href="cache_8c.html#a9f7f80caf44bbcbe519350fe3bd7fe3b">simple_cache_destroy</a></div><div class="ttdeci">void simple_cache_destroy()</div><div class="ttdef"><b>Definition:</b> cache.c:218</div></div>
+<div class="ttc" id="cache_8c_html_ad111b81657bfdb8d7f8a0ba039a67c75"><div class="ttname"><a href="cache_8c.html#ad111b81657bfdb8d7f8a0ba039a67c75">simple_cache_store</a></div><div class="ttdeci">void simple_cache_store(uint32_t domain, uint32_t *disk_id_order)</div><div class="ttdef"><b>Definition:</b> cache.c:285</div></div>
+<div class="ttc" id="cache_8c_html_afdc781c069b4b0043f35869fcbc55efc"><div class="ttname"><a href="cache_8c.html#afdc781c069b4b0043f35869fcbc55efc">simple_cache_seen</a></div><div class="ttdeci">uint32_t simple_cache_seen(uint32_t domain)</div><div class="ttdef"><b>Definition:</b> cache.c:161</div></div>
+<div class="ttc" id="cache_8c_html_af38057b4ddbe01e823749310861823db"><div class="ttname"><a href="cache_8c.html#af38057b4ddbe01e823749310861823db">simple_cache_add</a></div><div class="ttdeci">void simple_cache_add(uint32_t domain, uint32_t key, void *value, struct cache_handler *handler)</div><div class="ttdef"><b>Definition:</b> cache.c:172</div></div>
+<div class="ttc" id="cache_8c_html_a97cefeeb95cf098047581d0c5594e77f"><div class="ttname"><a href="cache_8c.html#a97cefeeb95cf098047581d0c5594e77f">simple_cache_init</a></div><div class="ttdeci">void * simple_cache_init(uint32_t size, uint32_t num_domains, char **file_names)</div><div class="ttdef"><b>Definition:</b> cache.c:78</div></div>
+<div class="ttc" id="cache_8c_html_a71ed49431550978fe7f8166d95fe5abd"><div class="ttname"><a href="cache_8c.html#a71ed49431550978fe7f8166d95fe5abd">simple_cache_get</a></div><div class="ttdeci">void * simple_cache_get(uint32_t domain, uint32_t key, struct cache_handler *handler)</div><div class="ttdef"><b>Definition:</b> cache.c:191</div></div>
+<div class="ttc" id="cache_8c_html_a9f7f80caf44bbcbe519350fe3bd7fe3b"><div class="ttname"><a href="cache_8c.html#a9f7f80caf44bbcbe519350fe3bd7fe3b">simple_cache_destroy</a></div><div class="ttdeci">void simple_cache_destroy()</div><div class="ttdef"><b>Definition:</b> cache.c:236</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -458,16 +476,16 @@ Variables</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">= {<a class="code" href="cache_8c.html#ac6df73735d3d7be14d9b6527b5652278">uint32_t_serialize</a>, </div>
 <div class="line">                                               <a class="code" href="cache_8c.html#abb815cb9d1d66414a22511ef27a42dc7">uint32_t_deserialize</a>,</div>
 <div class="line">                                               <a class="code" href="cache_8c.html#ad649fc080976743972120fce6cdc239d">uint32_t_free_mem</a>}</div>
-<div class="ttc" id="cache_8c_html_abb815cb9d1d66414a22511ef27a42dc7"><div class="ttname"><a href="cache_8c.html#abb815cb9d1d66414a22511ef27a42dc7">uint32_t_deserialize</a></div><div class="ttdeci">uint64_t uint32_t_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> cache.c:38</div></div>
-<div class="ttc" id="cache_8c_html_ad649fc080976743972120fce6cdc239d"><div class="ttname"><a href="cache_8c.html#ad649fc080976743972120fce6cdc239d">uint32_t_free_mem</a></div><div class="ttdeci">void uint32_t_free_mem(void **deserialized)</div><div class="ttdef"><b>Definition:</b> cache.c:55</div></div>
-<div class="ttc" id="cache_8c_html_ac6df73735d3d7be14d9b6527b5652278"><div class="ttname"><a href="cache_8c.html#ac6df73735d3d7be14d9b6527b5652278">uint32_t_serialize</a></div><div class="ttdeci">uint64_t uint32_t_serialize(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> cache.c:23</div></div>
+<div class="ttc" id="cache_8c_html_abb815cb9d1d66414a22511ef27a42dc7"><div class="ttname"><a href="cache_8c.html#abb815cb9d1d66414a22511ef27a42dc7">uint32_t_deserialize</a></div><div class="ttdeci">uint64_t uint32_t_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> cache.c:40</div></div>
+<div class="ttc" id="cache_8c_html_ad649fc080976743972120fce6cdc239d"><div class="ttname"><a href="cache_8c.html#ad649fc080976743972120fce6cdc239d">uint32_t_free_mem</a></div><div class="ttdeci">void uint32_t_free_mem(void **deserialized)</div><div class="ttdef"><b>Definition:</b> cache.c:57</div></div>
+<div class="ttc" id="cache_8c_html_ac6df73735d3d7be14d9b6527b5652278"><div class="ttname"><a href="cache_8c.html#ac6df73735d3d7be14d9b6527b5652278">uint32_t_serialize</a></div><div class="ttdeci">uint64_t uint32_t_serialize(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> cache.c:25</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 9 2016 12:22:18 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 29 2016 10:28:05 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

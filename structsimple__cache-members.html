@@ -37,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -92,14 +91,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="structsimple__cache.html#aa4b32d7790fafcf69482e6505d4b11dd">dss</a></td><td class="entry"><a class="el" href="structsimple__cache.html">simple_cache</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structsimple__cache.html#a02edcd1b1cbd4f2c73e161cceeb30afb">ils</a></td><td class="entry"><a class="el" href="structsimple__cache.html">simple_cache</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="structsimple__cache.html#af09d1513dd062a2f527de72ef0d2d310">index_file_names</a></td><td class="entry"><a class="el" href="structsimple__cache.html">simple_cache</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structsimple__cache.html#a4c9ac95d5a7b79c0eb300857c56898f3">num_domains</a></td><td class="entry"><a class="el" href="structsimple__cache.html">simple_cache</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structsimple__cache.html#a1fcd026a887024d7783a55698a0190e8">nums</a></td><td class="entry"><a class="el" href="structsimple__cache.html">simple_cache</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structsimple__cache.html#a1dbe8b40a155c9689e5c630f1e38957b">seens</a></td><td class="entry"><a class="el" href="structsimple__cache.html">simple_cache</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structsimple__cache.html#a942a96f5c71a68b7ee586cbcd0170d44">sizes</a></td><td class="entry"><a class="el" href="structsimple__cache.html">simple_cache</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structsimple__cache.html#aab2f2d7fe543c4c528b9ec8ea9ad6efd">mutex</a></td><td class="entry"><a class="el" href="structsimple__cache.html">simple_cache</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structsimple__cache.html#a4c9ac95d5a7b79c0eb300857c56898f3">num_domains</a></td><td class="entry"><a class="el" href="structsimple__cache.html">simple_cache</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structsimple__cache.html#a1fcd026a887024d7783a55698a0190e8">nums</a></td><td class="entry"><a class="el" href="structsimple__cache.html">simple_cache</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structsimple__cache.html#a1dbe8b40a155c9689e5c630f1e38957b">seens</a></td><td class="entry"><a class="el" href="structsimple__cache.html">simple_cache</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structsimple__cache.html#a942a96f5c71a68b7ee586cbcd0170d44">sizes</a></td><td class="entry"><a class="el" href="structsimple__cache.html">simple_cache</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 9 2016 12:22:18 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 29 2016 10:28:05 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

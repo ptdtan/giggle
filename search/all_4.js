@@ -28,6 +28,6 @@ var searchData=
   ['disk_5fstore_5fload',['disk_store_load',['../disk__store_8c.html#aea8c0ba7d4e8b54c355dd13a0a8c403b',1,'disk_store_load(FILE **index_fp, char *index_file_name, FILE **data_fp, char *data_file_name):&#160;disk_store.c'],['../disk__store_8h.html#aea8c0ba7d4e8b54c355dd13a0a8c403b',1,'disk_store_load(FILE **index_fp, char *index_file_name, FILE **data_fp, char *data_file_name):&#160;disk_store.c']]],
   ['disk_5fstore_5fsync',['disk_store_sync',['../disk__store_8c.html#a809f5b8ef05fcc07a26b1158ad01bf87',1,'disk_store_sync(struct disk_store *ds):&#160;disk_store.c'],['../disk__store_8h.html#a809f5b8ef05fcc07a26b1158ad01bf87',1,'disk_store_sync(struct disk_store *ds):&#160;disk_store.c']]],
   ['doubles_5fuint32_5ft_5ftuple',['doubles_uint32_t_tuple',['../structdoubles__uint32__t__tuple.html',1,'']]],
-  ['doubles_5fuint32_5ft_5ftuple_5fcmp',['doubles_uint32_t_tuple_cmp',['../sig__test_8c.html#a86e81558304701caf48bbb808f815211',1,'sig_test.c']]],
+  ['doubles_5fuint32_5ft_5ftuple_5fcmp',['doubles_uint32_t_tuple_cmp',['../util_8c.html#a86e81558304701caf48bbb808f815211',1,'doubles_uint32_t_tuple_cmp(const void *_a, const void *_b):&#160;util.c'],['../util_8h.html#a86e81558304701caf48bbb808f815211',1,'doubles_uint32_t_tuple_cmp(const void *_a, const void *_b):&#160;util.c']]],
   ['dss',['dss',['../structsimple__cache.html#aa4b32d7790fafcf69482e6505d4b11dd',1,'simple_cache']]]
 ];

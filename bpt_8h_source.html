@@ -37,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,152 +89,153 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <a href="bpt_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __BPT_H__</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __BPT_H__</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lists_8h.html">lists.h</a>&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cache_8h.html">cache.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="bpt_8h.html#a8191377efaf4c23e85b2e1276473c805">    9</a></span>&#160;uint32_t <a class="code" href="bpt_8h.html#a8191377efaf4c23e85b2e1276473c805">ORDER</a>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="bpt_8h.html#a16a3964b377fc7933b1680793b2d6fb5">   11</a></span>&#160;<span class="preprocessor">#define BPT_NODE_NUM_ELEMENTS (2*ORDER+9)</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="bpt_8h.html#a56d1365215177b1cdf6958b70bf7173b">   12</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BPT_NODE_ELEMENT_SIZE sizeof(uint32_t)</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="bpt_8h.html#a19109100b4cc5ee9b812f76d8fbd0521">   13</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BPT_NODE_SIZE (BPT_NODE_NUM_ELEMENTS*BPT_NODE_ELEMENT_SIZE)</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="bpt_8h.html#a7d698ca014f176ed9fd14f0fa8814653">   15</a></span>&#160;<span class="preprocessor">#define BPT_ID(node) ((node)-&gt;data[0])</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="bpt_8h.html#a420729dc62e858277ea099b51b62326c">   16</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BPT_PARENT(node) ((node)-&gt;data[1])</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="bpt_8h.html#a6e805fe96c119a9377a4b5d9ad038062">   17</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BPT_IS_LEAF(node) ((node)-&gt;data[2])</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="bpt_8h.html#a6828665a410ae72ccefec278f656f68e">   18</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BPT_LEADING(node) ((node)-&gt;data[3])</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="bpt_8h.html#a496cc73a848e99f40e0be29b0fb9ed89">   19</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BPT_NEXT(node) ((node)-&gt;data[4])</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="bpt_8h.html#ae8be621ab7f108efe35bca65ebec65ef">   20</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BPT_NUM_KEYS(node) ((node)-&gt;data[5])</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="bpt_8h.html#a51fbcac28b7ad8eac64390658a1df57b">   21</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BPT_KEYS(node) ((node)-&gt;data + 6)</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="bpt_8h.html#a5f2f8b3983fc898c72d4dcc46ba5b36a">   22</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BPT_POINTERS(node) ((node)-&gt;data + (6+ORDER+1))</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="bpt_8h.html#a15fb57d0754f717d227dcfba713302a9">   24</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structordered__set.html">ordered_set</a> *<a class="code" href="bpt_8h.html#a15fb57d0754f717d227dcfba713302a9">id_to_offset_map</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structbpt__node.html">   26</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbpt__node.html">bpt_node</a> </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// 0 parent</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// 1 is_leaf</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// 2 leading</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// 3 next</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// 4 num_keys</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// [5 ... 5+(ORDER+1)]</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// [(5+(ORDER+1)) ... ((5+ORDER+1)+1)+(ORDER+2))</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// Total size is 5+(ORDER+1)+(ORDER+2) = 2*ORDER + 9</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structbpt__node.html#aa46837a65345b1209d79777387cf2f3d">   38</a></span>&#160;    uint32_t *<a class="code" href="structbpt__node.html#aa46837a65345b1209d79777387cf2f3d">data</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;uint64_t <a class="code" href="bpt_8h.html#affde2092fffe21602aa70ca49ce0ac5f">bpt_node_serialize</a>(<span class="keywordtype">void</span> *deserialized, <span class="keywordtype">void</span> **serialized);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;uint64_t <a class="code" href="bpt_8h.html#afb8e0a3eef338e0f8f328212379f3257">bpt_node_deserialize</a>(<span class="keywordtype">void</span> *serialized,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                              uint64_t serialized_size,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                              <span class="keywordtype">void</span> **deserialized);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span> <a class="code" href="bpt_8h.html#a09ae2b9a9097078c629b2316a52f185f">bpt_node_free_mem</a>(<span class="keywordtype">void</span> **deserialized);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="bpt_8h.html#add9327e690ad0291e950cca3b765ce38">   47</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structcache__handler.html">cache_handler</a> <a class="code" href="bpt_8h.html#add9327e690ad0291e950cca3b765ce38">bpt_node_cache_handler</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">struct </span><a class="code" href="structbpt__node.html">bpt_node</a> *<a class="code" href="bpt_8h.html#a66affff2018650c24ac95ebeb6b830d8">bpt_new_node</a>(uint32_t domain);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;uint32_t <a class="code" href="bpt_8h.html#ac5d7c8d820a3f1f581bceb7e94dc0acb">bpt_find_leaf</a>(uint32_t domain, uint32_t curr, uint32_t key);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;uint32_t <a class="code" href="bpt_8h.html#a32cd7bbd689554ac1d69e6078860d495">bpt_place_new_key_value</a>(uint32_t domain,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                 uint32_t root_id,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                 uint32_t *target_id,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                 <span class="keywordtype">int</span> *target_key_pos,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                 uint32_t key,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                 uint32_t value_id,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                 <span class="keyword">struct</span> <a class="code" href="structcache__handler.html">cache_handler</a> *handler);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;uint32_t <a class="code" href="bpt_8h.html#a1eb9f11a1fbe7fcd9f73e7e72080bb9f">bpt_split_node</a>(uint32_t domain,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                        uint32_t root_id,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                        uint32_t bpt_node_id,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                        uint32_t *lo_result_id,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                        uint32_t *hi_result_id,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                        <span class="keywordtype">int</span> *lo_hi_split_point,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                        <span class="keywordtype">void</span> (*repair)(uint32_t domain,</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                       <span class="keyword">struct</span> <a class="code" href="structbpt__node.html">bpt_node</a> *,</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                       <span class="keyword">struct</span> <a class="code" href="structbpt__node.html">bpt_node</a> *));</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="bpt_8h.html#a33bc4e33e4c8064daa0ce694a8ea5b2f">   71</a></span>&#160;void (*<a class="code" href="bpt_8h.html#a33bc4e33e4c8064daa0ce694a8ea5b2f">bpt_node_repair</a>)(uint32_t domain, <span class="keyword">struct </span><a class="code" href="structbpt__node.html">bpt_node</a> *, <span class="keyword">struct </span><a class="code" href="structbpt__node.html">bpt_node</a> *);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//uint64_t (*serialize_leading)(void *deserialized, uint8_t **serialized);</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">//uint64_t (*serialize_pointer)(void *deserialized, uint8_t **serialized);</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">//uint64_t serialize_uint32_t(void *deserialized, uint8_t **serialized);</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="bpt_8h.html#a7479fe4bd21789193960e71273b868f4">   77</a></span>&#160;void (*<a class="code" href="bpt_8h.html#a7479fe4bd21789193960e71273b868f4">append</a>)(uint32_t domain,</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;               uint32_t new_value_id,</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;               uint32_t existing_value_id,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;               <span class="keyword">struct </span><a class="code" href="structcache__handler.html">cache_handler</a> *handler);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">//struct bpt_node *bpt_to_node(void *n);</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;uint32_t <a class="code" href="bpt_8h.html#a4b0bca3ea258bbe02b7da96cb01ac805">bpt_insert</a>(uint32_t domain,</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                    uint32_t root_id,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                    uint32_t key,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                    uint32_t value_id,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    <span class="keyword">struct</span> <a class="code" href="structcache__handler.html">cache_handler</a> *handler,</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                    uint32_t *leaf_id,</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                    <span class="keywordtype">int</span> *pos);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;uint32_t <a class="code" href="bpt_8h.html#ad5fd7cb3becfc64e139b0501b8a2c0f7">bpt_insert_new_value</a>(uint32_t domain,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                              uint32_t root_id,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                              uint32_t key,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                              <span class="keywordtype">void</span> *value,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                              <span class="keyword">struct</span> <a class="code" href="structcache__handler.html">cache_handler</a> *handler,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                              uint32_t *value_id,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                              uint32_t *leaf_id,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                              <span class="keywordtype">int</span> *pos);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">//void bpt_print_tree(struct bpt_node *curr, int level);</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">//void pbt_print_node(struct bpt_node *bpt_node);</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordtype">int</span> <a class="code" href="bpt_8h.html#ad70ee0a6e41825f14874c9d8105555c8">b_search</a>(uint32_t key, uint32_t *D, uint32_t D_size);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keywordtype">int</span> <a class="code" href="bpt_8h.html#a1dd2625a37253e8fb26f39eb80c5d03b">bpt_find_insert_pos</a>(<span class="keyword">struct</span> <a class="code" href="structbpt__node.html">bpt_node</a> *leaf, uint32_t key);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;uint32_t <a class="code" href="bpt_8h.html#a82816f83bc191b4e48f81a4106d1bd82">bpt_find</a>(uint32_t domain,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                  uint32_t root_id,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                  uint32_t *leaf_id,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                  <span class="keywordtype">int</span> *pos,</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                  uint32_t key);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keywordtype">void</span> <a class="code" href="bpt_8h.html#af2a9fba171bd364f14a96947e8ba543b">bpt_destroy_tree</a>(<span class="keyword">struct</span> <a class="code" href="structbpt__node.html">bpt_node</a> **root);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="bpt_8h.html#a36131eb22db7c95bbab5a5c8617fe7c9">bpt_write_tree</a>(uint32_t domain, uint32_t root_id);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keywordtype">void</span> <a class="code" href="bpt_8h.html#aba5b3aaead0ed6e28c32839282b73887">bpt_print_node</a>(<span class="keyword">struct</span> <a class="code" href="structbpt__node.html">bpt_node</a> *node);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lists_8h.html">lists.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cache_8h.html">cache.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="bpt_8h.html#a8191377efaf4c23e85b2e1276473c805">   10</a></span>&#160;uint32_t <a class="code" href="bpt_8h.html#a8191377efaf4c23e85b2e1276473c805">ORDER</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="bpt_8h.html#a16a3964b377fc7933b1680793b2d6fb5">   12</a></span>&#160;<span class="preprocessor">#define BPT_NODE_NUM_ELEMENTS (2*ORDER+9)</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="bpt_8h.html#a56d1365215177b1cdf6958b70bf7173b">   13</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BPT_NODE_ELEMENT_SIZE sizeof(uint32_t)</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="bpt_8h.html#a19109100b4cc5ee9b812f76d8fbd0521">   14</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BPT_NODE_SIZE (BPT_NODE_NUM_ELEMENTS*BPT_NODE_ELEMENT_SIZE)</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="bpt_8h.html#a7d698ca014f176ed9fd14f0fa8814653">   16</a></span>&#160;<span class="preprocessor">#define BPT_ID(node) ((node)-&gt;data[0])</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="bpt_8h.html#a420729dc62e858277ea099b51b62326c">   17</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BPT_PARENT(node) ((node)-&gt;data[1])</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="bpt_8h.html#a6e805fe96c119a9377a4b5d9ad038062">   18</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BPT_IS_LEAF(node) ((node)-&gt;data[2])</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="bpt_8h.html#a6828665a410ae72ccefec278f656f68e">   19</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BPT_LEADING(node) ((node)-&gt;data[3])</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="bpt_8h.html#a496cc73a848e99f40e0be29b0fb9ed89">   20</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BPT_NEXT(node) ((node)-&gt;data[4])</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="bpt_8h.html#ae8be621ab7f108efe35bca65ebec65ef">   21</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BPT_NUM_KEYS(node) ((node)-&gt;data[5])</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="bpt_8h.html#a51fbcac28b7ad8eac64390658a1df57b">   22</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BPT_KEYS(node) ((node)-&gt;data + 6)</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="bpt_8h.html#a5f2f8b3983fc898c72d4dcc46ba5b36a">   23</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BPT_POINTERS(node) ((node)-&gt;data + (6+ORDER+1))</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="bpt_8h.html#a15fb57d0754f717d227dcfba713302a9">   25</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structordered__set.html">ordered_set</a> *<a class="code" href="bpt_8h.html#a15fb57d0754f717d227dcfba713302a9">id_to_offset_map</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structbpt__node.html">   27</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbpt__node.html">bpt_node</a> </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// 0 parent</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// 1 is_leaf</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// 2 leading</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// 3 next</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// 4 num_keys</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// [5 ... 5+(ORDER+1)]</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// [(5+(ORDER+1)) ... ((5+ORDER+1)+1)+(ORDER+2))</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// Total size is 5+(ORDER+1)+(ORDER+2) = 2*ORDER + 9</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structbpt__node.html#aa46837a65345b1209d79777387cf2f3d">   39</a></span>&#160;    uint32_t *<a class="code" href="structbpt__node.html#aa46837a65345b1209d79777387cf2f3d">data</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;uint64_t <a class="code" href="bpt_8h.html#affde2092fffe21602aa70ca49ce0ac5f">bpt_node_serialize</a>(<span class="keywordtype">void</span> *deserialized, <span class="keywordtype">void</span> **serialized);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;uint64_t <a class="code" href="bpt_8h.html#afb8e0a3eef338e0f8f328212379f3257">bpt_node_deserialize</a>(<span class="keywordtype">void</span> *serialized,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                              uint64_t serialized_size,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                              <span class="keywordtype">void</span> **deserialized);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="bpt_8h.html#a09ae2b9a9097078c629b2316a52f185f">bpt_node_free_mem</a>(<span class="keywordtype">void</span> **deserialized);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="bpt_8h.html#add9327e690ad0291e950cca3b765ce38">   48</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structcache__handler.html">cache_handler</a> <a class="code" href="bpt_8h.html#add9327e690ad0291e950cca3b765ce38">bpt_node_cache_handler</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">struct </span><a class="code" href="structbpt__node.html">bpt_node</a> *<a class="code" href="bpt_8h.html#a66affff2018650c24ac95ebeb6b830d8">bpt_new_node</a>(uint32_t domain);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;uint32_t <a class="code" href="bpt_8h.html#ac5d7c8d820a3f1f581bceb7e94dc0acb">bpt_find_leaf</a>(uint32_t domain, uint32_t curr, uint32_t key);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;uint32_t <a class="code" href="bpt_8h.html#a32cd7bbd689554ac1d69e6078860d495">bpt_place_new_key_value</a>(uint32_t domain,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                 uint32_t root_id,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                 uint32_t *target_id,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                 <span class="keywordtype">int</span> *target_key_pos,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                 uint32_t key,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                 uint32_t value_id,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                 <span class="keyword">struct</span> <a class="code" href="structcache__handler.html">cache_handler</a> *handler);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;uint32_t <a class="code" href="bpt_8h.html#a1eb9f11a1fbe7fcd9f73e7e72080bb9f">bpt_split_node</a>(uint32_t domain,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                        uint32_t root_id,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                        uint32_t bpt_node_id,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                        uint32_t *lo_result_id,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                        uint32_t *hi_result_id,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                        <span class="keywordtype">int</span> *lo_hi_split_point,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                        <span class="keywordtype">void</span> (*repair)(uint32_t domain,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                       <span class="keyword">struct</span> <a class="code" href="structbpt__node.html">bpt_node</a> *,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                       <span class="keyword">struct</span> <a class="code" href="structbpt__node.html">bpt_node</a> *));</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="bpt_8h.html#a33bc4e33e4c8064daa0ce694a8ea5b2f">   72</a></span>&#160;void (*<a class="code" href="bpt_8h.html#a33bc4e33e4c8064daa0ce694a8ea5b2f">bpt_node_repair</a>)(uint32_t domain, <span class="keyword">struct </span><a class="code" href="structbpt__node.html">bpt_node</a> *, <span class="keyword">struct </span><a class="code" href="structbpt__node.html">bpt_node</a> *);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">//uint64_t (*serialize_leading)(void *deserialized, uint8_t **serialized);</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">//uint64_t (*serialize_pointer)(void *deserialized, uint8_t **serialized);</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">//uint64_t serialize_uint32_t(void *deserialized, uint8_t **serialized);</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="bpt_8h.html#a7479fe4bd21789193960e71273b868f4">   78</a></span>&#160;void (*<a class="code" href="bpt_8h.html#a7479fe4bd21789193960e71273b868f4">append</a>)(uint32_t domain,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;               uint32_t new_value_id,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;               uint32_t existing_value_id,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;               <span class="keyword">struct </span><a class="code" href="structcache__handler.html">cache_handler</a> *handler);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">//struct bpt_node *bpt_to_node(void *n);</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;uint32_t <a class="code" href="bpt_8h.html#a4b0bca3ea258bbe02b7da96cb01ac805">bpt_insert</a>(uint32_t domain,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                    uint32_t root_id,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                    uint32_t key,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    uint32_t value_id,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                    <span class="keyword">struct</span> <a class="code" href="structcache__handler.html">cache_handler</a> *handler,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                    uint32_t *leaf_id,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                    <span class="keywordtype">int</span> *pos);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;uint32_t <a class="code" href="bpt_8h.html#ad5fd7cb3becfc64e139b0501b8a2c0f7">bpt_insert_new_value</a>(uint32_t domain,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                              uint32_t root_id,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                              uint32_t key,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                              <span class="keywordtype">void</span> *value,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                              <span class="keyword">struct</span> <a class="code" href="structcache__handler.html">cache_handler</a> *handler,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                              uint32_t *value_id,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                              uint32_t *leaf_id,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                              <span class="keywordtype">int</span> *pos);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">//void bpt_print_tree(struct bpt_node *curr, int level);</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">//void pbt_print_node(struct bpt_node *bpt_node);</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">int</span> <a class="code" href="bpt_8h.html#ad70ee0a6e41825f14874c9d8105555c8">b_search</a>(uint32_t key, uint32_t *D, uint32_t D_size);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keywordtype">int</span> <a class="code" href="bpt_8h.html#a1dd2625a37253e8fb26f39eb80c5d03b">bpt_find_insert_pos</a>(<span class="keyword">struct</span> <a class="code" href="structbpt__node.html">bpt_node</a> *leaf, uint32_t key);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;uint32_t <a class="code" href="bpt_8h.html#a82816f83bc191b4e48f81a4106d1bd82">bpt_find</a>(uint32_t domain,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                  uint32_t root_id,</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                  uint32_t *leaf_id,</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                  <span class="keywordtype">int</span> *pos,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                  uint32_t key);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">void</span> <a class="code" href="bpt_8h.html#af2a9fba171bd364f14a96947e8ba543b">bpt_destroy_tree</a>(<span class="keyword">struct</span> <a class="code" href="structbpt__node.html">bpt_node</a> **root);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="bpt_8h.html#a36131eb22db7c95bbab5a5c8617fe7c9">bpt_write_tree</a>(uint32_t domain, uint32_t root_id);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">void</span> <a class="code" href="bpt_8h.html#aba5b3aaead0ed6e28c32839282b73887">bpt_print_node</a>(<span class="keyword">struct</span> <a class="code" href="structbpt__node.html">bpt_node</a> *node);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="lists_8h_html"><div class="ttname"><a href="lists_8h.html">lists.h</a></div></div>
-<div class="ttc" id="bpt_8h_html_a33bc4e33e4c8064daa0ce694a8ea5b2f"><div class="ttname"><a href="bpt_8h.html#a33bc4e33e4c8064daa0ce694a8ea5b2f">bpt_node_repair</a></div><div class="ttdeci">void(* bpt_node_repair)(uint32_t domain, struct bpt_node *, struct bpt_node *)</div><div class="ttdef"><b>Definition:</b> bpt.h:71</div></div>
-<div class="ttc" id="bpt_8h_html_a1eb9f11a1fbe7fcd9f73e7e72080bb9f"><div class="ttname"><a href="bpt_8h.html#a1eb9f11a1fbe7fcd9f73e7e72080bb9f">bpt_split_node</a></div><div class="ttdeci">uint32_t bpt_split_node(uint32_t domain, uint32_t root_id, uint32_t bpt_node_id, uint32_t *lo_result_id, uint32_t *hi_result_id, int *lo_hi_split_point, void(*repair)(uint32_t domain, struct bpt_node *, struct bpt_node *))</div><div class="ttdef"><b>Definition:</b> bpt.c:141</div></div>
-<div class="ttc" id="bpt_8h_html_a32cd7bbd689554ac1d69e6078860d495"><div class="ttname"><a href="bpt_8h.html#a32cd7bbd689554ac1d69e6078860d495">bpt_place_new_key_value</a></div><div class="ttdeci">uint32_t bpt_place_new_key_value(uint32_t domain, uint32_t root_id, uint32_t *target_id, int *target_key_pos, uint32_t key, uint32_t value_id, struct cache_handler *handler)</div><div class="ttdef"><b>Definition:</b> bpt.c:257</div></div>
-<div class="ttc" id="bpt_8h_html_a36131eb22db7c95bbab5a5c8617fe7c9"><div class="ttname"><a href="bpt_8h.html#a36131eb22db7c95bbab5a5c8617fe7c9">bpt_write_tree</a></div><div class="ttdeci">bool bpt_write_tree(uint32_t domain, uint32_t root_id)</div><div class="ttdef"><b>Definition:</b> bpt.c:486</div></div>
-<div class="ttc" id="structcache__handler_html"><div class="ttname"><a href="structcache__handler.html">cache_handler</a></div><div class="ttdef"><b>Definition:</b> cache.h:9</div></div>
-<div class="ttc" id="bpt_8h_html_a15fb57d0754f717d227dcfba713302a9"><div class="ttname"><a href="bpt_8h.html#a15fb57d0754f717d227dcfba713302a9">id_to_offset_map</a></div><div class="ttdeci">struct ordered_set * id_to_offset_map</div><div class="ttdef"><b>Definition:</b> bpt.h:24</div></div>
-<div class="ttc" id="structbpt__node_html_aa46837a65345b1209d79777387cf2f3d"><div class="ttname"><a href="structbpt__node.html#aa46837a65345b1209d79777387cf2f3d">bpt_node::data</a></div><div class="ttdeci">uint32_t * data</div><div class="ttdef"><b>Definition:</b> bpt.h:38</div></div>
-<div class="ttc" id="bpt_8h_html_ac5d7c8d820a3f1f581bceb7e94dc0acb"><div class="ttname"><a href="bpt_8h.html#ac5d7c8d820a3f1f581bceb7e94dc0acb">bpt_find_leaf</a></div><div class="ttdeci">uint32_t bpt_find_leaf(uint32_t domain, uint32_t curr, uint32_t key)</div><div class="ttdef"><b>Definition:</b> bpt.c:109</div></div>
-<div class="ttc" id="bpt_8h_html_ad70ee0a6e41825f14874c9d8105555c8"><div class="ttname"><a href="bpt_8h.html#ad70ee0a6e41825f14874c9d8105555c8">b_search</a></div><div class="ttdeci">int b_search(uint32_t key, uint32_t *D, uint32_t D_size)</div><div class="ttdef"><b>Definition:</b> bpt.c:32</div></div>
-<div class="ttc" id="bpt_8h_html_a4b0bca3ea258bbe02b7da96cb01ac805"><div class="ttname"><a href="bpt_8h.html#a4b0bca3ea258bbe02b7da96cb01ac805">bpt_insert</a></div><div class="ttdeci">uint32_t bpt_insert(uint32_t domain, uint32_t root_id, uint32_t key, uint32_t value_id, struct cache_handler *handler, uint32_t *leaf_id, int *pos)</div><div class="ttdef"><b>Definition:</b> bpt.c:385</div></div>
+<div class="ttc" id="bpt_8h_html_a33bc4e33e4c8064daa0ce694a8ea5b2f"><div class="ttname"><a href="bpt_8h.html#a33bc4e33e4c8064daa0ce694a8ea5b2f">bpt_node_repair</a></div><div class="ttdeci">void(* bpt_node_repair)(uint32_t domain, struct bpt_node *, struct bpt_node *)</div><div class="ttdef"><b>Definition:</b> bpt.h:72</div></div>
+<div class="ttc" id="bpt_8h_html_a1eb9f11a1fbe7fcd9f73e7e72080bb9f"><div class="ttname"><a href="bpt_8h.html#a1eb9f11a1fbe7fcd9f73e7e72080bb9f">bpt_split_node</a></div><div class="ttdeci">uint32_t bpt_split_node(uint32_t domain, uint32_t root_id, uint32_t bpt_node_id, uint32_t *lo_result_id, uint32_t *hi_result_id, int *lo_hi_split_point, void(*repair)(uint32_t domain, struct bpt_node *, struct bpt_node *))</div><div class="ttdef"><b>Definition:</b> bpt.c:146</div></div>
+<div class="ttc" id="bpt_8h_html_a32cd7bbd689554ac1d69e6078860d495"><div class="ttname"><a href="bpt_8h.html#a32cd7bbd689554ac1d69e6078860d495">bpt_place_new_key_value</a></div><div class="ttdeci">uint32_t bpt_place_new_key_value(uint32_t domain, uint32_t root_id, uint32_t *target_id, int *target_key_pos, uint32_t key, uint32_t value_id, struct cache_handler *handler)</div><div class="ttdef"><b>Definition:</b> bpt.c:262</div></div>
+<div class="ttc" id="bpt_8h_html_a36131eb22db7c95bbab5a5c8617fe7c9"><div class="ttname"><a href="bpt_8h.html#a36131eb22db7c95bbab5a5c8617fe7c9">bpt_write_tree</a></div><div class="ttdeci">bool bpt_write_tree(uint32_t domain, uint32_t root_id)</div><div class="ttdef"><b>Definition:</b> bpt.c:491</div></div>
+<div class="ttc" id="structcache__handler_html"><div class="ttname"><a href="structcache__handler.html">cache_handler</a></div><div class="ttdef"><b>Definition:</b> cache.h:10</div></div>
+<div class="ttc" id="bpt_8h_html_a15fb57d0754f717d227dcfba713302a9"><div class="ttname"><a href="bpt_8h.html#a15fb57d0754f717d227dcfba713302a9">id_to_offset_map</a></div><div class="ttdeci">struct ordered_set * id_to_offset_map</div><div class="ttdef"><b>Definition:</b> bpt.h:25</div></div>
+<div class="ttc" id="structbpt__node_html_aa46837a65345b1209d79777387cf2f3d"><div class="ttname"><a href="structbpt__node.html#aa46837a65345b1209d79777387cf2f3d">bpt_node::data</a></div><div class="ttdeci">uint32_t * data</div><div class="ttdef"><b>Definition:</b> bpt.h:39</div></div>
+<div class="ttc" id="bpt_8h_html_ac5d7c8d820a3f1f581bceb7e94dc0acb"><div class="ttname"><a href="bpt_8h.html#ac5d7c8d820a3f1f581bceb7e94dc0acb">bpt_find_leaf</a></div><div class="ttdeci">uint32_t bpt_find_leaf(uint32_t domain, uint32_t curr, uint32_t key)</div><div class="ttdef"><b>Definition:</b> bpt.c:111</div></div>
+<div class="ttc" id="bpt_8h_html_ad70ee0a6e41825f14874c9d8105555c8"><div class="ttname"><a href="bpt_8h.html#ad70ee0a6e41825f14874c9d8105555c8">b_search</a></div><div class="ttdeci">int b_search(uint32_t key, uint32_t *D, uint32_t D_size)</div><div class="ttdef"><b>Definition:</b> bpt.c:34</div></div>
+<div class="ttc" id="bpt_8h_html_a4b0bca3ea258bbe02b7da96cb01ac805"><div class="ttname"><a href="bpt_8h.html#a4b0bca3ea258bbe02b7da96cb01ac805">bpt_insert</a></div><div class="ttdeci">uint32_t bpt_insert(uint32_t domain, uint32_t root_id, uint32_t key, uint32_t value_id, struct cache_handler *handler, uint32_t *leaf_id, int *pos)</div><div class="ttdef"><b>Definition:</b> bpt.c:390</div></div>
 <div class="ttc" id="bpt_8h_html_af2a9fba171bd364f14a96947e8ba543b"><div class="ttname"><a href="bpt_8h.html#af2a9fba171bd364f14a96947e8ba543b">bpt_destroy_tree</a></div><div class="ttdeci">void bpt_destroy_tree(struct bpt_node **root)</div></div>
 <div class="ttc" id="cache_8h_html"><div class="ttname"><a href="cache_8h.html">cache.h</a></div></div>
-<div class="ttc" id="bpt_8h_html_aba5b3aaead0ed6e28c32839282b73887"><div class="ttname"><a href="bpt_8h.html#aba5b3aaead0ed6e28c32839282b73887">bpt_print_node</a></div><div class="ttdeci">void bpt_print_node(struct bpt_node *node)</div><div class="ttdef"><b>Definition:</b> bpt.c:744</div></div>
-<div class="ttc" id="bpt_8h_html_a8191377efaf4c23e85b2e1276473c805"><div class="ttname"><a href="bpt_8h.html#a8191377efaf4c23e85b2e1276473c805">ORDER</a></div><div class="ttdeci">uint32_t ORDER</div><div class="ttdef"><b>Definition:</b> bpt.h:9</div></div>
-<div class="ttc" id="bpt_8h_html_a09ae2b9a9097078c629b2316a52f185f"><div class="ttname"><a href="bpt_8h.html#a09ae2b9a9097078c629b2316a52f185f">bpt_node_free_mem</a></div><div class="ttdeci">void bpt_node_free_mem(void **deserialized)</div><div class="ttdef"><b>Definition:</b> bpt.c:83</div></div>
-<div class="ttc" id="bpt_8h_html_a1dd2625a37253e8fb26f39eb80c5d03b"><div class="ttname"><a href="bpt_8h.html#a1dd2625a37253e8fb26f39eb80c5d03b">bpt_find_insert_pos</a></div><div class="ttdeci">int bpt_find_insert_pos(struct bpt_node *leaf, uint32_t key)</div><div class="ttdef"><b>Definition:</b> bpt.c:134</div></div>
-<div class="ttc" id="bpt_8h_html_a82816f83bc191b4e48f81a4106d1bd82"><div class="ttname"><a href="bpt_8h.html#a82816f83bc191b4e48f81a4106d1bd82">bpt_find</a></div><div class="ttdeci">uint32_t bpt_find(uint32_t domain, uint32_t root_id, uint32_t *leaf_id, int *pos, uint32_t key)</div><div class="ttdef"><b>Definition:</b> bpt.c:456</div></div>
-<div class="ttc" id="structbpt__node_html"><div class="ttname"><a href="structbpt__node.html">bpt_node</a></div><div class="ttdef"><b>Definition:</b> bpt.h:26</div></div>
-<div class="ttc" id="bpt_8h_html_affde2092fffe21602aa70ca49ce0ac5f"><div class="ttname"><a href="bpt_8h.html#affde2092fffe21602aa70ca49ce0ac5f">bpt_node_serialize</a></div><div class="ttdeci">uint64_t bpt_node_serialize(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> bpt.c:49</div></div>
-<div class="ttc" id="bpt_8h_html_ad5fd7cb3becfc64e139b0501b8a2c0f7"><div class="ttname"><a href="bpt_8h.html#ad5fd7cb3becfc64e139b0501b8a2c0f7">bpt_insert_new_value</a></div><div class="ttdeci">uint32_t bpt_insert_new_value(uint32_t domain, uint32_t root_id, uint32_t key, void *value, struct cache_handler *handler, uint32_t *value_id, uint32_t *leaf_id, int *pos)</div><div class="ttdef"><b>Definition:</b> bpt.c:430</div></div>
-<div class="ttc" id="bpt_8h_html_afb8e0a3eef338e0f8f328212379f3257"><div class="ttname"><a href="bpt_8h.html#afb8e0a3eef338e0f8f328212379f3257">bpt_node_deserialize</a></div><div class="ttdeci">uint64_t bpt_node_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> bpt.c:65</div></div>
+<div class="ttc" id="bpt_8h_html_aba5b3aaead0ed6e28c32839282b73887"><div class="ttname"><a href="bpt_8h.html#aba5b3aaead0ed6e28c32839282b73887">bpt_print_node</a></div><div class="ttdeci">void bpt_print_node(struct bpt_node *node)</div><div class="ttdef"><b>Definition:</b> bpt.c:749</div></div>
+<div class="ttc" id="bpt_8h_html_a8191377efaf4c23e85b2e1276473c805"><div class="ttname"><a href="bpt_8h.html#a8191377efaf4c23e85b2e1276473c805">ORDER</a></div><div class="ttdeci">uint32_t ORDER</div><div class="ttdef"><b>Definition:</b> bpt.h:10</div></div>
+<div class="ttc" id="bpt_8h_html_a09ae2b9a9097078c629b2316a52f185f"><div class="ttname"><a href="bpt_8h.html#a09ae2b9a9097078c629b2316a52f185f">bpt_node_free_mem</a></div><div class="ttdeci">void bpt_node_free_mem(void **deserialized)</div><div class="ttdef"><b>Definition:</b> bpt.c:85</div></div>
+<div class="ttc" id="bpt_8h_html_a1dd2625a37253e8fb26f39eb80c5d03b"><div class="ttname"><a href="bpt_8h.html#a1dd2625a37253e8fb26f39eb80c5d03b">bpt_find_insert_pos</a></div><div class="ttdeci">int bpt_find_insert_pos(struct bpt_node *leaf, uint32_t key)</div><div class="ttdef"><b>Definition:</b> bpt.c:139</div></div>
+<div class="ttc" id="bpt_8h_html_a82816f83bc191b4e48f81a4106d1bd82"><div class="ttname"><a href="bpt_8h.html#a82816f83bc191b4e48f81a4106d1bd82">bpt_find</a></div><div class="ttdeci">uint32_t bpt_find(uint32_t domain, uint32_t root_id, uint32_t *leaf_id, int *pos, uint32_t key)</div><div class="ttdef"><b>Definition:</b> bpt.c:461</div></div>
+<div class="ttc" id="structbpt__node_html"><div class="ttname"><a href="structbpt__node.html">bpt_node</a></div><div class="ttdef"><b>Definition:</b> bpt.h:27</div></div>
+<div class="ttc" id="bpt_8h_html_affde2092fffe21602aa70ca49ce0ac5f"><div class="ttname"><a href="bpt_8h.html#affde2092fffe21602aa70ca49ce0ac5f">bpt_node_serialize</a></div><div class="ttdeci">uint64_t bpt_node_serialize(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> bpt.c:51</div></div>
+<div class="ttc" id="bpt_8h_html_ad5fd7cb3becfc64e139b0501b8a2c0f7"><div class="ttname"><a href="bpt_8h.html#ad5fd7cb3becfc64e139b0501b8a2c0f7">bpt_insert_new_value</a></div><div class="ttdeci">uint32_t bpt_insert_new_value(uint32_t domain, uint32_t root_id, uint32_t key, void *value, struct cache_handler *handler, uint32_t *value_id, uint32_t *leaf_id, int *pos)</div><div class="ttdef"><b>Definition:</b> bpt.c:435</div></div>
+<div class="ttc" id="bpt_8h_html_afb8e0a3eef338e0f8f328212379f3257"><div class="ttname"><a href="bpt_8h.html#afb8e0a3eef338e0f8f328212379f3257">bpt_node_deserialize</a></div><div class="ttdeci">uint64_t bpt_node_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> bpt.c:67</div></div>
 <div class="ttc" id="structordered__set_html"><div class="ttname"><a href="structordered__set.html">ordered_set</a></div><div class="ttdef"><b>Definition:</b> lists.h:69</div></div>
-<div class="ttc" id="bpt_8h_html_add9327e690ad0291e950cca3b765ce38"><div class="ttname"><a href="bpt_8h.html#add9327e690ad0291e950cca3b765ce38">bpt_node_cache_handler</a></div><div class="ttdeci">struct cache_handler bpt_node_cache_handler</div><div class="ttdef"><b>Definition:</b> bpt.h:47</div></div>
-<div class="ttc" id="bpt_8h_html_a66affff2018650c24ac95ebeb6b830d8"><div class="ttname"><a href="bpt_8h.html#a66affff2018650c24ac95ebeb6b830d8">bpt_new_node</a></div><div class="ttdeci">struct bpt_node * bpt_new_node(uint32_t domain)</div><div class="ttdef"><b>Definition:</b> bpt.c:94</div></div>
-<div class="ttc" id="bpt_8h_html_a7479fe4bd21789193960e71273b868f4"><div class="ttname"><a href="bpt_8h.html#a7479fe4bd21789193960e71273b868f4">append</a></div><div class="ttdeci">void(* append)(uint32_t domain, uint32_t new_value_id, uint32_t existing_value_id, struct cache_handler *handler)</div><div class="ttdef"><b>Definition:</b> bpt.h:77</div></div>
+<div class="ttc" id="bpt_8h_html_add9327e690ad0291e950cca3b765ce38"><div class="ttname"><a href="bpt_8h.html#add9327e690ad0291e950cca3b765ce38">bpt_node_cache_handler</a></div><div class="ttdeci">struct cache_handler bpt_node_cache_handler</div><div class="ttdef"><b>Definition:</b> bpt.h:48</div></div>
+<div class="ttc" id="bpt_8h_html_a66affff2018650c24ac95ebeb6b830d8"><div class="ttname"><a href="bpt_8h.html#a66affff2018650c24ac95ebeb6b830d8">bpt_new_node</a></div><div class="ttdeci">struct bpt_node * bpt_new_node(uint32_t domain)</div><div class="ttdef"><b>Definition:</b> bpt.c:96</div></div>
+<div class="ttc" id="bpt_8h_html_a7479fe4bd21789193960e71273b868f4"><div class="ttname"><a href="bpt_8h.html#a7479fe4bd21789193960e71273b868f4">append</a></div><div class="ttdeci">void(* append)(uint32_t domain, uint32_t new_value_id, uint32_t existing_value_id, struct cache_handler *handler)</div><div class="ttdef"><b>Definition:</b> bpt.h:78</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 9 2016 12:22:18 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 29 2016 10:28:05 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

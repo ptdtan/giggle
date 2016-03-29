@@ -37,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,6 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li class="current"><a href="functions.html"><span>All</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -123,8 +123,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
 <li>B
 : <a class="el" href="structuint32__t__ll__bpt__leading__data.html#a124e6bbf71fe85e6609926aa44829ff9">uint32_t_ll_bpt_leading_data</a>
-, <a class="el" href="structwah__16__bpt__leading__data.html#ade4088ed0d039792a2ff1b420f1e1543">wah_16_bpt_leading_data</a>
-, <a class="el" href="structwah__8__bpt__leading__data.html#a7e87da7741ccadca837786f75a093812">wah_8_bpt_leading_data</a>
+, <a class="el" href="structwah__bpt__leading__data.html#a7dd4ef17208a4ae214a0bd239e4118d3">wah_bpt_leading_data</a>
+</li>
+<li>BCF
+: <a class="el" href="structinput__file.html#a83873e9ae9752ffbf9df3608749d0e6aa76f38477b58dc3c39ec043589fdd07e6">input_file</a>
+</li>
+<li>bcf_fp
+: <a class="el" href="structinput__file.html#a3752c0b61401791be013c401c57a210e">input_file</a>
+</li>
+<li>BED
+: <a class="el" href="structinput__file.html#a83873e9ae9752ffbf9df3608749d0e6aae0ef2c2a12df0414c1398c1bd732da8c">input_file</a>
+</li>
+<li>bed_fp
+: <a class="el" href="structinput__file.html#a2c5a7d3df3bb5907ecb9a32b8a6175f2">input_file</a>
 </li>
 <li>bm
 : <a class="el" href="structbit__map.html#afdd99a8c8fd90a6bb3b69de9a17717dc">bit_map</a>
@@ -134,11 +145,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>chrm
+: <a class="el" href="structregion.html#a1b4cfd0fce075792e4f939013ca358b0">region</a>
+</li>
 <li>chrm_index
 : <a class="el" href="structgiggle__index.html#a69160fb3233ca0cbf802a7128949d417">giggle_index</a>
 </li>
 <li>chrm_index_file_name
 : <a class="el" href="structgiggle__index.html#a52704a4a1681e71b9ce8fc35c788b42c">giggle_index</a>
+</li>
+<li>curr
+: <a class="el" href="structgiggle__query__iter.html#a3e553a4f06191e742ac6f689b6014e48">giggle_query_iter</a>
 </li>
 </ul>
 
@@ -192,12 +209,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>element_size
 : <a class="el" href="structindexed__list.html#afd954c9dd31cbbef84e906f705805eae">indexed_list</a>
 </li>
+<li>end
+: <a class="el" href="structregion.html#aba13c43bf1731c733baba2a94ef64e2a">region</a>
+</li>
 </ul>
 
 
 <h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
 <li>file_id
 : <a class="el" href="structfile__id__offset__pair.html#ace7378556435057e48ced965126ed135">file_id_offset_pair</a>
+, <a class="el" href="structgiggle__query__iter.html#a858fa87ad214f55101e52cf123454b9d">giggle_query_iter</a>
 </li>
 <li>file_index
 : <a class="el" href="structgiggle__index.html#a45339222ad7ea1c7bc68e0832414ab7f">giggle_index</a>
@@ -212,9 +233,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>first
 : <a class="el" href="structuint__pair.html#ada014e94c643f771c8366ef0e369a237">uint_pair</a>
 </li>
-<li>fp
-: <a class="el" href="structinput__file.html#a6a2696ba0ae55eea625a688a825b2b52">input_file</a>
-</li>
 <li>free_mem
 : <a class="el" href="structcache__handler.html#a6a0de210a250edf4284dd912c09da435">cache_handler</a>
 </li>
@@ -225,6 +243,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>get
 : <a class="el" href="structcache__def.html#a7aabffe2b566859c85fe11c4adeed428">cache_def</a>
 </li>
+<li>gi
+: <a class="el" href="structargs.html#a0714079db2c12c1913992b6db90aa0f7">args</a>
+, <a class="el" href="structgiggle__query__iter.html#a43646ffad6c6a5c8f0a10a143d45e16a">giggle_query_iter</a>
+, <a class="el" href="structgigle__query__result.html#aaae558f1b4068e5a928a8074d950e786">gigle_query_result</a>
+</li>
 </ul>
 
 
@@ -232,9 +255,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>handler
 : <a class="el" href="structvalue__cache__handler__pair.html#a1a9915fb3c7cab02e3ac8312cf4f6498">value_cache_handler_pair</a>
 </li>
+<li>hdr
+: <a class="el" href="structinput__file.html#ad44a84e106369b74a1d37b7c44d2eda7">input_file</a>
+</li>
 <li>head
 : <a class="el" href="structfifo__q.html#aeb05c7b0f4869c41e644b9617f331623">fifo_q</a>
+, <a class="el" href="structlong__ll.html#a364aa1c73317b600f4571f1f8750f42f">long_ll</a>
 , <a class="el" href="structuint32__t__ll.html#a996df632f505f7fa639ec0797a2942ce">uint32_t_ll</a>
+</li>
+<li>header
+: <a class="el" href="structargs.html#a3b4d732ae2b6c6d683a9f48305c4ffae">args</a>
 </li>
 </ul>
 
@@ -257,6 +287,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>init
 : <a class="el" href="structcache__def.html#a01f83e34550dc7c0ba0c3cf1336f3e89">cache_def</a>
+</li>
+<li>input_file_get_next_interval
+: <a class="el" href="structinput__file.html#aecaf503c0bb79e7920e2c87353e728c8">input_file</a>
+</li>
+<li>input_file_get_next_line
+: <a class="el" href="structinput__file.html#a24847fc944d7a895d4835ff1d5e21874">input_file</a>
+</li>
+<li>input_file_seek
+: <a class="el" href="structinput__file.html#afc4f78c00be8f6d667817b2f94d088f4">input_file</a>
+</li>
+<li>ipf
+: <a class="el" href="structgiggle__query__iter.html#ad4f5e21baee4dc92ee701b08c7b4752e">giggle_query_iter</a>
 </li>
 </ul>
 
@@ -283,7 +325,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>len
 : <a class="el" href="structgiggle__index.html#a7e04278d0cf5b32dbbd90be27754fc62">giggle_index</a>
+, <a class="el" href="structlong__ll.html#ae616ae6c8c361e9fcf0c3a024528d00d">long_ll</a>
 , <a class="el" href="structuint32__t__ll.html#a8cdd0057c1f96f023042862811ab0ea6">uint32_t_ll</a>
+</li>
+<li>line
+: <a class="el" href="structinput__file.html#ac832f1695aaecde9432f7045ee88cab6">input_file</a>
 </li>
 </ul>
 
@@ -291,6 +337,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
 <li>mean_interval_size
 : <a class="el" href="structfile__data.html#a00ee945f4a32147044634282204b7fe7">file_data</a>
+</li>
+<li>mutex
+: <a class="el" href="structsimple__cache.html#aab2f2d7fe543c4c528b9ec8ea9ad6efd">simple_cache</a>
 </li>
 </ul>
 
@@ -316,6 +365,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>next
 : <a class="el" href="structfifo__q__element.html#a3a3b14dbfee42dc0f6d7255711f36e61">fifo_q_element</a>
+, <a class="el" href="structlong__ll__node.html#af24e7e287173e6232d7e4eec90c3ef3b">long_ll_node</a>
 , <a class="el" href="structuint32__t__ll__node.html#aacc3feeccb1706fe47e368fe5a6786a9">uint32_t_ll_node</a>
 </li>
 <li>non_leading_cache_handler
@@ -336,7 +386,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>num
 : <a class="el" href="structbyte__array.html#a45ba963451e1d5b2b4812ae1d3178f68">byte_array</a>
 , <a class="el" href="structdisk__store.html#ae581d818440aef8b0ceaea9c0b4232c0">disk_store</a>
+, <a class="el" href="structfile__id__offset__pairs.html#a9e907a4f34bbe5c215053290ed17ed0f">file_id_offset_pairs</a>
 , <a class="el" href="structgiggle__index.html#a6a787d9a8c99352477a922ecf4009efb">giggle_index</a>
+, <a class="el" href="structgiggle__query__iter.html#a82dc53cb812288602c63fe55af0fc7f5">giggle_query_iter</a>
 , <a class="el" href="structordered__set.html#afd6483e8065e783e9bd8a612407b1ef8">ordered_set</a>
 , <a class="el" href="structunordered__list.html#a7cfc733706c67bd015a827a61f93a191">unordered_list</a>
 </li>
@@ -348,6 +400,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>num_domains
 : <a class="el" href="structsimple__cache.html#a4c9ac95d5a7b79c0eb300857c56898f3">simple_cache</a>
+</li>
+<li>num_files
+: <a class="el" href="structgigle__query__result.html#a3a9d5fda368cb16f1590f79c3310930e">gigle_query_result</a>
 </li>
 <li>num_intervals
 : <a class="el" href="structfile__data.html#a77a7037c4da46bc9aefa70e1d801f628">file_data</a>
@@ -368,13 +423,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="structuint__offset__size__pair.html#a5b777c4bbfb2d310c3597cf549aa64bb">uint_offset_size_pair</a>
 </li>
 <li>offset_index
-: <a class="el" href="structgiggle__index.html#a44fb755992080bf37272c7678fd80c08">giggle_index</a>
+: <a class="el" href="structgiggle__index.html#a761869b75bd0546c494a47cd1c535da5">giggle_index</a>
 </li>
 <li>offset_index_file_name
 : <a class="el" href="structgiggle__index.html#ac18e3d072a93ed225c58cc00ea81df8c">giggle_index</a>
 </li>
 <li>offsets
 : <a class="el" href="structdisk__store.html#ae352925717a5d0c783fad3192642ec8f">disk_store</a>
+, <a class="el" href="structgigle__query__result.html#a73a24b0b358161e362df97334a3d9dfe">gigle_query_result</a>
 </li>
 </ul>
 
@@ -405,13 +461,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>SA
 : <a class="el" href="structuint32__t__ll__bpt__non__leading__data.html#a0e6eb42d3e71d9004bb2bf62d8fd125f">uint32_t_ll_bpt_non_leading_data</a>
-, <a class="el" href="structwah__16__bpt__non__leading__data.html#a4d8b036a6e04d3cbbc1c0e61c61da000">wah_16_bpt_non_leading_data</a>
-, <a class="el" href="structwah__8__bpt__non__leading__data.html#a89228ac1eedc116e5bcd3a7904506acf">wah_8_bpt_non_leading_data</a>
+, <a class="el" href="structwah__bpt__non__leading__data.html#a7b8c9d48628d24b13ac4895b8be22f49">wah_bpt_non_leading_data</a>
 </li>
 <li>SE
 : <a class="el" href="structuint32__t__ll__bpt__non__leading__data.html#af3719991d20a2681bd5fe912f7c0e11d">uint32_t_ll_bpt_non_leading_data</a>
-, <a class="el" href="structwah__16__bpt__non__leading__data.html#ab4c6f8c43799b80dd9cd3546b908d50b">wah_16_bpt_non_leading_data</a>
-, <a class="el" href="structwah__8__bpt__non__leading__data.html#a11b5a139b44613de799d2764993f15e4">wah_8_bpt_non_leading_data</a>
+, <a class="el" href="structwah__bpt__non__leading__data.html#a4e5fa3a608f61685b097a4fdf803921f">wah_bpt_non_leading_data</a>
 </li>
 <li>search_element_cmp
 : <a class="el" href="structordered__set.html#a097111f2f76b0aea8e0c35164e31cfd1">ordered_set</a>
@@ -434,6 +488,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>size
 : <a class="el" href="structbyte__array.html#aa4e7a99dd3c3eebd38085e5bf1ca59c7">byte_array</a>
 , <a class="el" href="structdisk__store.html#ad87c29238e78daa4b00e1a5c708a240f">disk_store</a>
+, <a class="el" href="structfile__id__offset__pairs.html#a30cac04117dfd2141550c05cb9cd1f78">file_id_offset_pairs</a>
 , <a class="el" href="structindexed__list.html#a5cd5baf86b19a0a27b9ff0025a2d2739">indexed_list</a>
 , <a class="el" href="structoffset__size__pair.html#a75e110032d290d7796a3047d647ae017">offset_size_pair</a>
 , <a class="el" href="structordered__set.html#a017b6d739c781ba02eaf2532d4d087da">ordered_set</a>
@@ -446,11 +501,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>sort_element_cmp
 : <a class="el" href="structordered__set.html#a5236c9670d7541669db515fa583bc97d">ordered_set</a>
 </li>
+<li>sorted_offsets
+: <a class="el" href="structgiggle__query__iter.html#a9de601c6b5c02a42d07b88bbb6905e90">giggle_query_iter</a>
+</li>
+<li>start
+: <a class="el" href="structregion.html#ad943381faa61287ecd01f64caf35a5e9">region</a>
+</li>
 <li>store
 : <a class="el" href="structcache__def.html#a65ee708ebbcc1942136a611c9b668d45">cache_def</a>
 </li>
 <li>str
 : <a class="el" href="structstr__uint__pair.html#a003452030f006c79cc6c3070ed541d22">str_uint_pair</a>
+</li>
+<li>success
+: <a class="el" href="structregion.html#add29e2121af46bbb785f778203f682ef">region</a>
 </li>
 </ul>
 
@@ -458,7 +522,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
 <li>tail
 : <a class="el" href="structfifo__q.html#ae1c3fda0934fa638f59452c7c977aec6">fifo_q</a>
+, <a class="el" href="structlong__ll.html#a41d7bb272062a6030ba3d222de031989">long_ll</a>
 , <a class="el" href="structuint32__t__ll.html#aa96a5a705bcce4698b2fff62fe69c1b4">uint32_t_ll</a>
+</li>
+<li>track_names
+: <a class="el" href="structargs.html#ae3a1ab407ea479f2d924ea7866c188cc">args</a>
+</li>
+<li>type
+: <a class="el" href="structinput__file.html#ab0262a0fbcadbd538b6a6a78ea1b4df4">input_file</a>
 </li>
 </ul>
 
@@ -484,16 +555,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
 <li>val
 : <a class="el" href="structfifo__q__element.html#a0fbddf8be9a7b57f72e7201289629e16">fifo_q_element</a>
+, <a class="el" href="structlong__ll__node.html#af940292f7914b81d40ee35f8c6a50883">long_ll_node</a>
 , <a class="el" href="structuint32__t__ll__node.html#a9dfff8c2882bb57ef3f231e9cd5755c6">uint32_t_ll_node</a>
+</li>
+<li>vals
+: <a class="el" href="structfile__id__offset__pairs.html#ae8afe13a2d3c8db1a98c53e89756bcb2">file_id_offset_pairs</a>
 </li>
 <li>value
 : <a class="el" href="structvalue__cache__handler__pair.html#a7333e9d3f02711535a90bc669d438bbb">value_cache_handler_pair</a>
+</li>
+<li>VCF
+: <a class="el" href="structinput__file.html#a83873e9ae9752ffbf9df3608749d0e6aa1b823852da38620dcd0703d0770ee635">input_file</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 9 2016 12:22:18 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 29 2016 10:28:05 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -37,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -92,7 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">ll.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="giggle_8h_source.html">giggle.h</a>&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="giggle__index_8h_source.html">giggle_index.h</a>&quot;</code><br/>
 </div>
 <p><a href="ll_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -105,6 +104,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuint32__t__ll__node.html">uint32_t_ll_node</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuint32__t__ll.html">uint32_t_ll</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlong__ll__node.html">long_ll_node</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlong__ll.html">long_ll</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -119,6 +122,16 @@ Functions</h2></td></tr>
 <tr class="separator:a80006493caaa1ddf1da2e07320bf2f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a2e7bf9bb7d5aab3e3176cd27b91f55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8h.html#a5a2e7bf9bb7d5aab3e3176cd27b91f55">uint32_t_ll_free</a> (void **ll)</td></tr>
 <tr class="separator:a5a2e7bf9bb7d5aab3e3176cd27b91f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef80b2fce12e89737a7000ffb829b85c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8h.html#aef80b2fce12e89737a7000ffb829b85c">long_ll_append</a> (struct <a class="el" href="structlong__ll.html">long_ll</a> **ll, long val)</td></tr>
+<tr class="separator:aef80b2fce12e89737a7000ffb829b85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af05c5b005180da298ff871edacd2faf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8h.html#af05c5b005180da298ff871edacd2faf5">long_ll_uniq_append</a> (struct <a class="el" href="structlong__ll.html">long_ll</a> **ll, long val)</td></tr>
+<tr class="separator:af05c5b005180da298ff871edacd2faf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7161ad2a0ae0bcb1bc41d7a9faa9255f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8h.html#a7161ad2a0ae0bcb1bc41d7a9faa9255f">long_ll_remove</a> (struct <a class="el" href="structlong__ll.html">long_ll</a> **ll, long val)</td></tr>
+<tr class="separator:a7161ad2a0ae0bcb1bc41d7a9faa9255f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663b1de2a414e904b8bdaf4ead061dee"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8h.html#a663b1de2a414e904b8bdaf4ead061dee">long_ll_contains</a> (struct <a class="el" href="structlong__ll.html">long_ll</a> *ll, long val)</td></tr>
+<tr class="separator:a663b1de2a414e904b8bdaf4ead061dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c68b8cda753ab2def0455ba59dbf1c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8h.html#a1c68b8cda753ab2def0455ba59dbf1c3">long_ll_free</a> (void **ll)</td></tr>
+<tr class="separator:a1c68b8cda753ab2def0455ba59dbf1c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afddda5f56f15d102ba7f5acab843b47b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8h.html#afddda5f56f15d102ba7f5acab843b47b">uint32_t_ll_leading_repair</a> (uint32_t domain, struct <a class="el" href="structbpt__node.html">bpt_node</a> *a, struct <a class="el" href="structbpt__node.html">bpt_node</a> *b)</td></tr>
 <tr class="separator:afddda5f56f15d102ba7f5acab843b47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af331582fc40722d1f95e46cd383519aa"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8h.html#af331582fc40722d1f95e46cd383519aa">uint32_t_ll_new_non_leading</a> (uint32_t domain)</td></tr>
@@ -172,6 +185,126 @@ Variables</h2></td></tr>
 <tr class="separator:ae313ce882c5a155b6c04392b60b3ae3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="aef80b2fce12e89737a7000ffb829b85c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void long_ll_append </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structlong__ll.html">long_ll</a> **&#160;</td>
+          <td class="paramname"><em>ll</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a663b1de2a414e904b8bdaf4ead061dee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t long_ll_contains </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structlong__ll.html">long_ll</a> *&#160;</td>
+          <td class="paramname"><em>ll</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1c68b8cda753ab2def0455ba59dbf1c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void long_ll_free </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>ll</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7161ad2a0ae0bcb1bc41d7a9faa9255f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void long_ll_remove </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structlong__ll.html">long_ll</a> **&#160;</td>
+          <td class="paramname"><em>ll</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af05c5b005180da298ff871edacd2faf5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void long_ll_uniq_append </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structlong__ll.html">long_ll</a> **&#160;</td>
+          <td class="paramname"><em>ll</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aff47a665a05bdbe3a0183d899f42c889"></a>
 <div class="memitem">
 <div class="memproto">
@@ -842,7 +975,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 9 2016 12:22:18 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 29 2016 10:28:05 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

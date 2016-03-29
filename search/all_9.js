@@ -7,6 +7,8 @@ var searchData=
   ['index_5ffile_5fname',['index_file_name',['../structdisk__store.html#a093fe3713a187fb35b3235e8d3ca6728',1,'disk_store']]],
   ['index_5ffile_5fnames',['index_file_names',['../structsimple__cache.html#af09d1513dd062a2f527de72ef0d2d310',1,'simple_cache']]],
   ['index_5ffp',['index_fp',['../structdisk__store.html#a2a19abda95a515092fc7eee047e5e6ad',1,'disk_store']]],
+  ['index_5fhelp',['index_help',['../index_8c.html#a68c92c0930ba582cc2d8f2baff0725fb',1,'index.c']]],
+  ['index_5fmain',['index_main',['../giggle_8c.html#a6590681405e50f3b4e82de72c0905be9',1,'index_main(int argc, char **argv, char *full_cmd):&#160;index.c'],['../index_8c.html#a6590681405e50f3b4e82de72c0905be9',1,'index_main(int argc, char **argv, char *full_cmd):&#160;index.c']]],
   ['index_5fsearch_2ec',['index_search.c',['../index__search_8c.html',1,'']]],
   ['index_5fstart_5foffset',['index_start_offset',['../structdisk__store.html#ae9675d1781b089591ad3f68fc97282df',1,'disk_store']]],
   ['indexed_5flist',['indexed_list',['../structindexed__list.html',1,'']]],
@@ -19,7 +21,13 @@ var searchData=
   ['init',['init',['../structcache__def.html#a01f83e34550dc7c0ba0c3cf1336f3e89',1,'cache_def']]],
   ['input_5ffile',['input_file',['../structinput__file.html',1,'']]],
   ['input_5ffile_5fdestroy',['input_file_destroy',['../file__read_8c.html#a5f69717cbf1944350cc5a7f59eb825b9',1,'input_file_destroy(struct input_file **i):&#160;file_read.c'],['../file__read_8h.html#a5f69717cbf1944350cc5a7f59eb825b9',1,'input_file_destroy(struct input_file **i):&#160;file_read.c']]],
-  ['input_5ffile_5fget_5fnext_5finterval',['input_file_get_next_interval',['../file__read_8c.html#add651715fe8d10ec9859aa79cf4b3fab',1,'input_file_get_next_interval(struct input_file *i, char **chrm, int *chrm_len, uint32_t *start, uint32_t *end, long *offset):&#160;file_read.c'],['../file__read_8h.html#add651715fe8d10ec9859aa79cf4b3fab',1,'input_file_get_next_interval(struct input_file *i, char **chrm, int *chrm_len, uint32_t *start, uint32_t *end, long *offset):&#160;file_read.c']]],
+  ['input_5ffile_5fget_5fnext_5finterval',['input_file_get_next_interval',['../structinput__file.html#aecaf503c0bb79e7920e2c87353e728c8',1,'input_file']]],
+  ['input_5ffile_5fget_5fnext_5finterval_5fbed',['input_file_get_next_interval_bed',['../file__read_8c.html#a582b2e4fac3b3328f200bd6a80c99d31',1,'input_file_get_next_interval_bed(struct input_file *i, char **chrm, int *chrm_len, uint32_t *start, uint32_t *end, long *offset):&#160;file_read.c'],['../file__read_8h.html#a582b2e4fac3b3328f200bd6a80c99d31',1,'input_file_get_next_interval_bed(struct input_file *i, char **chrm, int *chrm_len, uint32_t *start, uint32_t *end, long *offset):&#160;file_read.c']]],
+  ['input_5ffile_5fget_5fnext_5finterval_5fvcf',['input_file_get_next_interval_vcf',['../file__read_8c.html#a95de5b5b7071bcf205b1d73793f0b3a3',1,'input_file_get_next_interval_vcf(struct input_file *i, char **chrm, int *chrm_len, uint32_t *start, uint32_t *end, long *offset):&#160;file_read.c'],['../file__read_8h.html#a95de5b5b7071bcf205b1d73793f0b3a3',1,'input_file_get_next_interval_vcf(struct input_file *i, char **chrm, int *chrm_len, uint32_t *start, uint32_t *end, long *offset):&#160;file_read.c']]],
+  ['input_5ffile_5fget_5fnext_5fline',['input_file_get_next_line',['../structinput__file.html#a24847fc944d7a895d4835ff1d5e21874',1,'input_file']]],
+  ['input_5ffile_5fget_5fnext_5fline_5fbgzf',['input_file_get_next_line_bgzf',['../file__read_8c.html#a3877e383fa8a8f12556bdb216b21331c',1,'input_file_get_next_line_bgzf(struct input_file *i, char **str):&#160;file_read.c'],['../file__read_8h.html#a3877e383fa8a8f12556bdb216b21331c',1,'input_file_get_next_line_bgzf(struct input_file *i, char **str):&#160;file_read.c']]],
   ['input_5ffile_5finit',['input_file_init',['../file__read_8c.html#a1b9d2c7932e8eca80fef6f1bcea3bad2',1,'input_file_init(char *file_name):&#160;file_read.c'],['../file__read_8h.html#a1b9d2c7932e8eca80fef6f1bcea3bad2',1,'input_file_init(char *file_name):&#160;file_read.c']]],
-  ['input_5ffile_5fseek',['input_file_seek',['../file__read_8c.html#ad495762ca278abacc848849e1b75404d',1,'input_file_seek(struct input_file *i, long offset):&#160;file_read.c'],['../file__read_8h.html#ad495762ca278abacc848849e1b75404d',1,'input_file_seek(struct input_file *i, long offset):&#160;file_read.c']]]
+  ['input_5ffile_5fseek',['input_file_seek',['../structinput__file.html#afc4f78c00be8f6d667817b2f94d088f4',1,'input_file']]],
+  ['input_5ffile_5fseek_5fbgzf',['input_file_seek_bgzf',['../file__read_8c.html#ac215bda3d8c84dacdfbd72051ec8573a',1,'input_file_seek_bgzf(struct input_file *i, long offset):&#160;file_read.c'],['../file__read_8h.html#ac215bda3d8c84dacdfbd72051ec8573a',1,'input_file_seek_bgzf(struct input_file *i, long offset):&#160;file_read.c']]],
+  ['ipf',['ipf',['../structgiggle__query__iter.html#ad4f5e21baee4dc92ee701b08c7b4752e',1,'giggle_query_iter']]]
 ];

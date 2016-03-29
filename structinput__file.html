@@ -37,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,6 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structinput__file-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -91,18 +91,85 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="file__read_8h_source.html">file_read.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a83873e9ae9752ffbf9df3608749d0e6a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="structinput__file.html#a83873e9ae9752ffbf9df3608749d0e6aae0ef2c2a12df0414c1398c1bd732da8c">BED</a>, 
+<a class="el" href="structinput__file.html#a83873e9ae9752ffbf9df3608749d0e6aa1b823852da38620dcd0703d0770ee635">VCF</a>, 
+<a class="el" href="structinput__file.html#a83873e9ae9752ffbf9df3608749d0e6aa76f38477b58dc3c39ec043589fdd07e6">BCF</a>
+ }</td></tr>
+<tr class="separator:a83873e9ae9752ffbf9df3608749d0e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a7e5c8ad6a9b4412aa2b8d868e0a4703f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinput__file.html#a7e5c8ad6a9b4412aa2b8d868e0a4703f">file_name</a></td></tr>
 <tr class="separator:a7e5c8ad6a9b4412aa2b8d868e0a4703f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a2696ba0ae55eea625a688a825b2b52"><td class="memItemLeft" align="right" valign="top">BGZF *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinput__file.html#a6a2696ba0ae55eea625a688a825b2b52">fp</a></td></tr>
-<tr class="separator:a6a2696ba0ae55eea625a688a825b2b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac832f1695aaecde9432f7045ee88cab6"><td class="memItemLeft" align="right" valign="top">bcf1_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinput__file.html#ac832f1695aaecde9432f7045ee88cab6">line</a></td></tr>
+<tr class="separator:ac832f1695aaecde9432f7045ee88cab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c5a7d3df3bb5907ecb9a32b8a6175f2"><td class="memItemLeft" align="right" valign="top">BGZF *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinput__file.html#a2c5a7d3df3bb5907ecb9a32b8a6175f2">bed_fp</a></td></tr>
+<tr class="separator:a2c5a7d3df3bb5907ecb9a32b8a6175f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3752c0b61401791be013c401c57a210e"><td class="memItemLeft" align="right" valign="top">htsFile *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinput__file.html#a3752c0b61401791be013c401c57a210e">bcf_fp</a></td></tr>
+<tr class="separator:a3752c0b61401791be013c401c57a210e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad44a84e106369b74a1d37b7c44d2eda7"><td class="memItemLeft" align="right" valign="top">bcf_hdr_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinput__file.html#ad44a84e106369b74a1d37b7c44d2eda7">hdr</a></td></tr>
+<tr class="separator:ad44a84e106369b74a1d37b7c44d2eda7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1da8fc38073057ce2800e7dfdb5684f"><td class="memItemLeft" align="right" valign="top">kstring_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinput__file.html#af1da8fc38073057ce2800e7dfdb5684f">kstr</a></td></tr>
 <tr class="separator:af1da8fc38073057ce2800e7dfdb5684f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a896f420d30215d350aed61dc5b570fa6"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinput__file.html#a896f420d30215d350aed61dc5b570fa6">last_offset</a></td></tr>
 <tr class="separator:a896f420d30215d350aed61dc5b570fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0262a0fbcadbd538b6a6a78ea1b4df4"><td class="memItemLeft" align="right" valign="top">enum input_file:: { ... } &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinput__file.html#ab0262a0fbcadbd538b6a6a78ea1b4df4">type</a></td></tr>
+<tr class="separator:ab0262a0fbcadbd538b6a6a78ea1b4df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecaf503c0bb79e7920e2c87353e728c8"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinput__file.html#aecaf503c0bb79e7920e2c87353e728c8">input_file_get_next_interval</a> )(struct <a class="el" href="structinput__file.html">input_file</a> *i, char **chrm, int *chrm_len, uint32_t *<a class="el" href="timer_8h.html#a60de64d75454385b23995437f1d72669">start</a>, uint32_t *end, long *offset)</td></tr>
+<tr class="separator:aecaf503c0bb79e7920e2c87353e728c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24847fc944d7a895d4835ff1d5e21874"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinput__file.html#a24847fc944d7a895d4835ff1d5e21874">input_file_get_next_line</a> )(struct <a class="el" href="structinput__file.html">input_file</a> *i, char **str)</td></tr>
+<tr class="separator:a24847fc944d7a895d4835ff1d5e21874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc4f78c00be8f6d667817b2f94d088f4"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinput__file.html#afc4f78c00be8f6d667817b2f94d088f4">input_file_seek</a> )(struct <a class="el" href="structinput__file.html">input_file</a> *i, long offset)</td></tr>
+<tr class="separator:afc4f78c00be8f6d667817b2f94d088f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a83873e9ae9752ffbf9df3608749d0e6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a83873e9ae9752ffbf9df3608749d0e6aae0ef2c2a12df0414c1398c1bd732da8c"></a>BED</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a83873e9ae9752ffbf9df3608749d0e6aa1b823852da38620dcd0703d0770ee635"></a>VCF</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a83873e9ae9752ffbf9df3608749d0e6aa76f38477b58dc3c39ec043589fdd07e6"></a>BCF</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a3752c0b61401791be013c401c57a210e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">htsFile* input_file::bcf_fp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2c5a7d3df3bb5907ecb9a32b8a6175f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BGZF* input_file::bed_fp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a7e5c8ad6a9b4412aa2b8d868e0a4703f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -115,12 +182,48 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6a2696ba0ae55eea625a688a825b2b52"></a>
+<a class="anchor" id="ad44a84e106369b74a1d37b7c44d2eda7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BGZF* input_file::fp</td>
+          <td class="memname">bcf_hdr_t* input_file::hdr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aecaf503c0bb79e7920e2c87353e728c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* input_file::input_file_get_next_interval)(struct <a class="el" href="structinput__file.html">input_file</a> *i, char **chrm, int *chrm_len, uint32_t *<a class="el" href="timer_8h.html#a60de64d75454385b23995437f1d72669">start</a>, uint32_t *end, long *offset)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a24847fc944d7a895d4835ff1d5e21874"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* input_file::input_file_get_next_line)(struct <a class="el" href="structinput__file.html">input_file</a> *i, char **str)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afc4f78c00be8f6d667817b2f94d088f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* input_file::input_file_seek)(struct <a class="el" href="structinput__file.html">input_file</a> *i, long offset)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -151,13 +254,37 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ac832f1695aaecde9432f7045ee88cab6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bcf1_t* input_file::line</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab0262a0fbcadbd538b6a6a78ea1b4df4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum { ... }   input_file::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="file__read_8h_source.html">file_read.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 9 2016 12:22:18 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 29 2016 10:28:05 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
