@@ -6,7 +6,7 @@ var searchData=
   ['n_5f1',['n_1',['../structhgacc__t.html#aebe4eec2ab3101ac4692411947ad26d7',1,'hgacc_t']]],
   ['new_5fleading',['new_leading',['../structgiggle__def.html#a1399f3ca49edb894749d6db5420b969d',1,'giggle_def']]],
   ['new_5fnon_5fleading',['new_non_leading',['../structgiggle__def.html#aad734757af616d1d9741ce86a60b2d76',1,'giggle_def']]],
-  ['next',['next',['../structfifo__q__element.html#a3a3b14dbfee42dc0f6d7255711f36e61',1,'fifo_q_element::next()'],['../structuint32__t__ll__node.html#aacc3feeccb1706fe47e368fe5a6786a9',1,'uint32_t_ll_node::next()'],['../structlong__ll__node.html#af24e7e287173e6232d7e4eec90c3ef3b',1,'long_ll_node::next()']]],
+  ['next',['next',['../structleaf__data__result.html#a556a1393fee8d3f9af315762f4367074',1,'leaf_data_result::next()'],['../structfifo__q__element.html#a3a3b14dbfee42dc0f6d7255711f36e61',1,'fifo_q_element::next()'],['../structuint32__t__ll__node.html#aacc3feeccb1706fe47e368fe5a6786a9',1,'uint32_t_ll_node::next()'],['../structlong__ll__node.html#af24e7e287173e6232d7e4eec90c3ef3b',1,'long_ll_node::next()']]],
   ['non_5fleading_5fcache_5fhandler',['non_leading_cache_handler',['../structgiggle__def.html#a0166b285ee5e807895219a41e870d8f0',1,'giggle_def']]],
   ['non_5fleading_5fsa_5fadd_5fscalar',['non_leading_SA_add_scalar',['../structgiggle__def.html#a83f95b738f0e0c162328cf8fe7f8dedd',1,'giggle_def']]],
   ['non_5fleading_5fse_5fadd_5fscalar',['non_leading_SE_add_scalar',['../structgiggle__def.html#aebc0bbd525d3e3cda134039e4b300359',1,'giggle_def']]],
@@ -16,8 +16,12 @@ var searchData=
   ['num_5fbits',['num_bits',['../structbit__map.html#a5b541259c891062acf94c19fbbbba512',1,'bit_map']]],
   ['num_5fdata',['num_data',['../structdata__reg.html#a5e0f34139d10b6ab59356371f7d778b6',1,'data_reg']]],
   ['num_5fdomains',['num_domains',['../structsimple__cache.html#a4c9ac95d5a7b79c0eb300857c56898f3',1,'simple_cache']]],
-  ['num_5ffiles',['num_files',['../structgigle__query__result.html#a3a9d5fda368cb16f1590f79c3310930e',1,'gigle_query_result']]],
+  ['num_5fends',['num_ends',['../structleaf__data.html#ad1f075cdbe8aefc2e0483958cb4221dc',1,'leaf_data']]],
+  ['num_5ffiles',['num_files',['../structgiggle__query__result.html#acc060ca065225223f28d41c0dee82047',1,'giggle_query_result']]],
+  ['num_5fhits',['num_hits',['../structgiggle__query__result.html#a20d5887a72a6a22dfe3c3059c98d9514',1,'giggle_query_result']]],
   ['num_5fintervals',['num_intervals',['../structfile__data.html#a77a7037c4da46bc9aefa70e1d801f628',1,'file_data']]],
   ['num_5fints',['num_ints',['../structbit__map.html#afda6f41d11d0240b117a23016ff3a03b',1,'bit_map']]],
+  ['num_5fleading',['num_leading',['../structleaf__data.html#a6a048e7214c9748cd4baea9df1254020',1,'leaf_data']]],
+  ['num_5fstarts',['num_starts',['../structleaf__data.html#afcf0cf4d11edbdd621b0e1290e9a3a11',1,'leaf_data']]],
   ['nums',['nums',['../structsimple__cache.html#a1fcd026a887024d7783a55698a0190e8',1,'simple_cache']]]
 ];

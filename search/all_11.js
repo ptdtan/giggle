@@ -32,6 +32,7 @@ var searchData=
   ['sorted_5foffsets',['sorted_offsets',['../structgiggle__query__iter.html#a9de601c6b5c02a42d07b88bbb6905e90',1,'giggle_query_iter']]],
   ['speed_5ftests_2ec',['speed_tests.c',['../speed__tests_8c.html',1,'']]],
   ['start',['start',['../structregion.html#ad943381faa61287ecd01f64caf35a5e9',1,'region::start()'],['../timer_8c.html#a60de64d75454385b23995437f1d72669',1,'start():&#160;timer.c'],['../timer_8h.html#a60de64d75454385b23995437f1d72669',1,'start():&#160;timer.c']]],
+  ['starts',['starts',['../structleaf__data.html#a5ac759ee141634af6c31f0cb61706041',1,'leaf_data']]],
   ['stop',['stop',['../timer_8c.html#a8c528baf37154d347366083f0f816846',1,'stop():&#160;timer.c'],['../timer_8h.html#a8c528baf37154d347366083f0f816846',1,'stop():&#160;timer.c']]],
   ['store',['store',['../structcache__def.html#a65ee708ebbcc1942136a611c9b668d45',1,'cache_def']]],
   ['str',['str',['../structstr__uint__pair.html#a003452030f006c79cc6c3070ed541d22',1,'str_uint_pair']]],
@@ -42,5 +43,5 @@ var searchData=
   ['str_5fuint_5fpair_5fsearch_5fkey_5fcmp',['str_uint_pair_search_key_cmp',['../lists_8c.html#acd991bbe831920241dcfae49600e685f',1,'str_uint_pair_search_key_cmp(const void *a, const void *b):&#160;lists.c'],['../lists_8h.html#acd991bbe831920241dcfae49600e685f',1,'str_uint_pair_search_key_cmp(const void *a, const void *b):&#160;lists.c']]],
   ['str_5fuint_5fpair_5fsort_5felement_5fcmp',['str_uint_pair_sort_element_cmp',['../lists_8c.html#a794f6147d66a1fc4a7afefccd376c7d1',1,'str_uint_pair_sort_element_cmp(const void *a, const void *b):&#160;lists.c'],['../lists_8h.html#a794f6147d66a1fc4a7afefccd376c7d1',1,'str_uint_pair_sort_element_cmp(const void *a, const void *b):&#160;lists.c']]],
   ['str_5fuint_5fpair_5fstore',['str_uint_pair_store',['../lists_8c.html#a124b921a7eafa2ac10f5bc6638398b4c',1,'str_uint_pair_store(void *v, FILE *f, char *file_name):&#160;lists.c'],['../lists_8h.html#a124b921a7eafa2ac10f5bc6638398b4c',1,'str_uint_pair_store(void *v, FILE *f, char *file_name):&#160;lists.c']]],
-  ['success',['success',['../structregion.html#add29e2121af46bbb785f778203f682ef',1,'region']]]
+  ['success',['success',['../structrequest.html#aa438562f730c979154ca907ff7fd0dd4',1,'request']]]
 ];

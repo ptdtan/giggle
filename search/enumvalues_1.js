@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['vcf',['VCF',['../structinput__file.html#a83873e9ae9752ffbf9df3608749d0e6aa1b823852da38620dcd0703d0770ee635',1,'input_file']]]
+  ['request_5fdata',['REQUEST_DATA',['../structrequest.html#a7fdd6ec062374d3af7a0769f3125e675ae7afddf5e29ab85ffd25307b400f3b24',1,'request']]],
+  ['request_5fregion',['REQUEST_REGION',['../structrequest.html#a7fdd6ec062374d3af7a0769f3125e675a5d27d8cc1b9a70eea1322b60b918f56c',1,'request']]]
 ];

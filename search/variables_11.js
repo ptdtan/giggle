@@ -14,7 +14,8 @@ var searchData=
   ['sort_5felement_5fcmp',['sort_element_cmp',['../structordered__set.html#a5236c9670d7541669db515fa583bc97d',1,'ordered_set']]],
   ['sorted_5foffsets',['sorted_offsets',['../structgiggle__query__iter.html#a9de601c6b5c02a42d07b88bbb6905e90',1,'giggle_query_iter']]],
   ['start',['start',['../structregion.html#ad943381faa61287ecd01f64caf35a5e9',1,'region']]],
+  ['starts',['starts',['../structleaf__data.html#a5ac759ee141634af6c31f0cb61706041',1,'leaf_data']]],
   ['store',['store',['../structcache__def.html#a65ee708ebbcc1942136a611c9b668d45',1,'cache_def']]],
   ['str',['str',['../structstr__uint__pair.html#a003452030f006c79cc6c3070ed541d22',1,'str_uint_pair']]],
-  ['success',['success',['../structregion.html#add29e2121af46bbb785f778203f682ef',1,'region']]]
+  ['success',['success',['../structrequest.html#aa438562f730c979154ca907ff7fd0dd4',1,'request']]]
 ];

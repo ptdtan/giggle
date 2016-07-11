@@ -68,6 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="globals.html"><span>All</span></a></li>
       <li><a href="globals_func.html"><span>Functions</span></a></li>
       <li><a href="globals_vars.html"><span>Variables</span></a></li>
+      <li><a href="globals_type.html"><span>Typedefs</span></a></li>
       <li><a href="globals_defs.html"><span>Macros</span></a></li>
     </ul>
   </div>
@@ -101,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -152,17 +153,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="lists_8c.html#ae239a589479d1a533a44716366318270">lists.c</a>
 , <a class="el" href="lists_8h.html#ae239a589479d1a533a44716366318270">lists.h</a>
 </li>
+<li>init_region()
+: <a class="el" href="server__overlap_8c.html#a964bb5e07a7a625a99d199142e4ce7f7">server_overlap.c</a>
+</li>
 <li>input_file_destroy()
-: <a class="el" href="file__read_8h.html#a5f69717cbf1944350cc5a7f59eb825b9">file_read.h</a>
-, <a class="el" href="file__read_8c.html#a5f69717cbf1944350cc5a7f59eb825b9">file_read.c</a>
+: <a class="el" href="file__read_8c.html#a5f69717cbf1944350cc5a7f59eb825b9">file_read.c</a>
+, <a class="el" href="file__read_8h.html#a5f69717cbf1944350cc5a7f59eb825b9">file_read.h</a>
+</li>
+<li>input_file_get_curr_line_bgzf()
+: <a class="el" href="file__read_8c.html#aa8817ffb96deceb05a4670e80508589e">file_read.c</a>
+, <a class="el" href="file__read_8h.html#aa8817ffb96deceb05a4670e80508589e">file_read.h</a>
 </li>
 <li>input_file_get_next_interval_bed()
 : <a class="el" href="file__read_8c.html#a582b2e4fac3b3328f200bd6a80c99d31">file_read.c</a>
 , <a class="el" href="file__read_8h.html#a582b2e4fac3b3328f200bd6a80c99d31">file_read.h</a>
 </li>
 <li>input_file_get_next_interval_vcf()
-: <a class="el" href="file__read_8c.html#a95de5b5b7071bcf205b1d73793f0b3a3">file_read.c</a>
-, <a class="el" href="file__read_8h.html#a95de5b5b7071bcf205b1d73793f0b3a3">file_read.h</a>
+: <a class="el" href="file__read_8h.html#a95de5b5b7071bcf205b1d73793f0b3a3">file_read.h</a>
+, <a class="el" href="file__read_8c.html#a95de5b5b7071bcf205b1d73793f0b3a3">file_read.c</a>
 </li>
 <li>input_file_get_next_line_bgzf()
 : <a class="el" href="file__read_8c.html#a3877e383fa8a8f12556bdb216b21331c">file_read.c</a>
@@ -173,14 +181,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="file__read_8h.html#a1b9d2c7932e8eca80fef6f1bcea3bad2">file_read.h</a>
 </li>
 <li>input_file_seek_bgzf()
-: <a class="el" href="file__read_8h.html#ac215bda3d8c84dacdfbd72051ec8573a">file_read.h</a>
-, <a class="el" href="file__read_8c.html#ac215bda3d8c84dacdfbd72051ec8573a">file_read.c</a>
+: <a class="el" href="file__read_8c.html#ac215bda3d8c84dacdfbd72051ec8573a">file_read.c</a>
+, <a class="el" href="file__read_8h.html#ac215bda3d8c84dacdfbd72051ec8573a">file_read.h</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 29 2016 10:37:56 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 11 2016 16:05:23 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

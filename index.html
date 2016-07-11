@@ -63,7 +63,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -78,8 +78,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a href="https://travis-ci.org/ryanlayer/giggle">![Build Status](https://travis-ci.org/ryanlayer/giggle.svg?branch=master)</a></p>
-<h1>GIGGLE</h1>
-<p><a href="http://ryanlayer.github.io/giggle/">http://ryanlayer.github.io/giggle/</a></p>
+<h1>GIGGLE: Genomic Inquiry</h1>
+<p>A multi-file genomic index for fast genomic inquiries.</p>
 <h1>Build</h1>
 <h2>Giggle command line intervace</h2>
 <pre class="fragment">git clone https://github.com/samtools/htslib.git
@@ -90,12 +90,63 @@ git clone https://github.com/ryanlayer/giggle.git
 cd giggle
 make
 </pre><h2>Web server (optional)</h2>
-<p>This is based on <a href="http://www.gnu.org/software/libmicrohttpd/">libmicrohttpd</a></p>
-<p>wget <a href="http://ftpmirror.gnu.org/libmicrohttpd/libmicrohttpd-0.9.46.tar.gz">http://ftpmirror.gnu.org/libmicrohttpd/libmicrohttpd-0.9.46.tar.gz</a> tar zxvf libmicrohttpd-0.9.46.tar.gz cd libmicrohttpd-0.9.46 ./configure &ndash;prefix=$HOME/usr/local/ make make install</p>
-<p>git clone <a href="https://github.com/json-c/json-c.git">https://github.com/json-c/json-c.git</a> cd json-c sh autogen.sh ./configure &ndash;prefix=$HOME/usr/local/ make make install</p>
-<h1><a href="https://github.com/ryanlayer/giggle.git">Dev Docs</a></h1>
+<p>This is based on <a href="http://www.gnu.org/software/libmicrohttpd/">libmicrohttpd</a> </p>
+<pre class="fragment">wget http://ftpmirror.gnu.org/libmicrohttpd/libmicrohttpd-0.9.46.tar.gz
+tar zxvf libmicrohttpd-0.9.46.tar.gz
+cd libmicrohttpd-0.9.46
+./configure --prefix=$HOME/usr/local/
+make
+make install
+
+git clone https://github.com/json-c/json-c.git
+cd json-c
+sh autogen.sh
+./configure --prefix=$HOME/usr/local/
+make
+make install
+
+cd giggle
+make
+make server
+</pre><h1><a href="http://ryanlayer.github.io/giggle/">Dev Docs</a></h1>
 <h1>Example analysis</h1>
-<h2>Epigenomics Roadmap</h2>
+<h2>GTEx (in examples/gtex)</h2>
+<pre class="fragment">mkdir data
+cd data
+
+wget http://www.gtexportal.org/static/datasets/gtex_analysis_v6/annotations/GTEx_Data_V6_Annotations_SampleAttributesDS.txt
+
+tail -n+2 GTEx_Data_V6_Annotations_SampleAttributesDS.txt \
+| cut -f 1,6 \
+| sed -e "s/ /_/" \
+&gt; SAMPID_to_SMTS.txt
+
+wget http://www.gtexportal.org/static/datasets/gtex_analysis_v6/reference/gencode.v19.genes.patched_contigs.gtf.gz
+
+gunzip -c gencode.v19.genes.patched_contigs.gtf.gz \
+| awk '$3=="transcript"' \
+| cut -f1,4,5,9 \
+| sed -e "s/gene_id \"//" \
+| sed -e "s/\".*gene_name \"/\t/" \
+| sed -e "s/\".*$//" \
+&gt; genes.bed
+
+wget http://www.gtexportal.org/static/datasets/gtex_analysis_v6/rna_seq_data/GTEx_Analysis_v6_RNA-seq_RNA-SeQCv1.1.8_gene_rpkm.gct.gz
+
+gunzip -c GTEx_Analysis_v6_RNA-seq_RNA-SeQCv1.1.8_gene_rpkm.gct.gz \
+| python one_per_tissue.py
+
+mv *.bed gtex/.
+cd gtex
+ls | xargs -P 20 -I {} sh -c "bgzip {}"
+cd ..
+~/src/giggle/bin/giggle index -i "gtex/*gz" -o gtex_b -f
+
+giggle search -i gtex_b/ \
+    -q affected.snps.vcf.gz -o -v \
+| python gtex_to_bp.py 10
+| python bp.py -o affected_box_plot.png
+</pre><h2>Epigenomics Roadmap (in examples/rme)</h2>
 <pre class="fragment">mkdir data
 cd data
 wget http://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/coreMarks/jointModel/final/all.mnemonics.bedFiles.tgz
@@ -106,7 +157,8 @@ python rename.py states.txt EDACC_NAME.txt "data/*gz" "split/"
 cd split
 ls *.bed | xargs -I {} -P 10 sh -c "bgzip {}"
 ls *.bed.gz | xargs -I {} -P 10 sh -c "tabix {}"
-</pre><h3>bedtools</h3>
+</pre><h2>Timings</h2>
+<h3>bedtools</h3>
 <h4>unsorted</h4>
 <pre class="fragment">time ls split/*gz | \
     xargs -I{} \
@@ -168,10 +220,18 @@ sys 0m0.712s
 
 real    0m3.249s
 user    0m2.280s
-sys 0m0.822s</pre> </div></div><!-- contents -->
+sys 0m0.822s
+</pre><h2>Epigenomics Roadmap Server</h2>
+<pre class="fragment">~/src/giggle/bin/server_overlap \
+    1 \
+    split_i \
+    ~/src/giggle/examples/rme/web/track_names.txt \
+    ~/src/giggle/examples/rme/web/header.txt
+</pre><p>Then open <code>~src/giggle/scripts/get_overlaps.html</code> </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 29 2016 10:37:56 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 11 2016 16:05:23 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

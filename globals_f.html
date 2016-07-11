@@ -68,6 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="globals.html"><span>All</span></a></li>
       <li><a href="globals_func.html"><span>Functions</span></a></li>
       <li><a href="globals_vars.html"><span>Variables</span></a></li>
+      <li><a href="globals_type.html"><span>Typedefs</span></a></li>
       <li><a href="globals_defs.html"><span>Macros</span></a></li>
     </ul>
   </div>
@@ -101,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -114,21 +115,75 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock">Here is a list of all file members with links to the files they belong to:</div>
 
 <h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>fastlz_compress()
+: <a class="el" href="fastlz_8c.html#aa8b12c16f2514c6cd2a6748a9d6bce4d">fastlz.c</a>
+, <a class="el" href="fastlz_8h.html#aa8b12c16f2514c6cd2a6748a9d6bce4d">fastlz.h</a>
+</li>
+<li>fastlz_compress_level()
+: <a class="el" href="fastlz_8h.html#af4628c39d30c8deab1ad9b4aedb31e75">fastlz.h</a>
+, <a class="el" href="fastlz_8c.html#af4628c39d30c8deab1ad9b4aedb31e75">fastlz.c</a>
+</li>
+<li>FASTLZ_COMPRESSOR
+: <a class="el" href="fastlz_8c.html#ac7c10fddd912ad2aa50c41e0ac57720a">fastlz.c</a>
+</li>
+<li>fastlz_decompress()
+: <a class="el" href="fastlz_8c.html#a6cce72f3099f53d0cc244162180166b3">fastlz.c</a>
+, <a class="el" href="fastlz_8h.html#a6cce72f3099f53d0cc244162180166b3">fastlz.h</a>
+</li>
+<li>FASTLZ_DECOMPRESSOR
+: <a class="el" href="fastlz_8c.html#a8d7a1d26e328fd7d91839054e80b7745">fastlz.c</a>
+</li>
+<li>FASTLZ_EXPECT_CONDITIONAL
+: <a class="el" href="fastlz_8c.html#a07f262b6862377fd0ff4496b03c7cafb">fastlz.c</a>
+</li>
+<li>FASTLZ_INLINE
+: <a class="el" href="fastlz_8c.html#a6007971a5b9256fdb4c9280c036dc91e">fastlz.c</a>
+</li>
+<li>FASTLZ_LEVEL
+: <a class="el" href="fastlz_8c.html#af294cf71fcc9298973768be71380a4f6">fastlz.c</a>
+</li>
+<li>FASTLZ_READU16
+: <a class="el" href="fastlz_8c.html#af15ceff5fd1d402bb39ea2fa9ab027b5">fastlz.c</a>
+</li>
+<li>FASTLZ_SAFE
+: <a class="el" href="fastlz_8c.html#a24af1a30729fb8e78341d488c75544c7">fastlz.c</a>
+</li>
+<li>FASTLZ_STRICT_ALIGN
+: <a class="el" href="fastlz_8c.html#a5bef03d0c26989dfef387890818c698a">fastlz.c</a>
+</li>
+<li>FASTLZ_UNEXPECT_CONDITIONAL
+: <a class="el" href="fastlz_8c.html#a80cf6303c763ac3571a5d2c7fb103bdd">fastlz.c</a>
+</li>
+<li>FASTLZ_VERSION
+: <a class="el" href="fastlz_8h.html#aa2f0bd95cf19a45defb5b5a983c00675">fastlz.h</a>
+</li>
+<li>FASTLZ_VERSION_MAJOR
+: <a class="el" href="fastlz_8h.html#ac8ad72a81b4e434d9d62c2bcbe4427a5">fastlz.h</a>
+</li>
+<li>FASTLZ_VERSION_MINOR
+: <a class="el" href="fastlz_8h.html#a6a977d1b9ecd2bf6b26cce576f33a275">fastlz.h</a>
+</li>
+<li>FASTLZ_VERSION_REVISION
+: <a class="el" href="fastlz_8h.html#aa797abb5885959b2ba38485a6f57e8c0">fastlz.h</a>
+</li>
+<li>FASTLZ_VERSION_STRING
+: <a class="el" href="fastlz_8h.html#a3505bc38762d50d3c3ce943c826992b3">fastlz.h</a>
+</li>
 <li>fifo_q_peek()
-: <a class="el" href="lists_8c.html#a8dae2b5c4241c434938fd66a574ae46a">lists.c</a>
-, <a class="el" href="lists_8h.html#a8dae2b5c4241c434938fd66a574ae46a">lists.h</a>
+: <a class="el" href="lists_8h.html#a8dae2b5c4241c434938fd66a574ae46a">lists.h</a>
+, <a class="el" href="lists_8c.html#a8dae2b5c4241c434938fd66a574ae46a">lists.c</a>
 </li>
 <li>fifo_q_pop()
-: <a class="el" href="lists_8h.html#a6679e5cd6611ade943ae6f7552eb2e00">lists.h</a>
-, <a class="el" href="lists_8c.html#a6679e5cd6611ade943ae6f7552eb2e00">lists.c</a>
+: <a class="el" href="lists_8c.html#a6679e5cd6611ade943ae6f7552eb2e00">lists.c</a>
+, <a class="el" href="lists_8h.html#a6679e5cd6611ade943ae6f7552eb2e00">lists.h</a>
 </li>
 <li>fifo_q_push()
-: <a class="el" href="lists_8c.html#a1073a7c46c1fd35b24fb7455b82013d6">lists.c</a>
-, <a class="el" href="lists_8h.html#a1073a7c46c1fd35b24fb7455b82013d6">lists.h</a>
+: <a class="el" href="lists_8h.html#a1073a7c46c1fd35b24fb7455b82013d6">lists.h</a>
+, <a class="el" href="lists_8c.html#a1073a7c46c1fd35b24fb7455b82013d6">lists.c</a>
 </li>
 <li>file_data_free()
-: <a class="el" href="file__read_8h.html#a712b798ffb47675fff60dfd0e6bf24bb">file_read.h</a>
-, <a class="el" href="file__read_8c.html#a712b798ffb47675fff60dfd0e6bf24bb">file_read.c</a>
+: <a class="el" href="file__read_8c.html#a712b798ffb47675fff60dfd0e6bf24bb">file_read.c</a>
+, <a class="el" href="file__read_8h.html#a712b798ffb47675fff60dfd0e6bf24bb">file_read.h</a>
 </li>
 <li>file_data_load()
 : <a class="el" href="file__read_8c.html#a6bbbe3c53908e01d33e2bd90c37306b9">file_read.c</a>
@@ -139,16 +194,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="file__read_8h.html#adf8f1af70cceee38466748e42af5dfcd">file_read.h</a>
 </li>
 <li>file_id_offset_pair_load()
-: <a class="el" href="giggle__index_8c.html#a10932d54ee2061abf9133ede53d2b4bd">giggle_index.c</a>
-, <a class="el" href="giggle__index_8h.html#a10932d54ee2061abf9133ede53d2b4bd">giggle_index.h</a>
+: <a class="el" href="giggle__index_8h.html#a10932d54ee2061abf9133ede53d2b4bd">giggle_index.h</a>
+, <a class="el" href="giggle__index_8c.html#a10932d54ee2061abf9133ede53d2b4bd">giggle_index.c</a>
 </li>
 <li>file_id_offset_pair_store()
-: <a class="el" href="giggle__index_8c.html#a8f70329b505937b2c1d6c9e303f7fd3b">giggle_index.c</a>
-, <a class="el" href="giggle__index_8h.html#a8f70329b505937b2c1d6c9e303f7fd3b">giggle_index.h</a>
+: <a class="el" href="giggle__index_8h.html#a8f70329b505937b2c1d6c9e303f7fd3b">giggle_index.h</a>
+, <a class="el" href="giggle__index_8c.html#a8f70329b505937b2c1d6c9e303f7fd3b">giggle_index.c</a>
+</li>
+<li>flzuint16
+: <a class="el" href="fastlz_8c.html#a5a3b48f0afe017234d6b6afd8216e1d2">fastlz.c</a>
+</li>
+<li>flzuint32
+: <a class="el" href="fastlz_8c.html#a1619ac7bae012da52633633ddf2df04a">fastlz.c</a>
+</li>
+<li>flzuint8
+: <a class="el" href="fastlz_8c.html#a8eed0a1ba7ba91d1fbde3819a4cbdab5">fastlz.c</a>
 </li>
 <li>free_wrapper()
-: <a class="el" href="cache_8c.html#a228fb164e1510f64b1ab295b9f6ad80e">cache.c</a>
-, <a class="el" href="cache_8h.html#a228fb164e1510f64b1ab295b9f6ad80e">cache.h</a>
+: <a class="el" href="cache_8h.html#a228fb164e1510f64b1ab295b9f6ad80e">cache.h</a>
+, <a class="el" href="cache_8c.html#a228fb164e1510f64b1ab295b9f6ad80e">cache.c</a>
 </li>
 <li>ftwbuf
 : <a class="el" href="util_8h.html#a510ccf8618978c6fd2c3c9237bed81f4">util.h</a>
@@ -157,7 +221,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 29 2016 10:37:56 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 11 2016 16:05:23 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

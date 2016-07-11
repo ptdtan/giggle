@@ -34,5 +34,6 @@ var searchData=
   ['wah_5for',['wah_or',['../wah_8c.html#a169dee16686181844c7d43eb4da64dc9',1,'wah_or(uint8_t *X, uint8_t *Y, uint8_t **R, uint32_t *R_size):&#160;wah.c'],['../wah_8h.html#a169dee16686181844c7d43eb4da64dc9',1,'wah_or(uint8_t *X, uint8_t *Y, uint8_t **R, uint32_t *R_size):&#160;wah.c']]],
   ['wah_5fsize',['WAH_SIZE',['../wah_8c.html#a21a41453aa34a7f35fb75af54d419731',1,'WAH_SIZE():&#160;wah.c'],['../wah_8h.html#a21a41453aa34a7f35fb75af54d419731',1,'WAH_SIZE():&#160;wah.h']]],
   ['wah_5funiq_5fappend',['wah_uniq_append',['../wah_8c.html#a252f69eac36b5dc6ec9b5651796b3d69',1,'wah_uniq_append(uint8_t **w, uint32_t id):&#160;wah.c'],['../wah_8h.html#a252f69eac36b5dc6ec9b5651796b3d69',1,'wah_uniq_append(uint8_t **w, uint32_t id):&#160;wah.c']]],
-  ['wah_5fval',['WAH_VAL',['../wah_8h.html#ae0fb5b203407a5fd1f1e10c46839b4e3',1,'wah.h']]]
+  ['wah_5fval',['WAH_VAL',['../wah_8h.html#ae0fb5b203407a5fd1f1e10c46839b4e3',1,'wah.h']]],
+  ['write_5ftree',['write_tree',['../structgiggle__def.html#aa087ccfc4c754fb5cb6bee34cbbc6c7e',1,'giggle_def']]]
 ];

@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -142,7 +142,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a8191377efaf4c23e85b2e1276473c805"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a8191377efaf4c23e85b2e1276473c805">ORDER</a> = 4</td></tr>
+<tr class="memitem:a8191377efaf4c23e85b2e1276473c805"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a8191377efaf4c23e85b2e1276473c805">ORDER</a> = 100</td></tr>
 <tr class="separator:a8191377efaf4c23e85b2e1276473c805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33bc4e33e4c8064daa0ce694a8ea5b2f"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8c.html#a33bc4e33e4c8064daa0ce694a8ea5b2f">bpt_node_repair</a> )(uint32_t domain, struct <a class="el" href="structbpt__node.html">bpt_node</a> *, struct <a class="el" href="structbpt__node.html">bpt_node</a> *) = NULL</td></tr>
 <tr class="separator:a33bc4e33e4c8064daa0ce694a8ea5b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -672,9 +672,9 @@ Variables</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">= {<a class="code" href="bpt_8c.html#affde2092fffe21602aa70ca49ce0ac5f">bpt_node_serialize</a>, </div>
 <div class="line">                                               <a class="code" href="bpt_8c.html#afb8e0a3eef338e0f8f328212379f3257">bpt_node_deserialize</a>,</div>
 <div class="line">                                               <a class="code" href="bpt_8c.html#a09ae2b9a9097078c629b2316a52f185f">bpt_node_free_mem</a>}</div>
-<div class="ttc" id="bpt_8c_html_afb8e0a3eef338e0f8f328212379f3257"><div class="ttname"><a href="bpt_8c.html#afb8e0a3eef338e0f8f328212379f3257">bpt_node_deserialize</a></div><div class="ttdeci">uint64_t bpt_node_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> bpt.c:67</div></div>
-<div class="ttc" id="bpt_8c_html_affde2092fffe21602aa70ca49ce0ac5f"><div class="ttname"><a href="bpt_8c.html#affde2092fffe21602aa70ca49ce0ac5f">bpt_node_serialize</a></div><div class="ttdeci">uint64_t bpt_node_serialize(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> bpt.c:51</div></div>
-<div class="ttc" id="bpt_8c_html_a09ae2b9a9097078c629b2316a52f185f"><div class="ttname"><a href="bpt_8c.html#a09ae2b9a9097078c629b2316a52f185f">bpt_node_free_mem</a></div><div class="ttdeci">void bpt_node_free_mem(void **deserialized)</div><div class="ttdef"><b>Definition:</b> bpt.c:85</div></div>
+<div class="ttc" id="bpt_8c_html_afb8e0a3eef338e0f8f328212379f3257"><div class="ttname"><a href="bpt_8c.html#afb8e0a3eef338e0f8f328212379f3257">bpt_node_deserialize</a></div><div class="ttdeci">uint64_t bpt_node_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> bpt.c:68</div></div>
+<div class="ttc" id="bpt_8c_html_affde2092fffe21602aa70ca49ce0ac5f"><div class="ttname"><a href="bpt_8c.html#affde2092fffe21602aa70ca49ce0ac5f">bpt_node_serialize</a></div><div class="ttdeci">uint64_t bpt_node_serialize(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> bpt.c:52</div></div>
+<div class="ttc" id="bpt_8c_html_a09ae2b9a9097078c629b2316a52f185f"><div class="ttname"><a href="bpt_8c.html#a09ae2b9a9097078c629b2316a52f185f">bpt_node_free_mem</a></div><div class="ttdeci">void bpt_node_free_mem(void **deserialized)</div><div class="ttdef"><b>Definition:</b> bpt.c:86</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -695,7 +695,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t ORDER = 4</td>
+          <td class="memname">uint32_t ORDER = 100</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -705,7 +705,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 29 2016 10:37:56 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 11 2016 16:05:23 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

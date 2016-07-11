@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -100,6 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;err.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="wah_8h_source.html">wah.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="ll_8h_source.html">ll.h</a>&quot;</code><br/>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -954,9 +955,9 @@ Variables</h2></td></tr>
 <div class="line">        <a class="code" href="wah_8c.html#a0d594b8d10afcdc06b31190483d42650">wah_leading_deserialize</a>,</div>
 <div class="line">        <a class="code" href="wah_8c.html#aafebb74560da6e01219e8d31ef07f352">wah_leading_free</a></div>
 <div class="line">}</div>
-<div class="ttc" id="wah_8c_html_a0d594b8d10afcdc06b31190483d42650"><div class="ttname"><a href="wah_8c.html#a0d594b8d10afcdc06b31190483d42650">wah_leading_deserialize</a></div><div class="ttdeci">uint64_t wah_leading_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> wah.c:892</div></div>
-<div class="ttc" id="wah_8c_html_a18dc0d91389f426801d215cf4ce99a8c"><div class="ttname"><a href="wah_8c.html#a18dc0d91389f426801d215cf4ce99a8c">wah_leading_serialize</a></div><div class="ttdeci">uint64_t wah_leading_serialize(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> wah.c:847</div></div>
-<div class="ttc" id="wah_8c_html_aafebb74560da6e01219e8d31ef07f352"><div class="ttname"><a href="wah_8c.html#aafebb74560da6e01219e8d31ef07f352">wah_leading_free</a></div><div class="ttdeci">void wah_leading_free(void **deserialized)</div><div class="ttdef"><b>Definition:</b> wah.c:931</div></div>
+<div class="ttc" id="wah_8c_html_a0d594b8d10afcdc06b31190483d42650"><div class="ttname"><a href="wah_8c.html#a0d594b8d10afcdc06b31190483d42650">wah_leading_deserialize</a></div><div class="ttdeci">uint64_t wah_leading_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> wah.c:904</div></div>
+<div class="ttc" id="wah_8c_html_a18dc0d91389f426801d215cf4ce99a8c"><div class="ttname"><a href="wah_8c.html#a18dc0d91389f426801d215cf4ce99a8c">wah_leading_serialize</a></div><div class="ttdeci">uint64_t wah_leading_serialize(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> wah.c:859</div></div>
+<div class="ttc" id="wah_8c_html_aafebb74560da6e01219e8d31ef07f352"><div class="ttname"><a href="wah_8c.html#aafebb74560da6e01219e8d31ef07f352">wah_leading_free</a></div><div class="ttdeci">void wah_leading_free(void **deserialized)</div><div class="ttdef"><b>Definition:</b> wah.c:943</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -986,9 +987,9 @@ Variables</h2></td></tr>
 <div class="line">        <a class="code" href="wah_8c.html#aedabd265f4ab47a698727908eb2a8860">wah_non_leading_deserialize</a>,</div>
 <div class="line">        <a class="code" href="wah_8c.html#a860e5d66e407cf08ef88c143a3c45fca">wah_non_leading_free</a></div>
 <div class="line">}</div>
-<div class="ttc" id="wah_8c_html_aedabd265f4ab47a698727908eb2a8860"><div class="ttname"><a href="wah_8c.html#aedabd265f4ab47a698727908eb2a8860">wah_non_leading_deserialize</a></div><div class="ttdeci">uint64_t wah_non_leading_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> wah.c:777</div></div>
-<div class="ttc" id="wah_8c_html_a860e5d66e407cf08ef88c143a3c45fca"><div class="ttname"><a href="wah_8c.html#a860e5d66e407cf08ef88c143a3c45fca">wah_non_leading_free</a></div><div class="ttdeci">void wah_non_leading_free(void **deserialized)</div><div class="ttdef"><b>Definition:</b> wah.c:824</div></div>
-<div class="ttc" id="wah_8c_html_a119def45914cba9ee0ca660e2ca1b3ad"><div class="ttname"><a href="wah_8c.html#a119def45914cba9ee0ca660e2ca1b3ad">wah_non_leading_serialize</a></div><div class="ttdeci">uint64_t wah_non_leading_serialize(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> wah.c:720</div></div>
+<div class="ttc" id="wah_8c_html_aedabd265f4ab47a698727908eb2a8860"><div class="ttname"><a href="wah_8c.html#aedabd265f4ab47a698727908eb2a8860">wah_non_leading_deserialize</a></div><div class="ttdeci">uint64_t wah_non_leading_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> wah.c:789</div></div>
+<div class="ttc" id="wah_8c_html_a860e5d66e407cf08ef88c143a3c45fca"><div class="ttname"><a href="wah_8c.html#a860e5d66e407cf08ef88c143a3c45fca">wah_non_leading_free</a></div><div class="ttdeci">void wah_non_leading_free(void **deserialized)</div><div class="ttdef"><b>Definition:</b> wah.c:836</div></div>
+<div class="ttc" id="wah_8c_html_a119def45914cba9ee0ca660e2ca1b3ad"><div class="ttname"><a href="wah_8c.html#a119def45914cba9ee0ca660e2ca1b3ad">wah_non_leading_serialize</a></div><div class="ttdeci">uint64_t wah_non_leading_serialize(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> wah.c:732</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1007,7 +1008,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 29 2016 10:37:56 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 11 2016 16:05:23 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

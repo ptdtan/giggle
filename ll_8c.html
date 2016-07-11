@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,6 +110,8 @@ Functions</h2></td></tr>
 <tr class="separator:a78c5c274485e152d887a18b394af9fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedaba87b3606605fd2c26067fa47d82f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#aedaba87b3606605fd2c26067fa47d82f">uint32_t_ll_leading_serialize_to_wah</a> (void *deserialized, void **serialized)</td></tr>
 <tr class="separator:aedaba87b3606605fd2c26067fa47d82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affb63b1bb0fb88aee678e81d612f1cb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#affb63b1bb0fb88aee678e81d612f1cb2">uint32_t_ll_map_intersection_to_offset_list</a> (struct <a class="el" href="structgiggle__index.html">giggle_index</a> *gi, struct <a class="el" href="structgiggle__query__result.html">giggle_query_result</a> *gqr, void *_R)</td></tr>
+<tr class="separator:affb63b1bb0fb88aee678e81d612f1cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab52ff3b88e408533fffe3c291f116a3"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#aab52ff3b88e408533fffe3c291f116a3">uint32_t_ll_non_leading_serialize_to_wah</a> (void *deserialized, void **serialized)</td></tr>
 <tr class="separator:aab52ff3b88e408533fffe3c291f116a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a857fa1cb10691e79dd7e21636eeaad43"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll_8c.html#a857fa1cb10691e79dd7e21636eeaad43">uint32_t_ll_non_leading_serialize</a> (void *deserialized, void **serialized)</td></tr>
@@ -589,6 +591,38 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="affb63b1bb0fb88aee678e81d612f1cb2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void uint32_t_ll_map_intersection_to_offset_list </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structgiggle__index.html">giggle_index</a> *&#160;</td>
+          <td class="paramname"><em>gi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structgiggle__query__result.html">giggle_query_result</a> *&#160;</td>
+          <td class="paramname"><em>gqr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>_R</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a694e4719b330002fe736e685af548956"></a>
 <div class="memitem">
 <div class="memproto">
@@ -931,9 +965,9 @@ Variables</h2></td></tr>
 <div class="line">        <a class="code" href="ll_8c.html#ae5cfdfff071b7c7004b1cb8c70d4a1ef">uint32_t_ll_leading_deserialize</a>,</div>
 <div class="line">        <a class="code" href="ll_8c.html#aac6f08cdd015042073c2e6bab6ca08e2">uint32_t_ll_leading_free</a></div>
 <div class="line">}</div>
-<div class="ttc" id="ll_8c_html_aac6f08cdd015042073c2e6bab6ca08e2"><div class="ttname"><a href="ll_8c.html#aac6f08cdd015042073c2e6bab6ca08e2">uint32_t_ll_leading_free</a></div><div class="ttdeci">void uint32_t_ll_leading_free(void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:415</div></div>
-<div class="ttc" id="ll_8c_html_ae5cfdfff071b7c7004b1cb8c70d4a1ef"><div class="ttname"><a href="ll_8c.html#ae5cfdfff071b7c7004b1cb8c70d4a1ef">uint32_t_ll_leading_deserialize</a></div><div class="ttdeci">uint64_t uint32_t_ll_leading_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:383</div></div>
-<div class="ttc" id="ll_8c_html_abdbbae08c4b26caee7c278e2778db6c8"><div class="ttname"><a href="ll_8c.html#abdbbae08c4b26caee7c278e2778db6c8">uint32_t_ll_leading_serialize</a></div><div class="ttdeci">uint64_t uint32_t_ll_leading_serialize(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> ll.c:335</div></div>
+<div class="ttc" id="ll_8c_html_aac6f08cdd015042073c2e6bab6ca08e2"><div class="ttname"><a href="ll_8c.html#aac6f08cdd015042073c2e6bab6ca08e2">uint32_t_ll_leading_free</a></div><div class="ttdeci">void uint32_t_ll_leading_free(void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:461</div></div>
+<div class="ttc" id="ll_8c_html_ae5cfdfff071b7c7004b1cb8c70d4a1ef"><div class="ttname"><a href="ll_8c.html#ae5cfdfff071b7c7004b1cb8c70d4a1ef">uint32_t_ll_leading_deserialize</a></div><div class="ttdeci">uint64_t uint32_t_ll_leading_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:429</div></div>
+<div class="ttc" id="ll_8c_html_abdbbae08c4b26caee7c278e2778db6c8"><div class="ttname"><a href="ll_8c.html#abdbbae08c4b26caee7c278e2778db6c8">uint32_t_ll_leading_serialize</a></div><div class="ttdeci">uint64_t uint32_t_ll_leading_serialize(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> ll.c:381</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -951,9 +985,9 @@ Variables</h2></td></tr>
 <div class="line">        <a class="code" href="ll_8c.html#acfe7cda5d3421cfe17dcc91b95fccf15">uint32_t_ll_non_leading_deserialize</a>,</div>
 <div class="line">        <a class="code" href="ll_8c.html#ad11592dd3033e9e4439b4155d38c444f">uint32_t_ll_non_leading_free</a></div>
 <div class="line">}</div>
-<div class="ttc" id="ll_8c_html_ad11592dd3033e9e4439b4155d38c444f"><div class="ttname"><a href="ll_8c.html#ad11592dd3033e9e4439b4155d38c444f">uint32_t_ll_non_leading_free</a></div><div class="ttdeci">void uint32_t_ll_non_leading_free(void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:315</div></div>
-<div class="ttc" id="ll_8c_html_a857fa1cb10691e79dd7e21636eeaad43"><div class="ttname"><a href="ll_8c.html#a857fa1cb10691e79dd7e21636eeaad43">uint32_t_ll_non_leading_serialize</a></div><div class="ttdeci">uint64_t uint32_t_ll_non_leading_serialize(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> ll.c:205</div></div>
-<div class="ttc" id="ll_8c_html_acfe7cda5d3421cfe17dcc91b95fccf15"><div class="ttname"><a href="ll_8c.html#acfe7cda5d3421cfe17dcc91b95fccf15">uint32_t_ll_non_leading_deserialize</a></div><div class="ttdeci">uint64_t uint32_t_ll_non_leading_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:273</div></div>
+<div class="ttc" id="ll_8c_html_ad11592dd3033e9e4439b4155d38c444f"><div class="ttname"><a href="ll_8c.html#ad11592dd3033e9e4439b4155d38c444f">uint32_t_ll_non_leading_free</a></div><div class="ttdeci">void uint32_t_ll_non_leading_free(void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:361</div></div>
+<div class="ttc" id="ll_8c_html_a857fa1cb10691e79dd7e21636eeaad43"><div class="ttname"><a href="ll_8c.html#a857fa1cb10691e79dd7e21636eeaad43">uint32_t_ll_non_leading_serialize</a></div><div class="ttdeci">uint64_t uint32_t_ll_non_leading_serialize(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> ll.c:251</div></div>
+<div class="ttc" id="ll_8c_html_acfe7cda5d3421cfe17dcc91b95fccf15"><div class="ttname"><a href="ll_8c.html#acfe7cda5d3421cfe17dcc91b95fccf15">uint32_t_ll_non_leading_deserialize</a></div><div class="ttdeci">uint64_t uint32_t_ll_non_leading_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:319</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -971,9 +1005,9 @@ Variables</h2></td></tr>
 <div class="line">        <a class="code" href="ll_8c.html#ae5cfdfff071b7c7004b1cb8c70d4a1ef">uint32_t_ll_leading_deserialize</a>,</div>
 <div class="line">        <a class="code" href="ll_8c.html#aac6f08cdd015042073c2e6bab6ca08e2">uint32_t_ll_leading_free</a></div>
 <div class="line">}</div>
-<div class="ttc" id="ll_8c_html_aedaba87b3606605fd2c26067fa47d82f"><div class="ttname"><a href="ll_8c.html#aedaba87b3606605fd2c26067fa47d82f">uint32_t_ll_leading_serialize_to_wah</a></div><div class="ttdeci">uint64_t uint32_t_ll_leading_serialize_to_wah(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> ll.c:44</div></div>
-<div class="ttc" id="ll_8c_html_aac6f08cdd015042073c2e6bab6ca08e2"><div class="ttname"><a href="ll_8c.html#aac6f08cdd015042073c2e6bab6ca08e2">uint32_t_ll_leading_free</a></div><div class="ttdeci">void uint32_t_ll_leading_free(void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:415</div></div>
-<div class="ttc" id="ll_8c_html_ae5cfdfff071b7c7004b1cb8c70d4a1ef"><div class="ttname"><a href="ll_8c.html#ae5cfdfff071b7c7004b1cb8c70d4a1ef">uint32_t_ll_leading_deserialize</a></div><div class="ttdeci">uint64_t uint32_t_ll_leading_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:383</div></div>
+<div class="ttc" id="ll_8c_html_aedaba87b3606605fd2c26067fa47d82f"><div class="ttname"><a href="ll_8c.html#aedaba87b3606605fd2c26067fa47d82f">uint32_t_ll_leading_serialize_to_wah</a></div><div class="ttdeci">uint64_t uint32_t_ll_leading_serialize_to_wah(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> ll.c:57</div></div>
+<div class="ttc" id="ll_8c_html_aac6f08cdd015042073c2e6bab6ca08e2"><div class="ttname"><a href="ll_8c.html#aac6f08cdd015042073c2e6bab6ca08e2">uint32_t_ll_leading_free</a></div><div class="ttdeci">void uint32_t_ll_leading_free(void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:461</div></div>
+<div class="ttc" id="ll_8c_html_ae5cfdfff071b7c7004b1cb8c70d4a1ef"><div class="ttname"><a href="ll_8c.html#ae5cfdfff071b7c7004b1cb8c70d4a1ef">uint32_t_ll_leading_deserialize</a></div><div class="ttdeci">uint64_t uint32_t_ll_leading_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:429</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -991,16 +1025,16 @@ Variables</h2></td></tr>
 <div class="line">        <a class="code" href="ll_8c.html#acfe7cda5d3421cfe17dcc91b95fccf15">uint32_t_ll_non_leading_deserialize</a>,</div>
 <div class="line">        <a class="code" href="ll_8c.html#ad11592dd3033e9e4439b4155d38c444f">uint32_t_ll_non_leading_free</a></div>
 <div class="line">}</div>
-<div class="ttc" id="ll_8c_html_ad11592dd3033e9e4439b4155d38c444f"><div class="ttname"><a href="ll_8c.html#ad11592dd3033e9e4439b4155d38c444f">uint32_t_ll_non_leading_free</a></div><div class="ttdeci">void uint32_t_ll_non_leading_free(void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:315</div></div>
-<div class="ttc" id="ll_8c_html_acfe7cda5d3421cfe17dcc91b95fccf15"><div class="ttname"><a href="ll_8c.html#acfe7cda5d3421cfe17dcc91b95fccf15">uint32_t_ll_non_leading_deserialize</a></div><div class="ttdeci">uint64_t uint32_t_ll_non_leading_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:273</div></div>
-<div class="ttc" id="ll_8c_html_aab52ff3b88e408533fffe3c291f116a3"><div class="ttname"><a href="ll_8c.html#aab52ff3b88e408533fffe3c291f116a3">uint32_t_ll_non_leading_serialize_to_wah</a></div><div class="ttdeci">uint64_t uint32_t_ll_non_leading_serialize_to_wah(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> ll.c:110</div></div>
+<div class="ttc" id="ll_8c_html_ad11592dd3033e9e4439b4155d38c444f"><div class="ttname"><a href="ll_8c.html#ad11592dd3033e9e4439b4155d38c444f">uint32_t_ll_non_leading_free</a></div><div class="ttdeci">void uint32_t_ll_non_leading_free(void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:361</div></div>
+<div class="ttc" id="ll_8c_html_acfe7cda5d3421cfe17dcc91b95fccf15"><div class="ttname"><a href="ll_8c.html#acfe7cda5d3421cfe17dcc91b95fccf15">uint32_t_ll_non_leading_deserialize</a></div><div class="ttdeci">uint64_t uint32_t_ll_non_leading_deserialize(void *serialized, uint64_t serialized_size, void **deserialized)</div><div class="ttdef"><b>Definition:</b> ll.c:319</div></div>
+<div class="ttc" id="ll_8c_html_aab52ff3b88e408533fffe3c291f116a3"><div class="ttname"><a href="ll_8c.html#aab52ff3b88e408533fffe3c291f116a3">uint32_t_ll_non_leading_serialize_to_wah</a></div><div class="ttdeci">uint64_t uint32_t_ll_non_leading_serialize_to_wah(void *deserialized, void **serialized)</div><div class="ttdef"><b>Definition:</b> ll.c:156</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 29 2016 10:37:56 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 11 2016 16:05:23 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

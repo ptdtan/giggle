@@ -68,6 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="globals.html"><span>All</span></a></li>
       <li><a href="globals_func.html"><span>Functions</span></a></li>
       <li><a href="globals_vars.html"><span>Variables</span></a></li>
+      <li><a href="globals_type.html"><span>Typedefs</span></a></li>
       <li><a href="globals_defs.html"><span>Macros</span></a></li>
     </ul>
   </div>
@@ -101,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -181,6 +182,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="ll_8c.html#ae0b43569138fbf3b91222453cb6e1691">ll.c</a>
 , <a class="el" href="ll_8h.html#ae0b43569138fbf3b91222453cb6e1691">ll.h</a>
 </li>
+<li>uint32_t_ll_map_intersection_to_offset_list()
+: <a class="el" href="ll_8c.html#affb63b1bb0fb88aee678e81d612f1cb2">ll.c</a>
+, <a class="el" href="ll_8h.html#affb63b1bb0fb88aee678e81d612f1cb2">ll.h</a>
+</li>
 <li>uint32_t_ll_new_leading()
 : <a class="el" href="ll_8c.html#a694e4719b330002fe736e685af548956">ll.c</a>
 , <a class="el" href="ll_8h.html#a694e4719b330002fe736e685af548956">ll.h</a>
@@ -218,28 +223,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="ll_8h.html#aab52ff3b88e408533fffe3c291f116a3">ll.h</a>
 </li>
 <li>uint32_t_ll_non_leading_union_with_SA()
-: <a class="el" href="ll_8c.html#ae0f4ebec49c10f8252a00370a05c557c">ll.c</a>
-, <a class="el" href="ll_8h.html#ae0f4ebec49c10f8252a00370a05c557c">ll.h</a>
+: <a class="el" href="ll_8h.html#ae0f4ebec49c10f8252a00370a05c557c">ll.h</a>
+, <a class="el" href="ll_8c.html#ae0f4ebec49c10f8252a00370a05c557c">ll.c</a>
 </li>
 <li>uint32_t_ll_non_leading_union_with_SA_subtract_SE()
-: <a class="el" href="ll_8h.html#a24d85d1a332b7888c56b3fa4f27cbcde">ll.h</a>
-, <a class="el" href="ll_8c.html#a24d85d1a332b7888c56b3fa4f27cbcde">ll.c</a>
+: <a class="el" href="ll_8c.html#a24d85d1a332b7888c56b3fa4f27cbcde">ll.c</a>
+, <a class="el" href="ll_8h.html#a24d85d1a332b7888c56b3fa4f27cbcde">ll.h</a>
 </li>
 <li>uint32_t_ll_remove()
-: <a class="el" href="ll_8c.html#a4d23b502606d7e2ddf0b19cf5875ae6b">ll.c</a>
-, <a class="el" href="ll_8h.html#a4d23b502606d7e2ddf0b19cf5875ae6b">ll.h</a>
+: <a class="el" href="ll_8h.html#a4d23b502606d7e2ddf0b19cf5875ae6b">ll.h</a>
+, <a class="el" href="ll_8c.html#a4d23b502606d7e2ddf0b19cf5875ae6b">ll.c</a>
 </li>
 <li>uint32_t_ll_uniq_append()
-: <a class="el" href="ll_8h.html#a29342a209cb09f387f7e3305c18b226a">ll.h</a>
-, <a class="el" href="ll_8c.html#a29342a209cb09f387f7e3305c18b226a">ll.c</a>
+: <a class="el" href="ll_8c.html#a29342a209cb09f387f7e3305c18b226a">ll.c</a>
+, <a class="el" href="ll_8h.html#a29342a209cb09f387f7e3305c18b226a">ll.h</a>
 </li>
 <li>uint32_t_ll_wah_giggle_set_data_handler()
-: <a class="el" href="ll_8c.html#a78c5c274485e152d887a18b394af9fd5">ll.c</a>
-, <a class="el" href="ll_8h.html#a78c5c274485e152d887a18b394af9fd5">ll.h</a>
+: <a class="el" href="ll_8h.html#a78c5c274485e152d887a18b394af9fd5">ll.h</a>
+, <a class="el" href="ll_8c.html#a78c5c274485e152d887a18b394af9fd5">ll.c</a>
 </li>
 <li>uint32_t_ll_wah_leading_cache_handler
-: <a class="el" href="ll_8h.html#a72fcff32fd59ce75bb0530c367a33703">ll.h</a>
-, <a class="el" href="ll_8c.html#a72fcff32fd59ce75bb0530c367a33703">ll.c</a>
+: <a class="el" href="ll_8c.html#a72fcff32fd59ce75bb0530c367a33703">ll.c</a>
+, <a class="el" href="ll_8h.html#a72fcff32fd59ce75bb0530c367a33703">ll.h</a>
 </li>
 <li>uint32_t_ll_wah_non_leading_cache_handler
 : <a class="el" href="ll_8c.html#ae313ce882c5a155b6c04392b60b3ae3d">ll.c</a>
@@ -262,20 +267,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="lists_8h.html#a63e5628abd822a057589b2352a1d425e">lists.h</a>
 </li>
 <li>uint_pair_search_by_first_element_cmp()
-: <a class="el" href="lists_8h.html#a18f72942af90223fec9f671c91dd0cdb">lists.h</a>
-, <a class="el" href="lists_8c.html#a18f72942af90223fec9f671c91dd0cdb">lists.c</a>
+: <a class="el" href="lists_8c.html#a18f72942af90223fec9f671c91dd0cdb">lists.c</a>
+, <a class="el" href="lists_8h.html#a18f72942af90223fec9f671c91dd0cdb">lists.h</a>
 </li>
 <li>uint_pair_search_by_first_key_cmp()
-: <a class="el" href="lists_8c.html#a9138586f54ec668e9b301b34759cd355">lists.c</a>
-, <a class="el" href="lists_8h.html#a9138586f54ec668e9b301b34759cd355">lists.h</a>
+: <a class="el" href="lists_8h.html#a9138586f54ec668e9b301b34759cd355">lists.h</a>
+, <a class="el" href="lists_8c.html#a9138586f54ec668e9b301b34759cd355">lists.c</a>
 </li>
 <li>uint_pair_sort_by_first_element_cmp()
-: <a class="el" href="lists_8c.html#a4b15ad47e7c2a7408909d6b49de172ee">lists.c</a>
-, <a class="el" href="lists_8h.html#a4b15ad47e7c2a7408909d6b49de172ee">lists.h</a>
+: <a class="el" href="lists_8h.html#a4b15ad47e7c2a7408909d6b49de172ee">lists.h</a>
+, <a class="el" href="lists_8c.html#a4b15ad47e7c2a7408909d6b49de172ee">lists.c</a>
 </li>
 <li>uints_to_wah()
-: <a class="el" href="wah_8h.html#ab286280e58da2f86adb7b84805a05d9d">wah.h</a>
-, <a class="el" href="wah_8c.html#ab286280e58da2f86adb7b84805a05d9d">wah.c</a>
+: <a class="el" href="wah_8c.html#ab286280e58da2f86adb7b84805a05d9d">wah.c</a>
+, <a class="el" href="wah_8h.html#ab286280e58da2f86adb7b84805a05d9d">wah.h</a>
 </li>
 <li>unlink_cb()
 : <a class="el" href="util_8h.html#ab08d76004de1e54c0d18e143bfd50947">util.h</a>
@@ -286,30 +291,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="lists_8c.html#ac0dff7d4be552354782d70f19f04a9f3">lists.c</a>
 </li>
 <li>unordered_list_destroy()
-: <a class="el" href="lists_8h.html#a647a3e356a1049cf19aa2e3df121d2a9">lists.h</a>
-, <a class="el" href="lists_8c.html#a647a3e356a1049cf19aa2e3df121d2a9">lists.c</a>
+: <a class="el" href="lists_8c.html#a647a3e356a1049cf19aa2e3df121d2a9">lists.c</a>
+, <a class="el" href="lists_8h.html#a647a3e356a1049cf19aa2e3df121d2a9">lists.h</a>
 </li>
 <li>unordered_list_get()
-: <a class="el" href="lists_8h.html#a939e2ba0fee941fc71e4df021185a4b2">lists.h</a>
-, <a class="el" href="lists_8c.html#a939e2ba0fee941fc71e4df021185a4b2">lists.c</a>
+: <a class="el" href="lists_8c.html#a939e2ba0fee941fc71e4df021185a4b2">lists.c</a>
+, <a class="el" href="lists_8h.html#a939e2ba0fee941fc71e4df021185a4b2">lists.h</a>
 </li>
 <li>unordered_list_init()
 : <a class="el" href="lists_8c.html#a5db5991ed5fa311c02f2a6d9d7825bd5">lists.c</a>
 , <a class="el" href="lists_8h.html#a5db5991ed5fa311c02f2a6d9d7825bd5">lists.h</a>
 </li>
 <li>unordered_list_load()
-: <a class="el" href="lists_8h.html#a7da82f0dc440d45167ca1209b42c5630">lists.h</a>
-, <a class="el" href="lists_8c.html#a7da82f0dc440d45167ca1209b42c5630">lists.c</a>
+: <a class="el" href="lists_8c.html#a7da82f0dc440d45167ca1209b42c5630">lists.c</a>
+, <a class="el" href="lists_8h.html#a7da82f0dc440d45167ca1209b42c5630">lists.h</a>
 </li>
 <li>unordered_list_store()
-: <a class="el" href="lists_8c.html#ae4166e257a9861151a44eef683d2e10e">lists.c</a>
-, <a class="el" href="lists_8h.html#ae4166e257a9861151a44eef683d2e10e">lists.h</a>
+: <a class="el" href="lists_8h.html#ae4166e257a9861151a44eef683d2e10e">lists.h</a>
+, <a class="el" href="lists_8c.html#ae4166e257a9861151a44eef683d2e10e">lists.c</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 29 2016 10:37:56 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 11 2016 16:05:23 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

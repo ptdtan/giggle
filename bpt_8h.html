@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,7 +107,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a16a3964b377fc7933b1680793b2d6fb5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8h.html#a16a3964b377fc7933b1680793b2d6fb5">BPT_NODE_NUM_ELEMENTS</a>&#160;&#160;&#160;(2*<a class="el" href="bpt_8h.html#a8191377efaf4c23e85b2e1276473c805">ORDER</a>+9)</td></tr>
+<tr class="memitem:a16a3964b377fc7933b1680793b2d6fb5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8h.html#a16a3964b377fc7933b1680793b2d6fb5">BPT_NODE_NUM_ELEMENTS</a>&#160;&#160;&#160;(2*<a class="el" href="bpt_8h.html#a8191377efaf4c23e85b2e1276473c805">ORDER</a>+10)</td></tr>
 <tr class="separator:a16a3964b377fc7933b1680793b2d6fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56d1365215177b1cdf6958b70bf7173b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8h.html#a56d1365215177b1cdf6958b70bf7173b">BPT_NODE_ELEMENT_SIZE</a>&#160;&#160;&#160;sizeof(uint32_t)</td></tr>
 <tr class="separator:a56d1365215177b1cdf6958b70bf7173b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,7 +127,9 @@ Macros</h2></td></tr>
 <tr class="separator:ae8be621ab7f108efe35bca65ebec65ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51fbcac28b7ad8eac64390658a1df57b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8h.html#a51fbcac28b7ad8eac64390658a1df57b">BPT_KEYS</a>(node)&#160;&#160;&#160;((node)-&gt;data + 6)</td></tr>
 <tr class="separator:a51fbcac28b7ad8eac64390658a1df57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f2f8b3983fc898c72d4dcc46ba5b36a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8h.html#a5f2f8b3983fc898c72d4dcc46ba5b36a">BPT_POINTERS</a>(node)&#160;&#160;&#160;((node)-&gt;data + (6+<a class="el" href="bpt_8h.html#a8191377efaf4c23e85b2e1276473c805">ORDER</a>+1))</td></tr>
+<tr class="memitem:a78c97341ff0d58bb38ba7dde17758f5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8h.html#a78c97341ff0d58bb38ba7dde17758f5a">BPT_POINTERS_BLOCK</a>(node)&#160;&#160;&#160;(((node)-&gt;data + (6+<a class="el" href="bpt_8h.html#a8191377efaf4c23e85b2e1276473c805">ORDER</a>+1))[0])</td></tr>
+<tr class="separator:a78c97341ff0d58bb38ba7dde17758f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f2f8b3983fc898c72d4dcc46ba5b36a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bpt_8h.html#a5f2f8b3983fc898c72d4dcc46ba5b36a">BPT_POINTERS</a>(node)&#160;&#160;&#160;((node)-&gt;data + (6+<a class="el" href="bpt_8h.html#a8191377efaf4c23e85b2e1276473c805">ORDER</a>+2))</td></tr>
 <tr class="separator:a5f2f8b3983fc898c72d4dcc46ba5b36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -274,7 +276,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define BPT_NODE_NUM_ELEMENTS&#160;&#160;&#160;(2*<a class="el" href="bpt_8h.html#a8191377efaf4c23e85b2e1276473c805">ORDER</a>+9)</td>
+          <td class="memname">#define BPT_NODE_NUM_ELEMENTS&#160;&#160;&#160;(2*<a class="el" href="bpt_8h.html#a8191377efaf4c23e85b2e1276473c805">ORDER</a>+10)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -334,7 +336,23 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">node</td><td>)</td>
-          <td>&#160;&#160;&#160;((node)-&gt;data + (6+<a class="el" href="bpt_8h.html#a8191377efaf4c23e85b2e1276473c805">ORDER</a>+1))</td>
+          <td>&#160;&#160;&#160;((node)-&gt;data + (6+<a class="el" href="bpt_8h.html#a8191377efaf4c23e85b2e1276473c805">ORDER</a>+2))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a78c97341ff0d58bb38ba7dde17758f5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BPT_POINTERS_BLOCK</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">node</td><td>)</td>
+          <td>&#160;&#160;&#160;(((node)-&gt;data + (6+<a class="el" href="bpt_8h.html#a8191377efaf4c23e85b2e1276473c805">ORDER</a>+1))[0])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -918,7 +936,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 29 2016 10:37:56 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 11 2016 16:05:23 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

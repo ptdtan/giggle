@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -95,7 +95,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br/>
 <code>#include &lt;htslib/khash.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="bpt_8h_source.html">bpt.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="ll_8h_source.html">ll.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="cache_8h_source.html">cache.h</a>&quot;</code><br/>
 </div>
 <p><a href="giggle__index_8h_source.html">Go to the source code of this file.</a></p>
@@ -108,11 +107,15 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgiggle__index.html">giggle_index</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgigle__query__result.html">gigle_query_result</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgiggle__query__result.html">giggle_query_result</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgiggle__query__iter.html">giggle_query_iter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgiggle__def.html">giggle_def</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structleaf__data.html">leaf_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structleaf__data__result.html">leaf_data_result</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -129,6 +132,18 @@ Macros</h2></td></tr>
 <tr class="separator:ad7a967dd260384e94010b31b1412a0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c6d5de492ac61ad29aec7aa9a436bbf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#a1c6d5de492ac61ad29aec7aa9a436bbf">VERSION</a>&#160;&#160;&#160;<a class="el" href="giggle__index_8h.html#aa9e8f3bb466bb421d13913df7aeaa20c">MAJOR_VERSION</a> &quot;.&quot; <a class="el" href="giggle__index_8h.html#a320988aa2655ee094f3a34a52da10831">MINOR_VERSION</a> &quot;.&quot; <a class="el" href="giggle__index_8h.html#aa906836aa657b313f9abd75c981078f3">REVISION_VERSION</a></td></tr>
 <tr class="separator:a1c6d5de492ac61ad29aec7aa9a436bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d98afadfb3d4f63a1d1bb0caef63a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#a87d98afadfb3d4f63a1d1bb0caef63a6">LEAF_DATA_STARTS_START</a>(node, i)</td></tr>
+<tr class="separator:a87d98afadfb3d4f63a1d1bb0caef63a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15f33ff8df2021b7e7e59e1fd2fd72f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#aa15f33ff8df2021b7e7e59e1fd2fd72f">LEAF_DATA_STARTS_END</a>(node, i)</td></tr>
+<tr class="separator:aa15f33ff8df2021b7e7e59e1fd2fd72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a489d0f779c20d19aacf1db18e1c231f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#a489d0f779c20d19aacf1db18e1c231f5">LEAF_DATA_ENDS_START</a>(node, i)</td></tr>
+<tr class="separator:a489d0f779c20d19aacf1db18e1c231f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc3a023573ff35d5a756c10cc0975bc6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#abc3a023573ff35d5a756c10cc0975bc6">LEAF_DATA_ENDS_END</a>(node, i)</td></tr>
+<tr class="separator:abc3a023573ff35d5a756c10cc0975bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2bc84ede9252779b9fac6b3cf2fc78f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#ae2bc84ede9252779b9fac6b3cf2fc78f">LEAF_DATA_LEADING_START</a>(node)&#160;&#160;&#160;(0)</td></tr>
+<tr class="separator:ae2bc84ede9252779b9fac6b3cf2fc78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd6a28b4281720176d8fc7d2fdc4131a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#afd6a28b4281720176d8fc7d2fdc4131a">LEAF_DATA_LEADING_END</a>(node)&#160;&#160;&#160;(node-&gt;num_leading)</td></tr>
+<tr class="separator:afd6a28b4281720176d8fc7d2fdc4131a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -140,14 +155,14 @@ Functions</h2></td></tr>
 <tr class="separator:afd3f617ca2d8b83df4bf732c91fcce67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf1b4ed2ec2b6ad228fc773f9b9936a7"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#aaf1b4ed2ec2b6ad228fc773f9b9936a7">c_str_load</a> (FILE *f, char *file_name)</td></tr>
 <tr class="separator:aaf1b4ed2ec2b6ad228fc773f9b9936a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac98bcc2e68b68b63d5e9b87c9bd8249b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structgigle__query__result.html">gigle_query_result</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#ac98bcc2e68b68b63d5e9b87c9bd8249b">giggle_query</a> (struct <a class="el" href="structgiggle__index.html">giggle_index</a> *gi, char *chrm, uint32_t <a class="el" href="timer_8h.html#a60de64d75454385b23995437f1d72669">start</a>, uint32_t end, struct <a class="el" href="structgigle__query__result.html">gigle_query_result</a> *gqr)</td></tr>
-<tr class="separator:ac98bcc2e68b68b63d5e9b87c9bd8249b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd9b617bf3c03f8f87a471c8fa5cc33c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#acd9b617bf3c03f8f87a471c8fa5cc33c">gigle_query_result_destroy</a> (struct <a class="el" href="structgigle__query__result.html">gigle_query_result</a> **gqr)</td></tr>
-<tr class="separator:acd9b617bf3c03f8f87a471c8fa5cc33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc80a2635bf499b3eebd1503975f5191"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#acc80a2635bf499b3eebd1503975f5191">giggle_get_query_len</a> (struct <a class="el" href="structgigle__query__result.html">gigle_query_result</a> *gqr, uint32_t file_id)</td></tr>
-<tr class="separator:acc80a2635bf499b3eebd1503975f5191"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af03cba7c9e839586403332922d945f06"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structgiggle__query__iter.html">giggle_query_iter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#af03cba7c9e839586403332922d945f06">giggle_get_query_itr</a> (struct <a class="el" href="structgigle__query__result.html">gigle_query_result</a> *gqr, uint32_t file_id)</td></tr>
-<tr class="separator:af03cba7c9e839586403332922d945f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c6478b18cff477674f22b8fcc557e32"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structgiggle__query__result.html">giggle_query_result</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#a1c6478b18cff477674f22b8fcc557e32">giggle_query</a> (struct <a class="el" href="structgiggle__index.html">giggle_index</a> *gi, char *chrm, uint32_t <a class="el" href="timer_8h.html#a60de64d75454385b23995437f1d72669">start</a>, uint32_t end, struct <a class="el" href="structgiggle__query__result.html">giggle_query_result</a> *gqr)</td></tr>
+<tr class="separator:a1c6478b18cff477674f22b8fcc557e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8929a2a5be57f188dff5c26c90a0cace"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#a8929a2a5be57f188dff5c26c90a0cace">giggle_query_result_destroy</a> (struct <a class="el" href="structgiggle__query__result.html">giggle_query_result</a> **gqr)</td></tr>
+<tr class="separator:a8929a2a5be57f188dff5c26c90a0cace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3650610913e34a579fcd7cc904cd5f2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#ad3650610913e34a579fcd7cc904cd5f2">giggle_get_query_len</a> (struct <a class="el" href="structgiggle__query__result.html">giggle_query_result</a> *gqr, uint32_t file_id)</td></tr>
+<tr class="separator:ad3650610913e34a579fcd7cc904cd5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b5baeef7cf5487b15b73f20165fb991"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structgiggle__query__iter.html">giggle_query_iter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#a4b5baeef7cf5487b15b73f20165fb991">giggle_get_query_itr</a> (struct <a class="el" href="structgiggle__query__result.html">giggle_query_result</a> *gqr, uint32_t file_id)</td></tr>
+<tr class="separator:a4b5baeef7cf5487b15b73f20165fb991"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a772c2f2337edf69b5e7da202b1a3f04d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#a772c2f2337edf69b5e7da202b1a3f04d">giggle_query_next</a> (struct <a class="el" href="structgiggle__query__iter.html">giggle_query_iter</a> *gqi, char **result)</td></tr>
 <tr class="separator:a772c2f2337edf69b5e7da202b1a3f04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e86e4c9ff8ce07e61b42cb0d16fbc11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#a4e86e4c9ff8ce07e61b42cb0d16fbc11">giggle_iter_destroy</a> (struct <a class="el" href="structgiggle__query__iter.html">giggle_query_iter</a> **gqi)</td></tr>
@@ -176,11 +191,35 @@ Functions</h2></td></tr>
 <tr class="separator:aeec33bc2e5d70061b43d37bba9372af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b594f54e544eb0801200e661aaddbe9"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structgiggle__index.html">giggle_index</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#a7b594f54e544eb0801200e661aaddbe9">giggle_load</a> (char *data_dir, void(*giggle_set_data_handler)(void))</td></tr>
 <tr class="separator:a7b594f54e544eb0801200e661aaddbe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f93ea70d52f44622766bd4c55a823b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#aa1f93ea70d52f44622766bd4c55a823b">leaf_data_free_mem</a> (void **deserialized)</td></tr>
+<tr class="separator:aa1f93ea70d52f44622766bd4c55a823b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0897a338ef6cae0e4d46fafb3f8940b5"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#a0897a338ef6cae0e4d46fafb3f8940b5">leaf_data_deserialize</a> (void *serialized, uint64_t serialized_size, void **deserialized)</td></tr>
+<tr class="separator:a0897a338ef6cae0e4d46fafb3f8940b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c38c19bd649597b3d59c1b5b26bcea6"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#a0c38c19bd649597b3d59c1b5b26bcea6">leaf_data_serialize</a> (void *deserialized, void **serialized)</td></tr>
+<tr class="separator:a0c38c19bd649597b3d59c1b5b26bcea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02a31246cdea339f89d6ac4116e5f478"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#a02a31246cdea339f89d6ac4116e5f478">giggle_get_leaf_data</a> (struct <a class="el" href="structgiggle__index.html">giggle_index</a> *gi, uint32_t domain, uint32_t leaf_id, struct <a class="el" href="structleaf__data.html">leaf_data</a> **lf, uint16_t **starts_ends_offsets)</td></tr>
+<tr class="separator:a02a31246cdea339f89d6ac4116e5f478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7ef59aba8e62175ac9561cde5d277b8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#ab7ef59aba8e62175ac9561cde5d277b8">giggle_leaf_data_get_intersection_size</a> (uint32_t leaf_start_id, int pos_start_id, uint32_t leaf_end_id, int pos_end_id, uint32_t domain)</td></tr>
+<tr class="separator:ab7ef59aba8e62175ac9561cde5d277b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c4e41226cc372de80498001988fe3a1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#a9c4e41226cc372de80498001988fe3a1">giggle_leaf_data_get_intersection</a> (uint32_t leaf_start_id, int pos_start_id, uint32_t leaf_end_id, int pos_end_id, uint32_t domain)</td></tr>
+<tr class="separator:a9c4e41226cc372de80498001988fe3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff314516f5246657cace49178b6470de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#aff314516f5246657cace49178b6470de">leaf_data_map_intersection_to_offset_list</a> (struct <a class="el" href="structgiggle__index.html">giggle_index</a> *gi, struct <a class="el" href="structgiggle__query__result.html">giggle_query_result</a> *gqr, void *_R)</td></tr>
+<tr class="separator:aff314516f5246657cace49178b6470de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b63ee4af43eba69f715df33023da945"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#a4b63ee4af43eba69f715df33023da945">giggle_write_tree_cache_dump</a> (void *<a class="el" href="structgiggle__index.html">giggle_index</a>)</td></tr>
+<tr class="separator:a4b63ee4af43eba69f715df33023da945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fbe7498062365d9b2587e6d996f689b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#a0fbe7498062365d9b2587e6d996f689b">giggle_write_tree_leaf_data</a> (void *<a class="el" href="structgiggle__index.html">giggle_index</a>)</td></tr>
+<tr class="separator:a0fbe7498062365d9b2587e6d996f689b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeddd0fef2b3314cbe6a26f55a4a78c2e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#aeddd0fef2b3314cbe6a26f55a4a78c2e">giggle_collect_intersection_data_in_pointers</a> (uint32_t leaf_start_id, int pos_start_id, uint32_t leaf_end_id, int pos_end_id, uint32_t domain, void **r)</td></tr>
+<tr class="separator:aeddd0fef2b3314cbe6a26f55a4a78c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d1dc0dc1e23a1fbb6df570a5c0b8933"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#a6d1dc0dc1e23a1fbb6df570a5c0b8933">giggle_collect_intersection_data_in_block</a> (uint32_t leaf_start_id, int pos_start_id, uint32_t leaf_end_id, int pos_end_id, uint32_t domain, void **r)</td></tr>
+<tr class="separator:a6d1dc0dc1e23a1fbb6df570a5c0b8933"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a4330d0dc27201510a1e11bd6ce64a444"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structgiggle__def.html">giggle_def</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#a4330d0dc27201510a1e11bd6ce64a444">giggle_data_handler</a></td></tr>
 <tr class="separator:a4330d0dc27201510a1e11bd6ce64a444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c20e0245d5d5d493ca5be15b2a460ba"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcache__handler.html">cache_handler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="giggle__index_8h.html#a7c20e0245d5d5d493ca5be15b2a460ba">leaf_data_cache_handler</a></td></tr>
+<tr class="separator:a7c20e0245d5d5d493ca5be15b2a460ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ad7a967dd260384e94010b31b1412a0b4"></a>
@@ -193,6 +232,160 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a class="anchor" id="abc3a023573ff35d5a756c10cc0975bc6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LEAF_DATA_ENDS_END</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">node, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">i&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">( i == <a class="code" href="bpt_8h.html#ae8be621ab7f108efe35bca65ebec65ef">BPT_NUM_KEYS</a>(node) ? <a class="code" href="bpt_8h.html#a5f2f8b3983fc898c72d4dcc46ba5b36a">BPT_POINTERS</a>(node)[i-1] &amp; 65535 : \</div>
+<div class="line">    i == -1 ? 0 : <a class="code" href="bpt_8h.html#a5f2f8b3983fc898c72d4dcc46ba5b36a">BPT_POINTERS</a>(node)[i] &amp; 65535)</div>
+<div class="ttc" id="bpt_8h_html_ae8be621ab7f108efe35bca65ebec65ef"><div class="ttname"><a href="bpt_8h.html#ae8be621ab7f108efe35bca65ebec65ef">BPT_NUM_KEYS</a></div><div class="ttdeci">#define BPT_NUM_KEYS(node)</div><div class="ttdef"><b>Definition:</b> bpt.h:21</div></div>
+<div class="ttc" id="bpt_8h_html_a5f2f8b3983fc898c72d4dcc46ba5b36a"><div class="ttname"><a href="bpt_8h.html#a5f2f8b3983fc898c72d4dcc46ba5b36a">BPT_POINTERS</a></div><div class="ttdeci">#define BPT_POINTERS(node)</div><div class="ttdef"><b>Definition:</b> bpt.h:24</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a489d0f779c20d19aacf1db18e1c231f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LEAF_DATA_ENDS_START</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">node, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">i&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">(i &gt;= <a class="code" href="bpt_8h.html#ae8be621ab7f108efe35bca65ebec65ef">BPT_NUM_KEYS</a>(node) \</div>
+<div class="line">      ? <a class="code" href="bpt_8h.html#a5f2f8b3983fc898c72d4dcc46ba5b36a">BPT_POINTERS</a>(node)[<a class="code" href="bpt_8h.html#ae8be621ab7f108efe35bca65ebec65ef">BPT_NUM_KEYS</a>(node)-1] &amp; 65535 \</div>
+<div class="line">      : i == 0 ? 0:<a class="code" href="bpt_8h.html#a5f2f8b3983fc898c72d4dcc46ba5b36a">BPT_POINTERS</a>(node)[i-1] &amp; 65535)</div>
+<div class="ttc" id="bpt_8h_html_ae8be621ab7f108efe35bca65ebec65ef"><div class="ttname"><a href="bpt_8h.html#ae8be621ab7f108efe35bca65ebec65ef">BPT_NUM_KEYS</a></div><div class="ttdeci">#define BPT_NUM_KEYS(node)</div><div class="ttdef"><b>Definition:</b> bpt.h:21</div></div>
+<div class="ttc" id="bpt_8h_html_a5f2f8b3983fc898c72d4dcc46ba5b36a"><div class="ttname"><a href="bpt_8h.html#a5f2f8b3983fc898c72d4dcc46ba5b36a">BPT_POINTERS</a></div><div class="ttdeci">#define BPT_POINTERS(node)</div><div class="ttdef"><b>Definition:</b> bpt.h:24</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="afd6a28b4281720176d8fc7d2fdc4131a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LEAF_DATA_LEADING_END</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">node</td><td>)</td>
+          <td>&#160;&#160;&#160;(node-&gt;num_leading)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae2bc84ede9252779b9fac6b3cf2fc78f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LEAF_DATA_LEADING_START</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">node</td><td>)</td>
+          <td>&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa15f33ff8df2021b7e7e59e1fd2fd72f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LEAF_DATA_STARTS_END</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">node, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">i&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">( i == <a class="code" href="bpt_8h.html#ae8be621ab7f108efe35bca65ebec65ef">BPT_NUM_KEYS</a>(node) ? <a class="code" href="bpt_8h.html#a5f2f8b3983fc898c72d4dcc46ba5b36a">BPT_POINTERS</a>(node)[i-1] &gt;&gt; 16 : \</div>
+<div class="line">        i == -1 ? 0 : <a class="code" href="bpt_8h.html#a5f2f8b3983fc898c72d4dcc46ba5b36a">BPT_POINTERS</a>(node)[i] &gt;&gt; 16)</div>
+<div class="ttc" id="bpt_8h_html_ae8be621ab7f108efe35bca65ebec65ef"><div class="ttname"><a href="bpt_8h.html#ae8be621ab7f108efe35bca65ebec65ef">BPT_NUM_KEYS</a></div><div class="ttdeci">#define BPT_NUM_KEYS(node)</div><div class="ttdef"><b>Definition:</b> bpt.h:21</div></div>
+<div class="ttc" id="bpt_8h_html_a5f2f8b3983fc898c72d4dcc46ba5b36a"><div class="ttname"><a href="bpt_8h.html#a5f2f8b3983fc898c72d4dcc46ba5b36a">BPT_POINTERS</a></div><div class="ttdeci">#define BPT_POINTERS(node)</div><div class="ttdef"><b>Definition:</b> bpt.h:24</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a87d98afadfb3d4f63a1d1bb0caef63a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LEAF_DATA_STARTS_START</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">node, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">i&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">( i &gt;= <a class="code" href="bpt_8h.html#ae8be621ab7f108efe35bca65ebec65ef">BPT_NUM_KEYS</a>(node) \</div>
+<div class="line">      ? <a class="code" href="bpt_8h.html#a5f2f8b3983fc898c72d4dcc46ba5b36a">BPT_POINTERS</a>(node)[<a class="code" href="bpt_8h.html#ae8be621ab7f108efe35bca65ebec65ef">BPT_NUM_KEYS</a>(node)-1] &gt;&gt; 16 \</div>
+<div class="line">      : i == 0 ? 0 : <a class="code" href="bpt_8h.html#a5f2f8b3983fc898c72d4dcc46ba5b36a">BPT_POINTERS</a>(node)[i-1] &gt;&gt; 16)</div>
+<div class="ttc" id="bpt_8h_html_ae8be621ab7f108efe35bca65ebec65ef"><div class="ttname"><a href="bpt_8h.html#ae8be621ab7f108efe35bca65ebec65ef">BPT_NUM_KEYS</a></div><div class="ttdeci">#define BPT_NUM_KEYS(node)</div><div class="ttdef"><b>Definition:</b> bpt.h:21</div></div>
+<div class="ttc" id="bpt_8h_html_a5f2f8b3983fc898c72d4dcc46ba5b36a"><div class="ttname"><a href="bpt_8h.html#a5f2f8b3983fc898c72d4dcc46ba5b36a">BPT_POINTERS</a></div><div class="ttdeci">#define BPT_POINTERS(node)</div><div class="ttdef"><b>Definition:</b> bpt.h:24</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aa9e8f3bb466bb421d13913df7aeaa20c"></a>
@@ -372,6 +565,106 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a6d1dc0dc1e23a1fbb6df570a5c0b8933"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* giggle_collect_intersection_data_in_block </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>leaf_start_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos_start_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>leaf_end_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos_end_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeddd0fef2b3314cbe6a26f55a4a78c2e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* giggle_collect_intersection_data_in_pointers </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>leaf_start_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos_start_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>leaf_end_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos_end_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac38233bf7b6534aea65e48b5ed8eef01"></a>
 <div class="memitem">
 <div class="memproto">
@@ -424,14 +717,58 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af03cba7c9e839586403332922d945f06"></a>
+<a class="anchor" id="a02a31246cdea339f89d6ac4116e5f478"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t giggle_get_leaf_data </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structgiggle__index.html">giggle_index</a> *&#160;</td>
+          <td class="paramname"><em>gi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>leaf_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structleaf__data.html">leaf_data</a> **&#160;</td>
+          <td class="paramname"><em>lf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t **&#160;</td>
+          <td class="paramname"><em>starts_ends_offsets</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4b5baeef7cf5487b15b73f20165fb991"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">struct <a class="el" href="structgiggle__query__iter.html">giggle_query_iter</a>* giggle_get_query_itr </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structgigle__query__result.html">gigle_query_result</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structgiggle__query__result.html">giggle_query_result</a> *&#160;</td>
           <td class="paramname"><em>gqr</em>, </td>
         </tr>
         <tr>
@@ -450,14 +787,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acc80a2635bf499b3eebd1503975f5191"></a>
+<a class="anchor" id="ad3650610913e34a579fcd7cc904cd5f2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">uint32_t giggle_get_query_len </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structgigle__query__result.html">gigle_query_result</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structgiggle__query__result.html">giggle_query_result</a> *&#160;</td>
           <td class="paramname"><em>gqr</em>, </td>
         </tr>
         <tr>
@@ -664,6 +1001,94 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a9c4e41226cc372de80498001988fe3a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t giggle_leaf_data_get_intersection </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>leaf_start_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos_start_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>leaf_end_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos_end_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab7ef59aba8e62175ac9561cde5d277b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t giggle_leaf_data_get_intersection_size </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>leaf_start_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos_start_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>leaf_end_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos_end_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>domain</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a7b594f54e544eb0801200e661aaddbe9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -690,12 +1115,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac98bcc2e68b68b63d5e9b87c9bd8249b"></a>
+<a class="anchor" id="a1c6478b18cff477674f22b8fcc557e32"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structgigle__query__result.html">gigle_query_result</a>* giggle_query </td>
+          <td class="memname">struct <a class="el" href="structgiggle__query__result.html">giggle_query_result</a>* giggle_query </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structgiggle__index.html">giggle_index</a> *&#160;</td>
           <td class="paramname"><em>gi</em>, </td>
@@ -721,7 +1146,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structgigle__query__result.html">gigle_query_result</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structgiggle__query__result.html">giggle_query_result</a> *&#160;</td>
           <td class="paramname"><em>gqr</em>&#160;</td>
         </tr>
         <tr>
@@ -798,6 +1223,22 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a8929a2a5be57f188dff5c26c90a0cace"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void giggle_query_result_destroy </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structgiggle__query__result.html">giggle_query_result</a> **&#160;</td>
+          <td class="paramname"><em>gqr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ad1935641307768a31beefa079e7e9127"></a>
 <div class="memitem">
 <div class="memproto">
@@ -852,16 +1293,138 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acd9b617bf3c03f8f87a471c8fa5cc33c"></a>
+<a class="anchor" id="a4b63ee4af43eba69f715df33023da945"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void gigle_query_result_destroy </td>
+          <td class="memname">void giggle_write_tree_cache_dump </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structgigle__query__result.html">gigle_query_result</a> **&#160;</td>
-          <td class="paramname"><em>gqr</em></td><td>)</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>giggle_index</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0fbe7498062365d9b2587e6d996f689b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void giggle_write_tree_leaf_data </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>giggle_index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0897a338ef6cae0e4d46fafb3f8940b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t leaf_data_deserialize </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>serialized</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>serialized_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>deserialized</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa1f93ea70d52f44622766bd4c55a823b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void leaf_data_free_mem </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>deserialized</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aff314516f5246657cace49178b6470de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void leaf_data_map_intersection_to_offset_list </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structgiggle__index.html">giggle_index</a> *&#160;</td>
+          <td class="paramname"><em>gi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structgiggle__query__result.html">giggle_query_result</a> *&#160;</td>
+          <td class="paramname"><em>gqr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>_R</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0c38c19bd649597b3d59c1b5b26bcea6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t leaf_data_serialize </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>deserialized</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>serialized</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -881,10 +1444,22 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a7c20e0245d5d5d493ca5be15b2a460ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structcache__handler.html">cache_handler</a> leaf_data_cache_handler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 29 2016 10:37:56 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 11 2016 16:05:23 for Giggle by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

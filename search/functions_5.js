@@ -1,5 +1,10 @@
 var searchData=
 [
+  ['fastlz_5fcompress',['fastlz_compress',['../fastlz_8c.html#aa8b12c16f2514c6cd2a6748a9d6bce4d',1,'fastlz_compress(const void *input, int length, void *output):&#160;fastlz.c'],['../fastlz_8h.html#aa8b12c16f2514c6cd2a6748a9d6bce4d',1,'fastlz_compress(const void *input, int length, void *output):&#160;fastlz.c']]],
+  ['fastlz_5fcompress_5flevel',['fastlz_compress_level',['../fastlz_8c.html#af4628c39d30c8deab1ad9b4aedb31e75',1,'fastlz_compress_level(int level, const void *input, int length, void *output):&#160;fastlz.c'],['../fastlz_8h.html#af4628c39d30c8deab1ad9b4aedb31e75',1,'fastlz_compress_level(int level, const void *input, int length, void *output):&#160;fastlz.c']]],
+  ['fastlz_5fcompressor',['FASTLZ_COMPRESSOR',['../fastlz_8c.html#a1ffd2f5a74ba9ff5d22c61154aa3a7cd',1,'fastlz.c']]],
+  ['fastlz_5fdecompress',['fastlz_decompress',['../fastlz_8c.html#a6cce72f3099f53d0cc244162180166b3',1,'fastlz_decompress(const void *input, int length, void *output, int maxout):&#160;fastlz.c'],['../fastlz_8h.html#a6cce72f3099f53d0cc244162180166b3',1,'fastlz_decompress(const void *input, int length, void *output, int maxout):&#160;fastlz.c']]],
+  ['fastlz_5fdecompressor',['FASTLZ_DECOMPRESSOR',['../fastlz_8c.html#a1dd06f291f2e7e6157f193ceec2ba5f9',1,'fastlz.c']]],
   ['fifo_5fq_5fpeek',['fifo_q_peek',['../lists_8c.html#a8dae2b5c4241c434938fd66a574ae46a',1,'fifo_q_peek(struct fifo_q *q):&#160;lists.c'],['../lists_8h.html#a8dae2b5c4241c434938fd66a574ae46a',1,'fifo_q_peek(struct fifo_q *q):&#160;lists.c']]],
   ['fifo_5fq_5fpop',['fifo_q_pop',['../lists_8c.html#a6679e5cd6611ade943ae6f7552eb2e00',1,'fifo_q_pop(struct fifo_q **q):&#160;lists.c'],['../lists_8h.html#a6679e5cd6611ade943ae6f7552eb2e00',1,'fifo_q_pop(struct fifo_q **q):&#160;lists.c']]],
   ['fifo_5fq_5fpush',['fifo_q_push',['../lists_8c.html#a1073a7c46c1fd35b24fb7455b82013d6',1,'fifo_q_push(struct fifo_q **q, void *val):&#160;lists.c'],['../lists_8h.html#a1073a7c46c1fd35b24fb7455b82013d6',1,'fifo_q_push(struct fifo_q **q, void *val):&#160;lists.c']]],
